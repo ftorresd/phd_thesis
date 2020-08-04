@@ -1,0 +1,374 @@
+{
+  "ZToUpsilon1SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.06313657491887023, 
+        "fittedSigma": 1.1211917734993055
+      }, 
+      "total": {
+        "fittedMean": 0.22201434863808756, 
+        "fittedSigma": 2.4159916566582904
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.36665267567074383, 
+        "phoScale_syst_DOWN": 0.0830969502668684, 
+        "phoScale_stat_UP": 0.032206872554747475, 
+        "phoScale_gain_UP": 0.03381852094428188, 
+        "fittedSigma": 2.140080534017342, 
+        "phoScale_syst_UP": 0.015707553925050504, 
+        "phoScale_gain_DOWN": 0.03381852094428188, 
+        "phoResol_rho_UP": 0.944951677449665, 
+        "phoResol_phi_UP": 0.2713808730559829, 
+        "fittedMean": 0.21284770120606933, 
+        "phoResol_rho_DOWN": 2.1084379306736625, 
+        "phoScale_stat_DOWN": 0.03542348532071961
+      }
+    }, 
+    "Cat1": {
+      "muon": {
+        "fittedMean": 0.05056169447509143, 
+        "fittedSigma": 0.8397533080666877
+      }, 
+      "total": {
+        "fittedMean": 0.14134655426869777, 
+        "fittedSigma": 2.6141321021457697
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.13357123689346379, 
+        "phoScale_syst_DOWN": 0.05105068070147547, 
+        "phoScale_stat_UP": 0.012454037716225488, 
+        "phoScale_gain_UP": 0.013309616723502764, 
+        "fittedSigma": 2.475580947789855, 
+        "phoScale_syst_UP": 0.024690709049196954, 
+        "phoScale_gain_DOWN": 0.013309616723502764, 
+        "phoResol_rho_UP": 1.8611085424126594, 
+        "phoResol_phi_UP": 0.4115012370861466, 
+        "fittedMean": 0.1319938008220137, 
+        "phoResol_rho_DOWN": 2.4411406679945107, 
+        "phoScale_stat_DOWN": 0.014164061102155895
+      }
+    }, 
+    "Cat2": {
+      "muon": {
+        "fittedMean": 0.06029521600843879, 
+        "fittedSigma": 1.5492995104586087
+      }, 
+      "total": {
+        "fittedMean": 0.2025042865113074, 
+        "fittedSigma": 2.489146761195589
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.9642539775477503, 
+        "phoScale_syst_DOWN": 0.08799304539550395, 
+        "phoScale_stat_UP": 0.026041097333353306, 
+        "phoScale_gain_UP": 0.026314713393994944, 
+        "fittedSigma": 1.9482101081924417, 
+        "phoScale_syst_UP": 0.03567037622117942, 
+        "phoScale_gain_DOWN": 0.026314713393994944, 
+        "phoResol_rho_UP": 1.4112898623956598, 
+        "phoResol_phi_UP": 1.3430500921270379, 
+        "fittedMean": 0.19331961354696886, 
+        "phoResol_rho_DOWN": 0.5069329835326963, 
+        "phoScale_stat_DOWN": 0.026568067195777454
+      }
+    }, 
+    "Cat3": {
+      "muon": {
+        "fittedMean": 0.10770863911101704, 
+        "fittedSigma": 1.1394655229901345
+      }, 
+      "total": {
+        "fittedMean": 0.2787546968659637, 
+        "fittedSigma": 3.011225964834278
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.0291488022738067, 
+        "phoScale_syst_DOWN": 0.10347725420422485, 
+        "phoScale_stat_UP": 0.042802460023640417, 
+        "phoScale_gain_UP": 0.047855899515516484, 
+        "fittedSigma": 2.7873105555730504, 
+        "phoScale_syst_UP": 0.007618230172495337, 
+        "phoScale_gain_DOWN": 0.047855899515516484, 
+        "phoResol_rho_UP": 0.46824914900348463, 
+        "phoResol_phi_UP": 0.9121556649305618, 
+        "fittedMean": 0.25710509540981097, 
+        "phoResol_rho_DOWN": 2.5903576733700957, 
+        "phoScale_stat_DOWN": 0.05291777838739854
+      }
+    }
+  }, 
+  "ZToUpsilon2SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.0684774994745499, 
+        "fittedSigma": 1.2094534071260337
+      }, 
+      "total": {
+        "fittedMean": 0.25985321837454656, 
+        "fittedSigma": 2.2119964372025156
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.21375252328321784, 
+        "phoScale_syst_DOWN": 0.09607287834843485, 
+        "phoScale_stat_UP": 0.0450860895080176, 
+        "phoScale_gain_UP": 0.04668008042729837, 
+        "fittedSigma": 1.8520666009050137, 
+        "phoScale_syst_UP": 0.002548693007537523, 
+        "phoScale_gain_DOWN": 0.04668008042729837, 
+        "phoResol_rho_UP": 1.7832558782247214, 
+        "phoResol_phi_UP": 0.500149144720681, 
+        "fittedMean": 0.25066816145119586, 
+        "phoResol_rho_DOWN": 1.1357446863100407, 
+        "phoScale_stat_DOWN": 0.04836710425371073
+      }
+    }, 
+    "Cat1": {
+      "muon": {
+        "fittedMean": 0.0511315891536251, 
+        "fittedSigma": 1.5428499086434657
+      }, 
+      "total": {
+        "fittedMean": 0.11739585369277142, 
+        "fittedSigma": 3.081757317284319
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.30210244061316205, 
+        "phoScale_syst_DOWN": 0.04586408088933252, 
+        "phoScale_stat_UP": 0.00732166749966187, 
+        "phoScale_gain_UP": 0.00817660946284268, 
+        "fittedSigma": 2.6677410522826785, 
+        "phoScale_syst_UP": 0.029921685803725267, 
+        "phoScale_gain_DOWN": 0.00817660946284268, 
+        "phoResol_rho_UP": 2.6505803963301817, 
+        "phoResol_phi_UP": 0.20615924798810772, 
+        "fittedMean": 0.10567566917166638, 
+        "phoResol_rho_DOWN": 1.0008284897850444, 
+        "phoScale_stat_DOWN": 0.009095041407786286
+      }
+    }, 
+    "Cat2": {
+      "muon": {
+        "fittedMean": 0.06162449929019869, 
+        "fittedSigma": 2.650693567246527
+      }, 
+      "total": {
+        "fittedMean": 0.20584858953767304, 
+        "fittedSigma": 4.4385792709604965
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.711637601769754, 
+        "phoScale_syst_DOWN": 0.0890608229229967, 
+        "phoScale_stat_UP": 0.026941280979779818, 
+        "phoScale_gain_UP": 0.027188743443308325, 
+        "fittedSigma": 3.560169877570183, 
+        "phoScale_syst_UP": 0.03421354520504657, 
+        "phoScale_gain_DOWN": 0.027188743443308325, 
+        "phoResol_rho_UP": 1.4471196347444557, 
+        "phoResol_phi_UP": 1.4647934305833992, 
+        "fittedMean": 0.19640789928585278, 
+        "phoResol_rho_DOWN": 3.1217152780748556, 
+        "phoScale_stat_DOWN": 0.027437257789825854
+      }
+    }, 
+    "Cat3": {
+      "muon": {
+        "fittedMean": 0.13282738561920096, 
+        "fittedSigma": 1.6636295090790751
+      }, 
+      "total": {
+        "fittedMean": 0.22880982336302863, 
+        "fittedSigma": 3.9659723308356947
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.6778950640985029, 
+        "phoScale_syst_DOWN": 0.02990056464574417, 
+        "phoScale_stat_UP": 0.03001706687103712, 
+        "phoScale_gain_UP": 0.024980009469192627, 
+        "fittedSigma": 3.600176854749725, 
+        "phoScale_syst_UP": 0.07955549786222171, 
+        "phoScale_gain_DOWN": 0.024980009469192627, 
+        "phoResol_rho_UP": 2.979057408360447, 
+        "phoResol_phi_UP": 2.021506948582755, 
+        "fittedMean": 0.18630840264729998, 
+        "phoResol_rho_DOWN": 0.07882880176941864, 
+        "phoScale_stat_DOWN": 0.019712629361674245
+      }
+    }
+  }, 
+  "HToUpsilon1SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.10743210346269275, 
+        "fittedSigma": 2.621913965370373
+      }, 
+      "total": {
+        "fittedMean": 0.3017085445614978, 
+        "fittedSigma": 5.014460801109491
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.9733517697962593, 
+        "phoScale_syst_DOWN": 0.14373293390720973, 
+        "phoScale_stat_UP": 0.06611139700215932, 
+        "phoScale_gain_UP": 0.0674877841926861, 
+        "fittedSigma": 4.274387006818574, 
+        "phoScale_syst_UP": 0.008153621600259805, 
+        "phoScale_gain_DOWN": 0.06752299955298303, 
+        "phoResol_rho_UP": 3.3250211957687648, 
+        "phoResol_phi_UP": 2.6860041570608018, 
+        "fittedMean": 0.2819333059555018, 
+        "phoResol_rho_DOWN": 0.7782338256886285, 
+        "phoScale_stat_DOWN": 0.06890454683511327
+      }
+    }
+  }, 
+  "HToUpsilon3SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.0887522416796542, 
+        "fittedSigma": 3.4570089165644178
+      }, 
+      "total": {
+        "fittedMean": 0.249440608759916, 
+        "fittedSigma": 6.477292424401493
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.4744660376199297, 
+        "phoScale_syst_DOWN": 0.12214832945324997, 
+        "phoScale_stat_UP": 0.044971638631399885, 
+        "phoScale_gain_UP": 0.046316156183189176, 
+        "fittedSigma": 5.477627817039331, 
+        "phoScale_syst_UP": 0.02899531668232808, 
+        "phoScale_gain_DOWN": 0.04636253122468198, 
+        "phoResol_rho_UP": 5.230125803085093, 
+        "phoResol_phi_UP": 1.6279405965533844, 
+        "fittedMean": 0.23311725996878427, 
+        "phoResol_rho_DOWN": 1.0500042034736135, 
+        "phoScale_stat_DOWN": 0.04773861174032879
+      }
+    }
+  }, 
+  "HToUpsilon2SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.10067512727379917, 
+        "fittedSigma": 1.0209653869072595
+      }, 
+      "total": {
+        "fittedMean": 0.27663701084252024, 
+        "fittedSigma": 6.680890403840058
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 4.8893302402749965, 
+        "phoScale_syst_DOWN": 0.1330358246384388, 
+        "phoScale_stat_UP": 0.055158694925991465, 
+        "phoScale_gain_UP": 0.05654152918298551, 
+        "fittedSigma": 6.60241821356838, 
+        "phoScale_syst_UP": 0.01943796340950141, 
+        "phoScale_gain_DOWN": 0.05658433173062695, 
+        "phoResol_rho_UP": 1.5002631024501747, 
+        "phoResol_phi_UP": 5.871297700870129, 
+        "fittedMean": 0.2576675270892493, 
+        "phoResol_rho_DOWN": 3.019898934503703, 
+        "phoScale_stat_DOWN": 0.05797055043372443
+      }
+    }
+  }, 
+  "ZToUpsilon3SPhoton": {
+    "Cat0": {
+      "muon": {
+        "fittedMean": 0.06003292432367831, 
+        "fittedSigma": 1.7753662383070177
+      }, 
+      "total": {
+        "fittedMean": 0.22626854897780488, 
+        "fittedSigma": 3.077970511914742
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 0.7675356699701523, 
+        "phoScale_syst_DOWN": 0.08456643519103994, 
+        "phoScale_stat_UP": 0.034015836274504864, 
+        "phoScale_gain_UP": 0.03556060523536205, 
+        "fittedSigma": 2.51435422963756, 
+        "phoScale_syst_UP": 0.013069103199612062, 
+        "phoScale_gain_DOWN": 0.03556060523536205, 
+        "phoResol_rho_UP": 0.7066187920713648, 
+        "phoResol_phi_UP": 0.5858066462400169, 
+        "fittedMean": 0.21815935518255639, 
+        "phoResol_rho_DOWN": 2.3943404493554703, 
+        "phoScale_stat_DOWN": 0.03708694843173664
+      }
+    }, 
+    "Cat1": {
+      "muon": {
+        "fittedMean": 0.057789771266894045, 
+        "fittedSigma": 2.378921650153354
+      }, 
+      "total": {
+        "fittedMean": 0.1478292336184342, 
+        "fittedSigma": 4.771440704706437
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.1322869966671267, 
+        "phoScale_syst_DOWN": 0.05208069067953506, 
+        "phoScale_stat_UP": 0.013358912329010304, 
+        "phoScale_gain_UP": 0.014182851049819275, 
+        "fittedSigma": 4.136106645259658, 
+        "phoScale_syst_UP": 0.02351562850364261, 
+        "phoScale_gain_DOWN": 0.014182851049819275, 
+        "phoResol_rho_UP": 3.950655909281954, 
+        "phoResol_phi_UP": 1.224620785148069, 
+        "fittedMean": 0.1360655160175923, 
+        "phoResol_rho_DOWN": 0.5138308245647567, 
+        "phoScale_stat_DOWN": 0.015012431545435658
+      }
+    }, 
+    "Cat2": {
+      "muon": {
+        "fittedMean": 0.06030419061469319, 
+        "fittedSigma": 2.1027496377408776
+      }, 
+      "total": {
+        "fittedMean": 0.25843577900206316, 
+        "fittedSigma": 3.065205560819614
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.2465143573599629, 
+        "phoScale_syst_DOWN": 0.10645541994757186, 
+        "phoScale_stat_UP": 0.04501049378158148, 
+        "phoScale_gain_UP": 0.0452654828933824, 
+        "fittedSigma": 2.2302307259698697, 
+        "phoScale_syst_UP": 0.015674769731150097, 
+        "phoScale_gain_DOWN": 0.0452654828933824, 
+        "phoResol_rho_UP": 1.849359631860599, 
+        "phoResol_phi_UP": 1.1460930572406491, 
+        "fittedMean": 0.25130152499081654, 
+        "phoResol_rho_DOWN": 0.38017728276317353, 
+        "phoScale_stat_DOWN": 0.04552051463488176
+      }
+    }, 
+    "Cat3": {
+      "muon": {
+        "fittedMean": 0.09367725512593657, 
+        "fittedSigma": 2.2499042047449906
+      }, 
+      "total": {
+        "fittedMean": 0.19196145892501865, 
+        "fittedSigma": 4.655357455576628
+      }, 
+      "photon": {
+        "phoResol_phi_DOWN": 1.7761561126173415, 
+        "phoScale_syst_DOWN": 0.0742605053562222, 
+        "phoScale_stat_UP": 0.015076632090081383, 
+        "phoScale_gain_UP": 0.01995366656979636, 
+        "fittedSigma": 4.0755716296813755, 
+        "phoScale_syst_UP": 0.03345069196019971, 
+        "phoScale_gain_DOWN": 0.01995366656979636, 
+        "phoResol_rho_UP": 3.0798251850294225, 
+        "phoResol_phi_UP": 2.669262246075157, 
+        "fittedMean": 0.16755230104266494, 
+        "phoResol_rho_DOWN": 0.4295157588442994, 
+        "phoScale_stat_DOWN": 0.024725220005858174
+      }
+    }
+  }
+}
