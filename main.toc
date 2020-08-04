@@ -1,9 +1,0 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\contentsline {chapter}{Abstract}{iii}{section*.1}
-\contentsline {chapter}{Acknowledgements}{v}{section*.2}
-\contentsline {chapter}{\numberline {1}Rare Z and Higgs decays to quarkonia}{1}{chapter.4}
-\contentsline {section}{\numberline {1.1}Standard Model and the Electroweak Theory}{1}{section.5}
-\contentsline {section}{\numberline {1.2}Recent results}{4}{section.12}
-\contentsline {chapter}{Bibliography}{7}{appendix*.15}
