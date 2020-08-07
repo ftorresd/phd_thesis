@@ -1,3 +1,3 @@
 # My PhD Thesis
 
-To compile it, the Latex VSCode extension, will do the trick.
+To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
