@@ -9,8 +9,6 @@ In this chapter, it is presented a summary of the Resistive Plate Chamber techno
 
 \section{Resistive Plate Chambers}
 
-
-
 The seminal paper on the Resistive Plate Chamber (RPC) technology was presented by R. Santonico and R. Cardarelli, in which they described a "dc operated particle detector (...) whose constituent elements are two parallel electrode Bakelite plates between"~\cite{rpc_seminal}. The key idea behind the RPC, with respect to other similar gaseous detectors, is the use of two resistive plates as anode an cathode, which makes possible to have a small localized region of dead time, achieving very good time resolution. 
 
 The working principle for RPCs relies on the idea that a ionizing particle crossing the detector, tend to interact with the gas gap between the two plates and form a ionizing cascade process, in which the the produced charged particle are driven by the strong uniform electrical field produced by the two plates.
@@ -72,19 +70,17 @@ The gas mixture used in the CMS RPCs is composed by C2H2F4 (Freon R-134a, tetraf
 
 Since its R\&D, the RPC have shown good performance over aging. This is even historical over previous RPC experiments \todo{ADICIONAR REFERÊNCIAS 5.14, 5.15 E 5.16 DO MUON TDR}. Even the most recent studies of aging, taking into account future LHC conditions (High-Luminosity LHC - HL-LHC) plus a safety margin of 3 times the expected background (600 HZ/$cm^2$) have shown good aging hardness~\cite{andrea_rpc_2018}.
 
-\subsection{Electronics and Readout}
-
-\todo{FEBs}
-
-\todo{LINK SYSTEM}
-
 \subsection{Performance}
 
 \todo{PERFORMANCE NO RUN2}
 
-Bellow it is described the main contributions given to the CMS RPC project.
+\section{Contribution to the CMS RPC project}
 
-\section{RPC Operation - Shifts and Data Certification}
+During the curse of this study, a head collaboration of our research group and the CMS RPC project was established. Many contributions were given to the project as part of the graduation as a experimental particle physicist, with focus on getting acquaintance with a subsystem technology and give a meaningful collaboration to the detector operation.  Those are considered by the community important steps on the student graduation.
+
+Bellow it is described the contributions given to the CMS RPC project.
+
+\subsection{RPC Operation - Shifts and Data Certification}
 
 The first activities done for the CMS RPC project were shifts for data certification of data taken. This certification is done by specialized people for different CMS subsystems and physics objects groups~\footnote{Groups of reconstruction and performance experts for different high-level reconstructed objects from CMS, i.e. muons, taus, jets/MET, electrons/photons}. 
 
@@ -93,7 +89,7 @@ This certification is done in order to ensure the quality of the date recorded b
 Figure~\ref{lumi} shows, as an example of the luminosity delivered by the LHC, recorded one by CMS and the certified (validated), from the 22nd of April, 2016 to the 27th of October, 2016. Only certified data is available for physics analysis.
 
 Shifts are a continuous weekly activity (specially during the data taking period), performed in a weekly basis, in order to ensure the availability of certified data, as soon as possible.
-
+ 
 \begin{figure}%
     \centering
     \subfloat[]{{\includegraphics[width=0.55\textwidth,keepaspectratio]{figures/rpc/lumi_plot.png} }}%
@@ -111,7 +107,7 @@ On what concerns the Online Software (OS) of the CMS RPC system, the main contri
 
 The Trigger Supervisor is a web-based software, which run over the xDAQ backend and provides, through a mudules organized in a tree system, called cells, a standard inferface for the operation and monitoring of different system at CMS. In principle only systems which contribute directly to the L1 trigger should have a Trigger Supervisor implementation. This was the case for the  RPC during the Run1. Since Run2, RPC contributes to the trigger indirectly, by providing data to the muon processors (CPPF, OMTF and TwinMux). The Trigger Supervisor implementation is a legacy from that period.
 
-Each subsystem is responsible for its own implementation of the Trigger Supervisor, based on the functionalities that it wants to have (requirements). The xDAQ~\cite{xdaq} is a middleware, developed by CERN and widely used at CMS, as a tool for control and monitoring of data acquisition system in a distributed environment. It is capable of provideing a software layer for direct access of hardware functionalities and monitoring.
+Each subsystem is responsible for its own implementation of the Trigger Supervisor, based on the functionalities that it wants to have (requirements). The xDAQ~\cite{xdaq} is a middleware, developed by CERN and widely used at CMS, as a tool for control and monitoring of data acquisition system in a distributed environment. It is capable of providing a software layer for direct access of hardware functionalities and monitoring.
 
 The upgrade made (figure~\ref{ts_upgrade}), consists in upgrade the higher level of the RPC online software. In summary, up to 2017, the online software, was using Scientific Linux 6 as operational system, which executed xDAQ 12, in turn, servers as backend for Trigger Supervisor 2. A upgrade of the operational system to Centos 7, demanded the upgrade to xDAQ 14. On top of that, Trigger Supervisor 2 would not work and had to be updated to Trigger Supervisor 5 in order to be functional in 2018.
 
@@ -134,7 +130,7 @@ The upgrade  was done in time to ensure the control and operation of the RPC for
 \end{figure}
 
 
-\section{iRPC R\&D}
+\subsection{iRPC R\&D}
 
 For the next 4 year of CMS activities it is foreseen  the upgrade of the the Muon Systems~\cite{muon_tdr}. These upgrades are planed in order to extend the pseudorapidity coverage ($\eta$) and to guarantee the operation conditions of the present system in the HL-LHC (High Luminosity LHC) era. The RPC (Resistive Plate Chambers)~\cite{muon_tdr} subsystem, it will have maintenance of the present chambers and installation of new chambers in the region of $|\eta| < 1,8$ para $|\eta| < 2,4$~\cite{pedrazamorales2018rpc}. These new chambers (iRPC) will be added in the most internal part of the muon spectrometer, RE3/1 e RE4/1, as in Figure~\ref{muons_eta}.
 
@@ -216,7 +212,7 @@ This two measurements were enough to validate this chambers as possible trigger 
 
 \clearpage
 
-\section{LS2 and the RPC Standard Maintenance}
+\subsection{LS2 and the RPC Standard Maintenance}
 
 In December 2018, the LS2 (Long Shutdown 2) was started. This a period in which the LHC and its detectors (CMS included) stop their operation for maintenance and upgrade. The LS2 will go up to 2021, when LHC and CMS restart the data taking with the Run3. 
 
@@ -224,7 +220,7 @@ During the LS2 it is being installed services for the new chambers (gas pipes, l
 
 What concerns the standard maintenance of the present RPC system, the main LS2 activities in which the student was involved, can be divided in three main tasks: (a) HV maintenance, (b) LV and control maintenance and (c) detector commissioning. 
 
-\subsection{HV maintenance}
+\subsubsection{HV maintenance}
 
 A key factor of and RPC performance is the applied high voltage (HV). The CMS RPC achieve their optimal performance with, around, 9.5 kV applied in each gap. This voltage is in the range of the dielectric breakdown of many gases, which could lead to potential current leakages, if some part of the system is damaged, poorly operated or badly installed. If the currents are high enough this can make impossible the operation of the chamber. In cases like this, during the operation period (data taking), the problematic HV channel is identified and turned off (each chamber has two channels, one for each lawyer of gaps). Chambers in this situation are said to be operating in single gap mode (SG).
 
@@ -245,7 +241,7 @@ Another contribution to the HV maintenance was the proposal of a procedure to re
 \label{jupiterized}
 \end{figure}
 
-\subsection{LV and control maintenance}
+\subsubsection{LV and control maintenance}
 
 The low voltage (LV) and control maintenance consists in make sure that the Front-End Boards (FEBs) are powered and configurable, which means that the LV power system is working from supply board to the cable, that the signal cables are in good state and properly connected to the chamber and to the link boards and that the on-detector electronics (FEBs and Distribution Boards - DBs) are working fine.
 
@@ -264,7 +260,7 @@ For the barrel this maintenance happens concomitantly with the gas leak reparati
 
 
 
-\subsection{Detector commissioning}
+\subsubsection{Detector commissioning}
  
 All the LS2 activities demands uncabling of the chamber to be repaired and possibly some neighbor chambers. Also, it can involve the replacement of components of the chamber. To avoid damage to the system a compromising procedure is needed after all this activities. Given the responsibilities of the commissioning it was necessary to: (a) make sure that the the RPC system keep tracks of all the interventions, (b) maintain all the algorithms used in the commissioning procedure, (c) together with the RPC Coordination, define a pool of people and a schedule to the commissioning of the system and (d) follow-up, with other CMS RPC experts, the availability of materials and resources for the commissioning operations.
 

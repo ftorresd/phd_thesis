@@ -11,7 +11,7 @@ The other kind uncertainties affect the shape of the signal model. Those are rel
 
 \item \textbf{Luminosity:} an uncertainty value of $2.5\%$ is used on the integrated luminosity of the data samples, as recommended by CMS~\cite{CMS-PAS-LUM-17-001}.
 
-\item \textbf{Pile-up:} the total inelastic cross section of $69.2~mb$ for minimum bias is varied by $\pm~4.6\%$ and the analysis is ran with the extreme values. The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value, as recommended by CMS\todo{ADICIONAR REFERÊNCIA}. 
+\item \textbf{Pileup:} the total inelastic cross section of $69.2~mb$ for minimum bias is varied by $\pm~4.6\%$ and the analysis is ran with the extreme values. The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value, as recommended by CMS. 
 
 \item \textbf{Trigger efficiency:} the analysis is ran applying $\pm~1\sigma$ on the Trigger Efficiency Scale factors (ref. section \ref{sec:trigger}). The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value.
 
@@ -50,11 +50,11 @@ Smearing and scaling corrections are applied on simulated events since the resol
 \begin{itemize}
 % \renewcommand{\labelitemi}{$\star$}
 
-\item \textbf{Muon Momentum Scale and Resolution}: extracted by running the analysis with different setups of the official CMS Muon scaling and smearing package~\todo{ADICIONAR REFERÊNCIA - MUON PERFORMANCE}. The deviations, with respect to the default correction are summed in quadrature. Once the nominal parameters (mean or sigma) are obtained, the default corretions are shifted by $\pm~1\sigma$ and the fits are re-done, with the parameters of interest free to float and all others fixed. The systematic uncertainty quoted is the maximum difference of the parameter with respect to nominal value.
+\item \textbf{Muon Momentum Scale and Resolution}: extracted by running the analysis with different setups of the official CMS Muon scaling and smearing package~\cite{cms_muon_performance}. The deviations, with respect to the default correction are summed in quadrature. Once the nominal parameters (mean or sigma) are obtained, the default corrections are shifted by $\pm~1\sigma$ and the fits are re-done, with the parameters of interest free to float and all others fixed. The systematic uncertainty quoted is the maximum difference of the parameter with respect to nominal value.
 
-\item \textbf{Photon Energy Scale and Resolution}: extracted by running the analysis with different sets of corrections, provided by the CMS \todo{ADICIONAR REFERÊNCIA - EGAMMA PERFORMANCE}. Once the nominal mean is obtained, the sets are changed and the fits are re-done, with the mean free to float and all others parameters fixed. The corrections are shifted by $\pm~1\sigma$ on each source of systematics (following standard CMS recommendations). The quoted as systematic uncertainty is the quadrature sum of the maximum deviation within each set.
+\item \textbf{Photon Energy Scale and Resolution}: extracted by running the analysis with different sets of corrections, provided by the CMS~\footnote{CMS has not published, yet, a paper on the Run2 performance of the Photon reconstruction (This document is under internal review process.). Just as a reference, we cite the Run1 paper~\cite{egamma_run1_papper}.}. Once the nominal mean is obtained, the sets are changed and the fits are re-done, with the mean free to float and all others parameters fixed. The corrections are shifted by $\pm~1\sigma$ on each source of systematics (following standard CMS recommendations). The quoted as systematic uncertainty is the quadrature sum of the maximum deviation within each set.
 
-% \item \textbf{Photon Energy Resolution}: extracted by running the analysis with different sets of corrections, provided by the EGM-POG \cite{EGMSmearer}. Once the nominal sigma is obtained, the sets are changed and the fits are re-done, with the sigma free to float and all others parameters fixed. The corrections are shifted by $\pm~1\sigma$ on the $\rho$ parameter and $\pm~1\sigma$ on the $\phi$ parameter. The quoted as systematic uncertainty is the quadrature sum of the maximum deviation within each set.
+
 
 \end{itemize}
 

@@ -112,7 +112,7 @@
                 "sigma_mMuMNU_Cat0": 0.11107443892730806
             }
         },
-        "Cat1": {
+        "EB High R9": {
             "peakingBackground": {
                 "alpha1_mHZ_PeakingBackground": 0.9176686592892497,
                 "alpha2_mHZ_PeakingBackground": 1.228756424062731,

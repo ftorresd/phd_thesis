@@ -3,7 +3,7 @@
 \begin{tabular}{cl|c|c|c|c|c|}
 \cline{3-7}
 \multicolumn{1}{l}{}                      &      & \multicolumn{4}{c|}{Z$\rightarrow \Upsilon(nS) + \gamma$} & H$\rightarrow \Upsilon(nS) + \gamma$ \\ \cline{3-7}
-\multicolumn{1}{l}{}                      &                     & \textbf{Cat0}  & \textbf{Cat1}  & \textbf{Cat2}  & \textbf{Cat3} & \textbf{Cat0}        \\ \hline
+\multicolumn{1}{l}{}                      &                     & \textbf{Inclusive}  & \textbf{EB High R9}  & \textbf{EB Low R9}  & \textbf{EE} & \textbf{Cat0}        \\ \hline
 
 
 \multicolumn{1}{|c|}{\multirow{8}{*}{$\Upsilon(1S)$}} & \multicolumn{6}{c|}{\textbf{Mean}} \\ \cline{2-7}
