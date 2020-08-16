@@ -70,6 +70,41 @@ Since its R\&D, the RPC have shown good performance over aging. This is even his
 
 \todo{PERFORMANCE NO RUN2}
 
+The RPCs, for the CMS experiment, contribute mainly with triggering inputs, due to its very good time resolution. The important parameters which are monitored to evaluate the RPC performance are the efficiency and cluster size. The former is related to the ratio of the registered hits over the number of muons that passed through the chamber, while the former one is the number adjacent strip (minimal readout unit) that were fired (activated) per hit. Figures~\ref{eff_run2} and \ref{cls_run2} present the historical distribution of efficiency and cluster size as a function of the integrated luminosity collect during Run2.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/barrel_eff_vs_intL.png}
+    \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/endcap_eff_vs_intL.png}
+    \caption{RPC efficiencies (per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the efficiency around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\ref{rpc_run2_performance}.}
+    \label{eff_run2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/barrel_cls_vs_intL.png}
+    \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/endcap_cls_vs_intL.png}
+    \caption{RPC cluster size (CLS - per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the cluster size around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\ref{rpc_run2_performance}.}
+    \label{cls_run2}
+\end{figure}
+
+In general, the RPC system operates with efficiency above 95\% and cluster size smaller than 3 (a good parameter established during the design phase). The importance of the efficiency is a less complicated concept to catch, on the other hand, the cluster size might not be so straight forward. The optimal regime of RPCs operation at CMS is the avalanche mode, in which the electrical discharge is constrained in a millimeter level size region. Another operation mode is the streamer mode, in which the initial discharge might trigger secondary ones, e.g. by the emission of unquenched photons. A streamer discharge is capable of fire neighbor strips, increasing the cluster size. Operating in avalanche mode is fundamental to keep the RPCs capable of dealing with the high background environment of CMS. 
+
+To keep the mean cluster size under control ($< 3$) is important to guarantees enough spatial resolution for the measurements (the geometrical position of a hit is the midpoint of the cluster) and ensures that the system has enough rate capability to operate, since a RPC with a high sensitive front-end electronics (necessary for the avalanche mode operation) could be degraded by pileup of dead time on many channels, including electronics noise, streamers, darks counts and other sources of background.
+
+A third important parameter to be measured and controlled in a RPC system under the LHC conditions is the current due to the high voltage applied. This current is known to be proportional to the total charge released in the electrical discharges. When the voltage is high enough to bring the charge multiplication effect to non-negligible levels, having too much current is understood as a drop in the effective local voltage inside the gap. This has a impact on the gas gain, which can impose a reduction on the detector sensitivity.
+
+Figure~\ref{cms_run2_currents} presents the ohmic currents \todo{Definir ohmic e cosmic current.} in different regions of the detector, from $16^{th}$ of April, 2018 to $2^{nd}$ of December, 2018. It is clear how the stations subjected to higher background (RE$\pm$4) are 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{figures/rpc/performance/ohmic_current_run2.png}
+    \caption{Ohmic current history of W+0, RE+1, RE+4 and RE-4. The blank regions, from time to time, corresponds to technical stops (TS), when the detector is off. Source:~\ref{rpc_run2_performance}.}
+    \label{cms_run2_currents}
+\end{figure}
+
+A review of the RPC performance during Run2 can be found at~\cite{rpc_run2_performance}.
+
 \section{Contribution to the CMS RPC project}
 
 During the curse of this study, a head collaboration of our research group and the CMS RPC project was established. Many contributions were given to the project as part of the graduation as a experimental particle physicist, with focus on getting acquaintance with a subsystem technology and give a meaningful collaboration to the detector operation.  Those are considered by the community important steps on the student graduation.
