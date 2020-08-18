@@ -1,8 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{CMS Resistive Plate Chambers - RPC}
 
-% \todo{DESCREVER **MELHOR** AS ATIVIDADES PARA A RPC ATIVIDADES}
-
 In the course of this PhD study, there were a lot of opportunities to work for the RPC project, in the context of the CMS Collaboration. The main activities consists of shifts for the RPC operation and data certification, upgrade and maintenance of the online software, R\&D activities for the RPC upgrade and detector maintenance during the LHC Long Shutdown 2 (2019 to 2020).
 
 In this chapter, it is presented a summary of the Resistive Plate Chamber technology and the contributions to the RPC project at CMS.
@@ -11,21 +9,76 @@ In this chapter, it is presented a summary of the Resistive Plate Chamber techno
 
 The seminal paper on the Resistive Plate Chamber (RPC) technology was presented by R. Santonico and R. Cardarelli, in which they described a "dc operated particle detector (...) whose constituent elements are two parallel electrode Bakelite plates between"~\cite{rpc_seminal}. The key idea behind the RPC, with respect to other similar gaseous detectors, is the use of two resistive plates as anode an cathode, which makes possible to have a small localized region of dead time, achieving very good time resolution. 
 
-The working principle for RPCs relies on the idea that a ionizing particle crossing the detector, tend to interact with the gas gap between the two plates and form a ionizing cascade process, in which the the produced charged particle are driven by the strong uniform electrical field produced by the two plates.
+The working principle for RPCs relies on the idea that a ionizing particle crossing the detector, tend to interact with the gap between the two plates (filled with some specific gas mixture) and form a ionizing cascade process, in which the produced charged particle are driven by the strong uniform electrical field produced by the two plates.
 
 The gas mixture is a key component of a RPC. Even though the first RPCs were produced with a mixture of argon and butane, nowadays RPCs use a mixture of gases that would enhance an ionization caused by the incident particle and quench secondary (background) effects.
 
 Another feature of the RPCs is its construction simplicity and low cost. This allow the use RPC to cover larger at a reasonable cost. 
 
-A extensive review of the RPC technology and its application can be found in~\cite{livro_rpc}.
+A extensive review of the RPC technology and its application can be found at~\cite{livro_rpc}.
 
-\todo{DESCREVER A TECNOLOGIA DAS RPCS}
+\subsection{Principles and operation modes}
 
-\todo{DESCEREVER OS PRINCÍPOS DE OPERACAO - TDR}
+The core of a RPC chamber is a gap made with two parallel high resistivity plates, separated by some regular distance (typically millimeters), filled with with a proper gas mixture and under appropriate high voltage (HV) applied on the plates (electrodes, from here on). When a ionizing particle crosses the gap, there is a high enough chance the the particle will interact with the gas and produce a newly created positive ion and a electron. This pair will travel in opposite directions, according to the electric field from the electrodes. During this process, the electron will gain kinetic energy and inelasticly interact with other neighboring atoms/molecules, creating excitations in their energy levels and, potentially, also ionizing them. The secondary ionization electrons will also follow the same curse, creating an \textbf{Avalanche} of positive and negative particle/ions traveling towards the electrodes. This process is proportional to the applied electric field. Figure~\ref{avalanche} illustrates the avalanche production.
+
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth,keepaspectratio]{figures/rpc/avalanche_prod.png}
+    \end{center}
+    \caption{The Avalanche production process inside a RPC gap. (Top) The initial process and the secondary electron/ion generation. (Bottom) The overall charge distribution of an Avalanche between the electrodes. Source:~\cite{livro_descarga}.}
+    \label{avalanche}
+\end{figure}
+
+The number of particle composing the avalanche can be expressed as (assuming constant pressure)~\cite{livro_descarga}:
+
+\begin{equation}
+    n_{e}=n_{0}e^{\alpha d} = n_{0}A,
+\end{equation}
+where $n_{0}$ is the number of initial electrons initiating the avalanche, $A$ is the \textit{gas gain}, or \textit{multiplication factor} and $d$ is the distance since the avalanche creation. This is also known as Townsend theory for discharges and $\alpha$ is the first Townsend coefficient.
+
+When the positive ions bunch reaches the cathode, under certain conditions (if the first ionization energy of the ion is greater than the work function of the cathode), the recombination of the ion with the electrode material might release electrons which will also follow the electric field. The relative probability (with respect to the primary electron emission) of this emission to happen ($\gamma_{+}$) is called the the second Townsend coefficient.
+ 
+\begin{equation}
+    n_{+}=n_{0} A \gamma_{+}.
+\end{equation}
+
+Another process which can occur is the secondary photoelectron productions, described by a similar equation as above: $n_{pe}=n_{0} A \gamma_{ph}$. This production is mostly related to de-excitation of molecules and atoms in vicinity of the avalanche. The produced photons might initiate new ionization process.
+
+As an alternative to the Townsend theory, Raether, Meek, and Loeb, proposed the \textit{streamer–leader theory}~\cite{streamer_leader_theory}. This theory is valid when the when there is a high enough concentration of ions produced. This critical value is called Raether limit.
+
+\begin{equation}
+    n_{0} A > 10^{8} \text{ electrons}
+\end{equation}
+
+In this limit, the electric field created by the space distribution is high enough to be same order of the external field. In the vicinity of the head (or tail) of the avalanche the field gets disturbed and intensified. The intensification of the field enhances the ionization effect and give rise to secondary avalanches (photoelectrons). The intensified field also makes the photoelectrons produced travel towards the head (positive ions). Their antiquation generates more UV radiation and more secondary avalanches. This whole process is called \textbf{Streamer}. If no quenching is imposed, the streamer might evolve to a spark, fully discharging on the electrodes. If the concentration of electrons is high enough, the avalanche tail (electrons) might also give rise to a streamer (namely, negative streamer). Figure~\ref{streamer} illustrates the different subprocess related to streamer production.
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth,keepaspectratio]{figures/rpc/streamer.png}
+    \end{center}
+    \caption{Streamer formation process. The distorted electric field around the high positive charge concentration enhances the ionization process, initiating secondary avalanches. Source:~\cite{livro_descarga}.}
+    \label{streamer}
+\end{figure}
+
+A RPC where most of the charge multiplication process happens in the form of a streamer is said to be working in \textbf{Streamer Mode}. The advantage of the of the streamer mode is the high induced charge which is easily caught by non-sensitive readout electronics. On the other hand, the streamer mode, because of its highly associated charge, will have a impact in the rate capability of the detector (the local dead time will be higher).
+
+Because of the high background environment of LHC, the CMS RPC operates in \textbf{Avalanche Mode}, where de discharge is highly quenched and very well localized. On the other hand, a very sensitive readout electronics is required to cope with the high rate demanded.
+
+A good review of electrical discharge on gases can be found at~\cite{livro_descarga}.
 
 \section{CMS Resistive Plate Chambers}
 
-At CMS, the Resistive Plate Chamber are installed in both the barrel and endcap region, forming a redundant system with the DT (barrel) and CSC (endcap). As described in the CMS Muon Technical Design Report (Muon-TDR)~\cite{muon_tdr}, the RPC are composed of 423 endcap chambers and 633 barrel chambers.
+At CMS, the Resistive Plate Chamber are installed in both the barrel and endcap region, forming a redundant system with the DT (barrel) and CSC (endcap). As described in the CMS Muon Technical Design Report (Muon-TDR)~\cite{muon_tdr}, the RPC are composed of 423 Endcap chambers and 633 barrel chambers. Figure~\ref{picture_rpc} presents a picture of the CMS RPCs installed on station RE+4 of the Endcap.
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth,keepaspectratio]{figures/rpc/picture_rpc.jpg}
+    \end{center}
+    \caption{RPC chamber on installed on station RE+4 of CMS Endcap. Source:~\cite{rpc_picture}.}
+    \label{picture_rpc}
+\end{figure}
+
 
 Each chamber consists of two gas gaps (double gap), 2 mm tick each, made of Bakelite (phenolic resin) with bulk resistivity of $10^{10}$ - $10^{11}$ $\Omega m$. The choice of the bulk resistivity of the electrode has high impact on the rate capability of the detector.
 
@@ -63,12 +116,9 @@ The length of the strips is chosen, for both barrel and endcap, in such a way to
 The gas mixture used in the CMS RPCs is composed by C2H2F4 (Freon R-134a, tetrafluoroethane), C4H10 (isobutane), SF6 (sulphur hexafluoride) (95.2 : 4.5 : 0.3 ratio) and with controlled humidity of 40\% at 20-22 $^{\circ}$C. The Freon is used to enhance the ionization and charge multiplication that characterizes the avalanche, while the isobutane is introduced for quenching proposes, in order to reduce the secondary ionizations that could lead to formation of streamers and the SF6 is used to reduce the electron background. The choice of Freon over other gases, i.e. argon-based and helium-based, was motivated by previous studies~\cite{gas_mixture_BERNARDINI1995428,gas_mixture_Gorini}.
 
 
-Since its R\&D, the RPC have shown good performance over aging. This is even historical over previous RPC experiments~\cite{
-    Bressi:1987kg,Ge:2014tea,Abbrescia:1993xy,Antoniazzi:1992dg,DiCiaccio:1992di,deAsmundis:1995dq,Boutigny:1995ib}. Even the most recent studies of aging, taking into account future LHC conditions (High-Luminosity LHC - HL-LHC) plus a safety margin of 3 times the expected background (600 HZ/$cm^2$) have shown good aging hardness~\cite{andrea_rpc_2018}.
+Since its R\&D, the RPC have shown good performance over aging. This is even historical over previous RPC experiments~\cite{Bressi:1987kg,Ge:2014tea,Abbrescia:1993xy,Antoniazzi:1992dg,DiCiaccio:1992di,deAsmundis:1995dq,Boutigny:1995ib}. Even the most recent studies of aging, taking into account future LHC conditions (High-Luminosity LHC - HL-LHC) plus a safety margin of 3 times the expected background (600 HZ/$cm^2$) have shown good aging hardness~\cite{andrea_rpc_2018}.
 
 \subsection{Performance}
-
-\todo{PERFORMANCE NO RUN2}
 
 The RPCs, for the CMS experiment, contribute mainly with triggering inputs, due to its very good time resolution. The important parameters which are monitored to evaluate the RPC performance are the efficiency and cluster size. The former is related to the ratio of the registered hits over the number of muons that passed through the chamber, while the former one is the number adjacent strip (minimal readout unit) that were fired (activated) per hit. Figures~\ref{eff_run2} and \ref{cls_run2} present the historical distribution of efficiency and cluster size as a function of the integrated luminosity collect during Run2.
 
@@ -76,7 +126,7 @@ The RPCs, for the CMS experiment, contribute mainly with triggering inputs, due 
     \centering
     \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/barrel_eff_vs_intL.png}
     \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/endcap_eff_vs_intL.png}
-    \caption{RPC efficiencies (per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the efficiency around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\ref{rpc_run2_performance}.}
+    \caption{RPC efficiencies (per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the efficiency around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\cite{rpc_run2_performance}.}
     \label{eff_run2}
 \end{figure}
 
@@ -84,7 +134,7 @@ The RPCs, for the CMS experiment, contribute mainly with triggering inputs, due 
     \centering
     \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/barrel_cls_vs_intL.png}
     \includegraphics[width=0.47\textwidth,keepaspectratio]{figures/rpc/performance/endcap_cls_vs_intL.png}
-    \caption{RPC cluster size (CLS - per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the cluster size around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\ref{rpc_run2_performance}.}
+    \caption{RPC cluster size (CLS - per chamber) over Run2 Integrated Luminosity for Barrel (left) and Endcap (right). Red lines indicates technical stops (TS) while grey ones indicates Year-End-Technical stops (YETS). The drop in the cluster size around 110 $pb^{-1}$ is related to a known operation mistake. Source:~\cite{rpc_run2_performance}.}
     \label{cls_run2}
 \end{figure}
 
@@ -92,14 +142,14 @@ In general, the RPC system operates with efficiency above 95\% and cluster size 
 
 To keep the mean cluster size under control ($< 3$) is important to guarantees enough spatial resolution for the measurements (the geometrical position of a hit is the midpoint of the cluster) and ensures that the system has enough rate capability to operate, since a RPC with a high sensitive front-end electronics (necessary for the avalanche mode operation) could be degraded by pileup of dead time on many channels, including electronics noise, streamers, darks counts and other sources of background.
 
-A third important parameter to be measured and controlled in a RPC system under the LHC conditions is the current due to the high voltage applied. This current is known to be proportional to the total charge released in the electrical discharges. When the voltage is high enough to bring the charge multiplication effect to non-negligible levels, having too much current is understood as a drop in the effective local voltage inside the gap. This has a impact on the gas gain, which can impose a reduction on the detector sensitivity.
+A third important parameter to be measured and controlled in a RPC system, under the LHC conditions, is the current due to the high voltage applied. This current is known to be proportional to the total charge released in each electrical discharges and to the hit rate on the chamber. The voltage applied is divided, as in a series circuit, between the electrodes and the gap. At increasing background, the current also increases and, since the applied voltage is constant, the voltage across the gap is reduced in favor of the voltage across the electrodes. This reduction of effective voltage on the gas, might have an impact on its gain, imposing a reduction on the detector sensitivity.
 
-Figure~\ref{cms_run2_currents} presents the ohmic currents \todo{Definir ohmic e cosmic current.} in different regions of the detector, from $16^{th}$ of April, 2018 to $2^{nd}$ of December, 2018. It is clear how the stations subjected to higher background (RE$\pm$4) are 
+Figure~\ref{cms_run2_currents} presents the ohmic currents~\footnote{Current at 6500 V, which is below the typical working point of a CMS RPC (around 9500 V). In this region, no charge multiplication effect take place and chamber current is governed only by Ohm's Law.} in different regions of the detector, from $16^{th}$ of April, 2018 to $2^{nd}$ of December, 2018. It is clear how the stations subjected to higher background (RE$\pm$4 - 40 $Hz/cm^2$) are subjected to a degrading factor that increases with the luminosity (background rate) and decreases when the detector is powered off. This effect is supposed to be related with the Hydrogen Fluoride (HF) production inside the gap, due to the electrical discharges. HF is a conductivity molecule, which can potentially attach to the internal surface of the gap, reducing the overall resistivity. The HF production can be controlled by properly tunning the gas flow as a function of the background that the chamber is subjected. HF concentration can also lead to permanent degradation of the gap, due to its chemical properties. Keeping the currents levels as low as possible is important for aging proposes. 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{figures/rpc/performance/ohmic_current_run2.png}
-    \caption{Ohmic current history of W+0, RE+1, RE+4 and RE-4. The blank regions, from time to time, corresponds to technical stops (TS), when the detector is off. Source:~\ref{rpc_run2_performance}.}
+    \caption{Ohmic current history of W+0, RE+1, RE+4 and RE-4. The blank regions, from time to time, corresponds to technical stops (TS), when the detector is off. Source:~\cite{rpc_run2_performance}.}
     \label{cms_run2_currents}
 \end{figure}
 
@@ -134,7 +184,7 @@ Shifts are a continuous weekly activity (specially during the data taking period
 
 On what concerns the Online Software (OS) of the CMS RPC system, the main contribution given was the upgrade of the Trigger Supervisor libraries.
 
-The Trigger Supervisor is a web-based software, which run over the xDAQ backend and provides, through a mudules organized in a tree system, called cells, a standard inferface for the operation and monitoring of different system at CMS. In principle only systems which contribute directly to the L1 trigger should have a Trigger Supervisor implementation. This was the case for the  RPC during the Run1. Since Run2, RPC contributes to the trigger indirectly, by providing data to the muon processors (CPPF, OMTF and TwinMux). The Trigger Supervisor implementation is a legacy from that period.
+The Trigger Supervisor is a web-based software, which run over the xDAQ backend and provides, through a modules organized in a tree system, called cells, a standard inferface for the operation and monitoring of different system at CMS. In principle only systems which contribute directly to the L1 trigger should have a Trigger Supervisor implementation. This was the case for the  RPC during the Run1. Since Run2, RPC contributes to the trigger indirectly, by providing data to the muon processors (CPPF, OMTF and TwinMux). The Trigger Supervisor implementation is a legacy from that period.
 
 Each subsystem is responsible for its own implementation of the Trigger Supervisor, based on the functionalities that it wants to have (requirements). The xDAQ~\cite{xdaq} is a middleware, developed by CERN and widely used at CMS, as a tool for control and monitoring of data acquisition system in a distributed environment. It is capable of providing a software layer for direct access of hardware functionalities and monitoring.
 
