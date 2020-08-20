@@ -127,6 +127,16 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 \newboolean{cms@nolineno}
 \setboolean{cms@nolineno}{false}
 
+% double hat
+\usepackage{amsmath}
+\usepackage{accents}
+\newlength{\dhatheight}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\hat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \hat{\vphantom{\rule{1pt}{\dhatheight}}%
+    \smash{\hat{#1}}}}
+
 
 \newcommand{\cPZJpsill}{\ensuremath{\cPZ\to\cPJgy\,\ell^+\ell^-}\xspace}
 \newcommand{\cPZJpsimm}{\ensuremath{\cPZ\to\cPJgy\,\Pgmp\Pgmm}\xspace}
@@ -402,25 +412,25 @@ I would like to thank:
 
 \input{chapters/introduction}
 
-% \input{chapters/theory}
+\input{chapters/theory}
 
-% \input{chapters/detector}
+\input{chapters/detector}
 
-% \input{chapters/datasets} 
+\input{chapters/datasets} 
 
-% \input{chapters/analysis}
+\input{chapters/analysis}
 
-% \input{chapters/backgroundmodel}
+\input{chapters/backgroundmodel}
  
-% \input{chapters/signalmodel}
+\input{chapters/signalmodel}
 
-% \input{chapters/systematic}
+\input{chapters/systematic}
 
-% \input{chapters/modeling_xchecks}
+\input{chapters/modeling_xchecks}
 
 \input{chapters/results}
 
-% \input{chapters/rpc}
+\input{chapters/rpc}
 
 
 %----------------------------------------------------------------------------------------

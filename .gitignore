@@ -283,5 +283,6 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bibs
 .DS_Store
+*DS_Store
 
 Figures/.DS_Store
