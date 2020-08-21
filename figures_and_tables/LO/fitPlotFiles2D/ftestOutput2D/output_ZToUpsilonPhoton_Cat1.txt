@@ -1,0 +1,1006 @@
+Warning in <TClassTable::Add>: class RooPowerLaw already in TClassTable
+Warning in <TClassTable::Add>: class RooPowerLaw already in TClassTable
+Warning in <TClassTable::Add>: class RooPowerLawSum already in TClassTable
+Warning in <TClassTable::Add>: class WSTFileWrapper already in TClassTable
+Warning in <TClassTable::Add>: class RooExponentialSum already in TClassTable
+Warning in <TClassTable::Add>: class ProfileMultiplePdfs already in TClassTable
+Warning in <TClassTable::Add>: class PdfModelBuilder already in TClassTable
+-------> It a Z analysis!
+---> unblindReg_1: 70 - 80
+---> unblindReg_2: 100 - 120
+[INFO] got intL and sqrts 0x3c34ba0, 0x49cbdd0
+[INFO] got intL and sqrts 0x3c34ba0, 0x49cbdd0
+[INFO] Got mass from ws 0x43ab7c0
+RooAddPdf::ftest_pdf_0_13TeV_bern1_totalBckg[ ftest_pdf_0_13TeV_bern1_combFraction * ftest_pdf_0_13TeV_bern1_combTotal + [%] * ftest_pdf_0_13TeV_bern1_peakTotal ] = 0.155921
+----> Fitting...
+----> Fitted...
+[INFO]	 Bernstein 1 0 903.212 -1806.42 0
+RooAddPdf::ftest_pdf_0_13TeV_bern2_totalBckg[ ftest_pdf_0_13TeV_bern2_combFraction * ftest_pdf_0_13TeV_bern2_combTotal + [%] * ftest_pdf_0_13TeV_bern2_peakTotal ] = 0.138138
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.396418
+[INFO]	 Bernstein 2 903.212 902.853 0.719166 0.396418
+[INFO] Determining Envelope Functions for Family Bernstein, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 Bernstein 1 0 903.212 -1806.42 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  62.4405
+[INFO] p-value  =  0.667409
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  62.4405
+[INFO] p-value  =  0.667409
+-------> gofProb: 0.667409
+[INFO] Adding to Envelope env_pdf_Cat1_0_bern1_totalBckg 0.667409 2xNLL + c is 1839.42
+----> Fitting...
+----> Fitted...
+[INFO] 	 Bernstein 2 903.212 902.853 0.719166 0.396418
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 33 fitted parameters
+[INFO] Chi2 in Observed =  64.0931
+[INFO] p-value  =  0.578087
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 33 fitted parameters
+[INFO] Chi2 in Observed =  64.0931
+[INFO] p-value  =  0.578087
+-------> gofProb: 0.578087
+--------------------------
+RooAddPdf::ftest_pdf_0_13TeV_exp1_totalBckg[ ftest_pdf_0_13TeV_exp1_combFraction * ftest_pdf_0_13TeV_exp1_combTotal + [%] * ftest_pdf_0_13TeV_exp1_peakTotal ] = 0.118539
+----> Fitting...
+----> Fitted...
+[INFO]	 Exponential 1 0 902.979 -1805.96 0
+ERROR -- addExponential -- only odd number of params allowed
+--------------------------
+RooAddPdf::ftest_pdf_0_13TeV_exp3_totalBckg[ ftest_pdf_0_13TeV_exp3_combFraction * ftest_pdf_0_13TeV_exp3_combTotal + [%] * ftest_pdf_0_13TeV_exp3_peakTotal ] = 0.118536
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+[WARNING] Warning -- Fit status for ftest_pdf_0_13TeV_exp3_totalBckg at 1
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.999861
+[INFO]	 Exponential 3 902.979 902.979 0.000277292 0.999861
+[INFO] Determining Envelope Functions for Family Exponential, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+--------------------------
+----> Fitting...
+----> Fitted...
+[INFO] 	 Exponential 1 0 902.979 -1805.96 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  63.5158
+[INFO] p-value  =  0.631482
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  63.5158
+[INFO] p-value  =  0.631482
+-------> gofProb: 0.631482
+[INFO] Adding to Envelope env_pdf_Cat1_0_exp1_totalBckg 0.631482 2xNLL + c is 1838.96
+ERROR -- addExponential -- only odd number of params allowed
+--------------------------
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+----> Fitted...
+[WARNING] Warning -- Fit status for env_pdf_Cat1_0_exp3_totalBckg at 1
+[INFO] 	 Exponential 3 902.979 902.979 0.000295015 0.999853
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  105.399
+[INFO] p-value  =  0.00147993
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  105.399
+[INFO] p-value  =  0.00147993
+-------> gofProb: 0.00147993
+RooAddPdf::ftest_pdf_0_13TeV_pow1_totalBckg[ ftest_pdf_0_13TeV_pow1_combFraction * ftest_pdf_0_13TeV_pow1_combTotal + [%] * ftest_pdf_0_13TeV_pow1_peakTotal ] = 0.118511
+----> Fitting...
+----> Fitted...
+[INFO]	 PowerLaw 1 0 903.179 -1806.36 0
+ERROR -- addPowerLaw -- only odd number of params allowed
+RooAddPdf::ftest_pdf_0_13TeV_pow3_totalBckg[ ftest_pdf_0_13TeV_pow3_combFraction * ftest_pdf_0_13TeV_pow3_combTotal + [%] * ftest_pdf_0_13TeV_pow3_peakTotal ] = 0.11851
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.999793
+[INFO]	 PowerLaw 3 903.179 903.179 0.000413431 0.999793
+[INFO] Determining Envelope Functions for Family PowerLaw, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 PowerLaw 1 0 903.179 -1806.36 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  63.7831
+[INFO] p-value  =  0.622421
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  63.7831
+[INFO] p-value  =  0.622421
+-------> gofProb: 0.622421
+[INFO] Adding to Envelope env_pdf_Cat1_0_pow1_totalBckg 0.622421 2xNLL + c is 1839.36
+ERROR -- addPowerLaw -- only odd number of params allowed
+----> Fitting...
+----> Fitted...
+[INFO] 	 PowerLaw 3 903.179 903.179 0.000413431 0.999793
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  64.9904
+[INFO] p-value  =  0.51204
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  64.9904
+[INFO] p-value  =  0.51204
+-------> gofProb: 0.51204
+RooAddPdf::ftest_pdf_0_13TeV_lau1_totalBckg[ ftest_pdf_0_13TeV_lau1_combFraction * ftest_pdf_0_13TeV_lau1_combTotal + [%] * ftest_pdf_0_13TeV_lau1_peakTotal ] = 0.118502
+----> Fitting...
+----> Fitted...
+[INFO]	 Laurent 1 0 905.018 -1810.04 0
+RooAddPdf::ftest_pdf_0_13TeV_lau2_totalBckg[ ftest_pdf_0_13TeV_lau2_combFraction * ftest_pdf_0_13TeV_lau2_combTotal + [%] * ftest_pdf_0_13TeV_lau2_peakTotal ] = 0.118502
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.0581832
+[INFO]	 Laurent 2 905.018 903.224 3.58843 0.0581832
+[INFO] Determining Envelope Functions for Family Laurent, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 1 0 905.018 -1810.04 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  72.0639
+[INFO] p-value  =  0.345059
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 32 fitted parameters
+[INFO] Chi2 in Observed =  72.0639
+[INFO] p-value  =  0.345059
+-------> gofProb: 0.345059
+[INFO] Adding to Envelope env_pdf_Cat1_0_lau1_totalBckg 0.345059 2xNLL + c is 1843.04
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 2 905.018 903.224 3.58843 0.0581832
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 33 fitted parameters
+[INFO] Chi2 in Observed =  65.3696
+[INFO] p-value  =  0.533575
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 33 fitted parameters
+[INFO] Chi2 in Observed =  65.3696
+[INFO] p-value  =  0.533575
+-------> gofProb: 0.533575
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 3 903.224 903.224 0 1
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  65.9756
+[INFO] p-value  =  0.477693
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 34 fitted parameters
+[INFO] Chi2 in Observed =  65.9756
+[INFO] p-value  =  0.477693
+-------> gofProb: 0.477693
+------> analysisBranch: ZToUpsilonPhoton
+
+
+-----> nBackground:
+RooRealVar::CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_Cat1_norm = 200  L(0 - 500) 
+From analysis code: 198
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+// ------------------------------------------------------------------------- //
+[INFO] Created MultiPdf CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_Cat1, in Category 0 with a total of 4 pdfs
+RooArgList::store = (env_pdf_Cat1_0_bern1_totalBckg,env_pdf_Cat1_0_exp1_totalBckg,env_pdf_Cat1_0_pow1_totalBckg,env_pdf_Cat1_0_lau1_totalBckg)
+[INFO] Best Fit Pdf = 1, env_pdf_Cat1_0_exp1_totalBckg
+// ------------------------------------------------------------------------- //
+[INFO] Simple check of index 1
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(multipdf) ERROR importing object named pdfindex_UntaggedTag_0_13TeV_Cat1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkspace::import(multipdf) ERROR dataset with name data_obs already exists in workspace, import aborted
+ ######################################################## 
+ --------> var->GetName(): IntLumi
+C  L(-INF - +INF) 
+
+36.86
+
+ --------> var->GetName(): SqrtS
+C  L(-INF - +INF) 
+
+13
+
+ --------> var->GetName(): mHZ
+C  L(70 - 120) // [GeV]
+
+95
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_p0
+C  L(-5 - 5) 
+
+0.426232 +/- 0.0965386
+
+ --------> var->GetName(): mMuMNU
+C  L(8.5 - 11) // [GeV]
+
+9.75
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_mean_m
+C  L(8.9603 - 9.9603) // [GeV]
+
+9.45545
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0822964
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha1_1S
+C  L(-INF - +INF) 
+
+1.40449
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow1_1S
+C  L(-INF - +INF) 
+
+2.18614
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha2_1S
+C  L(-INF - +INF) 
+
+1.40555
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow2_1S
+C  L(-INF - +INF) 
+
+7.98626
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_fbckg1S
+C  L(0 - 1) 
+
+0.204681 +/- 0.0602308
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_mscale
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha1_2S
+C  L(-INF - +INF) 
+
+1.22292
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow1_2S
+C  L(-INF - +INF) 
+
+3.00036
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha2_2S
+C  L(-INF - +INF) 
+
+2.01742
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow2_2S
+C  L(-INF - +INF) 
+
+3.00213
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_fbckg2S
+C  L(0 - 1) 
+
+0.0521939 +/- 0.056752
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha1_3S
+C  L(-INF - +INF) 
+
+1.32664
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow1_3S
+C  L(-INF - +INF) 
+
+2.32469
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_alpha2_3S
+C  L(-INF - +INF) 
+
+1.63458
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_npow2_3S
+C  L(-INF - +INF) 
+
+6.82978
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_fbckg3S
+C  L(0 - 1) 
+
+9.48718e-09 +/- 4.13116e-09
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_bkg_a1
+C  L(-1 - 1) 
+
+-0.121478 +/- 0.205059
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_combFraction
+C  L(0 - 1) 
+
+0.65455 +/- 0.0505462
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_Mean
+C  L(70 - 120) 
+
+91.0489
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_Sigma
+C  L(-INF - +INF) 
+
+1.38576
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_alpha1
+C  L(-INF - +INF) 
+
+0.872538
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_n1
+C  L(-INF - +INF) 
+
+3.17582
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_alpha2
+C  L(-INF - +INF) 
+
+1.17085
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_dcball_n2
+C  L(-INF - +INF) 
+
+2.7004
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_bern1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.29115
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_p1
+C  L(-1 - 0) 
+
+-0.0311726 +/- 0.00666933
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_mean_m
+C  L(8.9603 - 9.9603) // [GeV]
+
+9.45545
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0822964
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha1_1S
+C  L(-INF - +INF) 
+
+1.40449
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow1_1S
+C  L(-INF - +INF) 
+
+2.18614
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha2_1S
+C  L(-INF - +INF) 
+
+1.40555
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow2_1S
+C  L(-INF - +INF) 
+
+7.98626
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_fbckg1S
+C  L(0 - 1) 
+
+0.207925 +/- 0.0613382
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_mscale
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha1_2S
+C  L(-INF - +INF) 
+
+1.22292
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow1_2S
+C  L(-INF - +INF) 
+
+3.00036
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha2_2S
+C  L(-INF - +INF) 
+
+2.01742
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow2_2S
+C  L(-INF - +INF) 
+
+3.00213
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_fbckg2S
+C  L(0 - 1) 
+
+0.0528186 +/- 0.0576753
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha1_3S
+C  L(-INF - +INF) 
+
+1.32664
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow1_3S
+C  L(-INF - +INF) 
+
+2.32469
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_alpha2_3S
+C  L(-INF - +INF) 
+
+1.63458
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_npow2_3S
+C  L(-INF - +INF) 
+
+6.82978
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_fbckg3S
+C  L(0 - 1) 
+
+7.57911e-09 +/- 2.36387e-05
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_bkg_a1
+C  L(-1 - 1) 
+
+-0.128186 +/- 0.208409
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_combFraction
+C  L(0 - 1) 
+
+0.638024 +/- 0.0499714
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_Mean
+C  L(70 - 120) 
+
+91.0489
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_Sigma
+C  L(-INF - +INF) 
+
+1.38576
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_alpha1
+C  L(-INF - +INF) 
+
+0.872538
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_n1
+C  L(-INF - +INF) 
+
+3.17582
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_alpha2
+C  L(-INF - +INF) 
+
+1.17085
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_dcball_n2
+C  L(-INF - +INF) 
+
+2.7004
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_exp1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.29115
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_p1
+C  L(-9 - 1) 
+
+-2.8117 +/- 0.602747
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_mean_m
+C  L(8.9603 - 9.9603) // [GeV]
+
+9.45545
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0822964
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha1_1S
+C  L(-INF - +INF) 
+
+1.40449
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow1_1S
+C  L(-INF - +INF) 
+
+2.18614
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha2_1S
+C  L(-INF - +INF) 
+
+1.40555
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow2_1S
+C  L(-INF - +INF) 
+
+7.98626
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_fbckg1S
+C  L(0 - 1) 
+
+0.209468 +/- 0.0617932
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_mscale
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha1_2S
+C  L(-INF - +INF) 
+
+1.22292
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow1_2S
+C  L(-INF - +INF) 
+
+3.00036
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha2_2S
+C  L(-INF - +INF) 
+
+2.01742
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow2_2S
+C  L(-INF - +INF) 
+
+3.00213
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_fbckg2S
+C  L(0 - 1) 
+
+0.0536755 +/- 0.0580244
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha1_3S
+C  L(-INF - +INF) 
+
+1.32664
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow1_3S
+C  L(-INF - +INF) 
+
+2.32469
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_alpha2_3S
+C  L(-INF - +INF) 
+
+1.63458
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_npow2_3S
+C  L(-INF - +INF) 
+
+6.82978
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_fbckg3S
+C  L(0 - 1) 
+
+2.55002e-06 +/- 1.02616e-08
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_bkg_a1
+C  L(-1 - 1) 
+
+-0.131982 +/- 0.209683
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_combFraction
+C  L(0 - 1) 
+
+0.630704 +/- 0.0498702
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_Mean
+C  L(70 - 120) 
+
+91.0489
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_Sigma
+C  L(-INF - +INF) 
+
+1.38576
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_alpha1
+C  L(-INF - +INF) 
+
+0.872538
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_n1
+C  L(-INF - +INF) 
+
+3.17582
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_alpha2
+C  L(-INF - +INF) 
+
+1.17085
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_dcball_n2
+C  L(-INF - +INF) 
+
+2.7004
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_pow1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.29115
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_l1
+C  L(1e-06 - 0.999999) 
+
+0.999998 +/- 1.60457e-10
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_mean_m
+C  L(8.9603 - 9.9603) // [GeV]
+
+9.45545
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0822964
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha1_1S
+C  L(-INF - +INF) 
+
+1.40449
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow1_1S
+C  L(-INF - +INF) 
+
+2.18614
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha2_1S
+C  L(-INF - +INF) 
+
+1.40555
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow2_1S
+C  L(-INF - +INF) 
+
+7.98626
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_fbckg1S
+C  L(0 - 1) 
+
+0.211648 +/- 0.0627091
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_mscale
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha1_2S
+C  L(-INF - +INF) 
+
+1.22292
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow1_2S
+C  L(-INF - +INF) 
+
+3.00036
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha2_2S
+C  L(-INF - +INF) 
+
+2.01742
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow2_2S
+C  L(-INF - +INF) 
+
+3.00213
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_fbckg2S
+C  L(0 - 1) 
+
+0.0542592 +/- 0.0588415
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha1_3S
+C  L(-INF - +INF) 
+
+1.32664
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow1_3S
+C  L(-INF - +INF) 
+
+2.32469
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_alpha2_3S
+C  L(-INF - +INF) 
+
+1.63458
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_npow2_3S
+C  L(-INF - +INF) 
+
+6.82978
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_fbckg3S
+C  L(0 - 1) 
+
+1.45872e-07 +/- 2.3044e-10
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_bkg_a1
+C  L(-1 - 1) 
+
+-0.139391 +/- 0.212771
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_combFraction
+C  L(0 - 1) 
+
+0.618904 +/- 0.0495164
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_Mean
+C  L(70 - 120) 
+
+91.0489
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_Sigma
+C  L(-INF - +INF) 
+
+1.38576
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_alpha1
+C  L(-INF - +INF) 
+
+0.872538
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_n1
+C  L(-INF - +INF) 
+
+3.17582
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_alpha2
+C  L(-INF - +INF) 
+
+1.17085
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_dcball_n2
+C  L(-INF - +INF) 
+
+2.7004
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_Cat1_0_lau1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.29115
+
+ --------> var->GetName(): CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_Cat1_norm
+C  L(0 - 500) 
+
+200
+
+ ######################################################## 
+
+RooWorkspace(multipdf)  contents
+
+variables
+---------
+(CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_Cat1_norm,IntLumi,SqrtS,env_pdf_Cat1_0_bern1_alpha1_1S,env_pdf_Cat1_0_bern1_alpha1_2S,env_pdf_Cat1_0_bern1_alpha1_3S,env_pdf_Cat1_0_bern1_alpha2_1S,env_pdf_Cat1_0_bern1_alpha2_2S,env_pdf_Cat1_0_bern1_alpha2_3S,env_pdf_Cat1_0_bern1_bkg_a1,env_pdf_Cat1_0_bern1_combFraction,env_pdf_Cat1_0_bern1_dcball_Mean,env_pdf_Cat1_0_bern1_dcball_Sigma,env_pdf_Cat1_0_bern1_dcball_alpha1,env_pdf_Cat1_0_bern1_dcball_alpha2,env_pdf_Cat1_0_bern1_dcball_n1,env_pdf_Cat1_0_bern1_dcball_n2,env_pdf_Cat1_0_bern1_fbckg1S,env_pdf_Cat1_0_bern1_fbckg2S,env_pdf_Cat1_0_bern1_fbckg3S,env_pdf_Cat1_0_bern1_mean_m,env_pdf_Cat1_0_bern1_mscale,env_pdf_Cat1_0_bern1_npow1_1S,env_pdf_Cat1_0_bern1_npow1_2S,env_pdf_Cat1_0_bern1_npow1_3S,env_pdf_Cat1_0_bern1_npow2_1S,env_pdf_Cat1_0_bern1_npow2_2S,env_pdf_Cat1_0_bern1_npow2_3S,env_pdf_Cat1_0_bern1_p0,env_pdf_Cat1_0_bern1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_bern1_p1_Bernstein_mMuMNU,env_pdf_Cat1_0_bern1_shift2,env_pdf_Cat1_0_bern1_shift3,env_pdf_Cat1_0_bern1_sigmaUpsilon,env_pdf_Cat1_0_exp1_alpha1_1S,env_pdf_Cat1_0_exp1_alpha1_2S,env_pdf_Cat1_0_exp1_alpha1_3S,env_pdf_Cat1_0_exp1_alpha2_1S,env_pdf_Cat1_0_exp1_alpha2_2S,env_pdf_Cat1_0_exp1_alpha2_3S,env_pdf_Cat1_0_exp1_bkg_a1,env_pdf_Cat1_0_exp1_combFraction,env_pdf_Cat1_0_exp1_dcball_Mean,env_pdf_Cat1_0_exp1_dcball_Sigma,env_pdf_Cat1_0_exp1_dcball_alpha1,env_pdf_Cat1_0_exp1_dcball_alpha2,env_pdf_Cat1_0_exp1_dcball_n1,env_pdf_Cat1_0_exp1_dcball_n2,env_pdf_Cat1_0_exp1_fbckg1S,env_pdf_Cat1_0_exp1_fbckg2S,env_pdf_Cat1_0_exp1_fbckg3S,env_pdf_Cat1_0_exp1_mean_m,env_pdf_Cat1_0_exp1_mscale,env_pdf_Cat1_0_exp1_npow1_1S,env_pdf_Cat1_0_exp1_npow1_2S,env_pdf_Cat1_0_exp1_npow1_3S,env_pdf_Cat1_0_exp1_npow2_1S,env_pdf_Cat1_0_exp1_npow2_2S,env_pdf_Cat1_0_exp1_npow2_3S,env_pdf_Cat1_0_exp1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_exp1_p1,env_pdf_Cat1_0_exp1_p1_Bernstein_mMuMNU,env_pdf_Cat1_0_exp1_shift2,env_pdf_Cat1_0_exp1_shift3,env_pdf_Cat1_0_exp1_sigmaUpsilon,env_pdf_Cat1_0_lau1_alpha1_1S,env_pdf_Cat1_0_lau1_alpha1_2S,env_pdf_Cat1_0_lau1_alpha1_3S,env_pdf_Cat1_0_lau1_alpha2_1S,env_pdf_Cat1_0_lau1_alpha2_2S,env_pdf_Cat1_0_lau1_alpha2_3S,env_pdf_Cat1_0_lau1_bkg_a1,env_pdf_Cat1_0_lau1_combFraction,env_pdf_Cat1_0_lau1_dcball_Mean,env_pdf_Cat1_0_lau1_dcball_Sigma,env_pdf_Cat1_0_lau1_dcball_alpha1,env_pdf_Cat1_0_lau1_dcball_alpha2,env_pdf_Cat1_0_lau1_dcball_n1,env_pdf_Cat1_0_lau1_dcball_n2,env_pdf_Cat1_0_lau1_fbckg1S,env_pdf_Cat1_0_lau1_fbckg2S,env_pdf_Cat1_0_lau1_fbckg3S,env_pdf_Cat1_0_lau1_l1,env_pdf_Cat1_0_lau1_mean_m,env_pdf_Cat1_0_lau1_mscale,env_pdf_Cat1_0_lau1_npow1_1S,env_pdf_Cat1_0_lau1_npow1_2S,env_pdf_Cat1_0_lau1_npow1_3S,env_pdf_Cat1_0_lau1_npow2_1S,env_pdf_Cat1_0_lau1_npow2_2S,env_pdf_Cat1_0_lau1_npow2_3S,env_pdf_Cat1_0_lau1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_lau1_p1_Bernstein_mMuMNU,env_pdf_Cat1_0_lau1_shift2,env_pdf_Cat1_0_lau1_shift3,env_pdf_Cat1_0_lau1_sigmaUpsilon,env_pdf_Cat1_0_pow1_alpha1_1S,env_pdf_Cat1_0_pow1_alpha1_2S,env_pdf_Cat1_0_pow1_alpha1_3S,env_pdf_Cat1_0_pow1_alpha2_1S,env_pdf_Cat1_0_pow1_alpha2_2S,env_pdf_Cat1_0_pow1_alpha2_3S,env_pdf_Cat1_0_pow1_bkg_a1,env_pdf_Cat1_0_pow1_combFraction,env_pdf_Cat1_0_pow1_dcball_Mean,env_pdf_Cat1_0_pow1_dcball_Sigma,env_pdf_Cat1_0_pow1_dcball_alpha1,env_pdf_Cat1_0_pow1_dcball_alpha2,env_pdf_Cat1_0_pow1_dcball_n1,env_pdf_Cat1_0_pow1_dcball_n2,env_pdf_Cat1_0_pow1_fbckg1S,env_pdf_Cat1_0_pow1_fbckg2S,env_pdf_Cat1_0_pow1_fbckg3S,env_pdf_Cat1_0_pow1_mean_m,env_pdf_Cat1_0_pow1_mscale,env_pdf_Cat1_0_pow1_npow1_1S,env_pdf_Cat1_0_pow1_npow1_2S,env_pdf_Cat1_0_pow1_npow1_3S,env_pdf_Cat1_0_pow1_npow2_1S,env_pdf_Cat1_0_pow1_npow2_2S,env_pdf_Cat1_0_pow1_npow2_3S,env_pdf_Cat1_0_pow1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_pow1_p1,env_pdf_Cat1_0_pow1_p1_Bernstein_mMuMNU,env_pdf_Cat1_0_pow1_shift2,env_pdf_Cat1_0_pow1_shift3,env_pdf_Cat1_0_pow1_sigmaUpsilon,mHZ,mMuMNU,pdfindex_UntaggedTag_0_13TeV_Cat1)
+
+p.d.f.s
+-------
+RooMultiPdf::CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_Cat1[ _pdfs=(env_pdf_Cat1_0_bern1_totalBckg,env_pdf_Cat1_0_exp1_totalBckg,env_pdf_Cat1_0_pow1_totalBckg,env_pdf_Cat1_0_lau1_totalBckg) _index=pdfindex_UntaggedTag_0_13TeV_Cat1 ] = 0.0727437
+  RooAddPdf::env_pdf_Cat1_0_bern1_totalBckg[ env_pdf_Cat1_0_bern1_combFraction * env_pdf_Cat1_0_bern1_combTotal + [%] * env_pdf_Cat1_0_bern1_peakTotal ] = 0.340628
+    RooProdPdf::env_pdf_Cat1_0_bern1_combTotal[ env_pdf_Cat1_0_bern1 * env_pdf_Cat1_0_bern1_combBckg_mMuMu ] = 0.45091
+      RooBernsteinFast<1>::env_pdf_Cat1_0_bern1[ x=mHZ coefList=(env_pdf_Cat1_0_bern1_p0_sq) ] = 0.590837
+        RooFormulaVar::env_pdf_Cat1_0_bern1_p0_sq[ actualVars=(env_pdf_Cat1_0_bern1_p0) formula="@0*@0" ] = 0.181674
+      RooAddPdf::env_pdf_Cat1_0_bern1_combBckg_mMuMu[ env_pdf_Cat1_0_bern1_fbckg1S * env_pdf_Cat1_0_bern1_bckg1S + env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_bckg2S * env_pdf_Cat1_0_bern1_bckg2S + env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_bckg3S * env_pdf_Cat1_0_bern1_bckg3S + env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_mBkg * env_pdf_Cat1_0_bern1_mBkg ] = 0.763171
+        RooDoubleCB::env_pdf_Cat1_0_bern1_bckg1S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_bern1_mean1S width=env_pdf_Cat1_0_bern1_sigma1S alpha1=env_pdf_Cat1_0_bern1_alpha1_1S n1=env_pdf_Cat1_0_bern1_npow1_1S alpha2=env_pdf_Cat1_0_bern1_alpha2_1S n2=env_pdf_Cat1_0_bern1_npow2_1S ] = 0.0280226
+          RooFormulaVar::env_pdf_Cat1_0_bern1_mean1S[ actualVars=(env_pdf_Cat1_0_bern1_mean_m) formula="@0" ] = 9.45545
+          RooFormulaVar::env_pdf_Cat1_0_bern1_sigma1S[ actualVars=(env_pdf_Cat1_0_bern1_sigmaUpsilon) formula="@0" ] = 0.0822964
+        RooDoubleCB::env_pdf_Cat1_0_bern1_bckg2S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_bern1_mean2S width=env_pdf_Cat1_0_bern1_sigma2S alpha1=env_pdf_Cat1_0_bern1_alpha1_2S n1=env_pdf_Cat1_0_bern1_npow1_2S alpha2=env_pdf_Cat1_0_bern1_alpha2_2S n2=env_pdf_Cat1_0_bern1_npow2_2S ] = 0.08738
+          RooFormulaVar::env_pdf_Cat1_0_bern1_mean2S[ actualVars=(env_pdf_Cat1_0_bern1_mean_m,env_pdf_Cat1_0_bern1_mscale,env_pdf_Cat1_0_bern1_shift2) formula="@0+@1*@2" ] = 10.0184
+          RooFormulaVar::env_pdf_Cat1_0_bern1_sigma2S[ actualVars=(env_pdf_Cat1_0_bern1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.0871936
+        RooRecursiveFraction::env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_bckg2S[ list=(env_pdf_Cat1_0_bern1_fbckg2S,env_pdf_Cat1_0_bern1_fbckg1S) ] = 0.0415108
+        RooDoubleCB::env_pdf_Cat1_0_bern1_bckg3S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_bern1_mean3S width=env_pdf_Cat1_0_bern1_sigma3S alpha1=env_pdf_Cat1_0_bern1_alpha1_3S n1=env_pdf_Cat1_0_bern1_npow1_3S alpha2=env_pdf_Cat1_0_bern1_alpha2_3S n2=env_pdf_Cat1_0_bern1_npow2_3S ] = 0.0160927
+          RooFormulaVar::env_pdf_Cat1_0_bern1_mean3S[ actualVars=(env_pdf_Cat1_0_bern1_mean_m,env_pdf_Cat1_0_bern1_mscale,env_pdf_Cat1_0_bern1_shift3) formula="@0+@1*@2" ] = 10.3503
+          RooFormulaVar::env_pdf_Cat1_0_bern1_sigma3S[ actualVars=(env_pdf_Cat1_0_bern1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.0900812
+        RooRecursiveFraction::env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_bckg3S[ list=(env_pdf_Cat1_0_bern1_fbckg3S,env_pdf_Cat1_0_bern1_fbckg2S,env_pdf_Cat1_0_bern1_fbckg1S) ] = 7.15151e-09
+        RooChebychev::env_pdf_Cat1_0_bern1_mBkg[ x=mMuMNU coefList=(env_pdf_Cat1_0_bern1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_Cat1_0_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_bern1_mBkg[ list=(1,env_pdf_Cat1_0_bern1_fbckg3S,env_pdf_Cat1_0_bern1_fbckg2S,env_pdf_Cat1_0_bern1_fbckg1S) ] = 0.753808
+    RooProdPdf::env_pdf_Cat1_0_bern1_peakTotal[ env_pdf_Cat1_0_bern1_dcball * env_pdf_Cat1_0_bern1_bernstein_PeakingBackground ] = 0.131669
+      RooDoubleCB::env_pdf_Cat1_0_bern1_dcball[ x=mHZ xp=NULL mean=env_pdf_Cat1_0_bern1_dcball_Mean width=env_pdf_Cat1_0_bern1_dcball_Sigma alpha1=env_pdf_Cat1_0_bern1_dcball_alpha1 n1=env_pdf_Cat1_0_bern1_dcball_n1 alpha2=env_pdf_Cat1_0_bern1_dcball_alpha2 n2=env_pdf_Cat1_0_bern1_dcball_n2 ] = 0.114937
+      RooBernstein::env_pdf_Cat1_0_bern1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_Cat1_0_bern1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_bern1_p1_Bernstein_mMuMNU) ] = 1.14557
+  RooAddPdf::env_pdf_Cat1_0_exp1_totalBckg[ env_pdf_Cat1_0_exp1_combFraction * env_pdf_Cat1_0_exp1_combTotal + [%] * env_pdf_Cat1_0_exp1_peakTotal ] = 0.0727437
+    RooProdPdf::env_pdf_Cat1_0_exp1_combTotal[ env_pdf_Cat1_0_exp1 * env_pdf_Cat1_0_exp1_combBckg_mMuMu ] = 0.0393128
+      RooAddPdf::env_pdf_Cat1_0_exp1[ env_pdf_Cat1_0_exp1_recursive_fraction_env_pdf_Cat1_0_exp1_e1 * env_pdf_Cat1_0_exp1_e1 ] = 0.0517464
+        RooExponential::env_pdf_Cat1_0_exp1_e1[ x=mHZ c=env_pdf_Cat1_0_exp1_p1 ] = 0.0517464
+        RooRecursiveFraction::env_pdf_Cat1_0_exp1_recursive_fraction_env_pdf_Cat1_0_exp1_e1[ list=(1) ] = 1
+      RooAddPdf::env_pdf_Cat1_0_exp1_combBckg_mMuMu[ env_pdf_Cat1_0_exp1_fbckg1S * env_pdf_Cat1_0_exp1_bckg1S + env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg2S * env_pdf_Cat1_0_exp1_bckg2S + env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg3S * env_pdf_Cat1_0_exp1_bckg3S + env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_mBkg * env_pdf_Cat1_0_exp1_mBkg ] = 0.759721
+        RooDoubleCB::env_pdf_Cat1_0_exp1_bckg1S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_exp1_mean1S width=env_pdf_Cat1_0_exp1_sigma1S alpha1=env_pdf_Cat1_0_exp1_alpha1_1S n1=env_pdf_Cat1_0_exp1_npow1_1S alpha2=env_pdf_Cat1_0_exp1_alpha2_1S n2=env_pdf_Cat1_0_exp1_npow2_1S ] = 0.0280226
+          RooFormulaVar::env_pdf_Cat1_0_exp1_mean1S[ actualVars=(env_pdf_Cat1_0_exp1_mean_m) formula="@0" ] = 9.45545
+          RooFormulaVar::env_pdf_Cat1_0_exp1_sigma1S[ actualVars=(env_pdf_Cat1_0_exp1_sigmaUpsilon) formula="@0" ] = 0.0822964
+        RooDoubleCB::env_pdf_Cat1_0_exp1_bckg2S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_exp1_mean2S width=env_pdf_Cat1_0_exp1_sigma2S alpha1=env_pdf_Cat1_0_exp1_alpha1_2S n1=env_pdf_Cat1_0_exp1_npow1_2S alpha2=env_pdf_Cat1_0_exp1_alpha2_2S n2=env_pdf_Cat1_0_exp1_npow2_2S ] = 0.08738
+          RooFormulaVar::env_pdf_Cat1_0_exp1_mean2S[ actualVars=(env_pdf_Cat1_0_exp1_mean_m,env_pdf_Cat1_0_exp1_mscale,env_pdf_Cat1_0_exp1_shift2) formula="@0+@1*@2" ] = 10.0184
+          RooFormulaVar::env_pdf_Cat1_0_exp1_sigma2S[ actualVars=(env_pdf_Cat1_0_exp1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.0871936
+        RooRecursiveFraction::env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg2S[ list=(env_pdf_Cat1_0_exp1_fbckg2S,env_pdf_Cat1_0_exp1_fbckg1S) ] = 0.0418363
+        RooDoubleCB::env_pdf_Cat1_0_exp1_bckg3S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_exp1_mean3S width=env_pdf_Cat1_0_exp1_sigma3S alpha1=env_pdf_Cat1_0_exp1_alpha1_3S n1=env_pdf_Cat1_0_exp1_npow1_3S alpha2=env_pdf_Cat1_0_exp1_alpha2_3S n2=env_pdf_Cat1_0_exp1_npow2_3S ] = 0.0160927
+          RooFormulaVar::env_pdf_Cat1_0_exp1_mean3S[ actualVars=(env_pdf_Cat1_0_exp1_mean_m,env_pdf_Cat1_0_exp1_mscale,env_pdf_Cat1_0_exp1_shift3) formula="@0+@1*@2" ] = 10.3503
+          RooFormulaVar::env_pdf_Cat1_0_exp1_sigma3S[ actualVars=(env_pdf_Cat1_0_exp1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.0900812
+        RooRecursiveFraction::env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg3S[ list=(env_pdf_Cat1_0_exp1_fbckg3S,env_pdf_Cat1_0_exp1_fbckg2S,env_pdf_Cat1_0_exp1_fbckg1S) ] = 5.68614e-09
+        RooChebychev::env_pdf_Cat1_0_exp1_mBkg[ x=mMuMNU coefList=(env_pdf_Cat1_0_exp1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_mBkg[ list=(1,env_pdf_Cat1_0_exp1_fbckg3S,env_pdf_Cat1_0_exp1_fbckg2S,env_pdf_Cat1_0_exp1_fbckg1S) ] = 0.750239
+    RooProdPdf::env_pdf_Cat1_0_exp1_peakTotal[ env_pdf_Cat1_0_exp1_dcball * env_pdf_Cat1_0_exp1_bernstein_PeakingBackground ] = 0.131669
+      RooDoubleCB::env_pdf_Cat1_0_exp1_dcball[ x=mHZ xp=NULL mean=env_pdf_Cat1_0_exp1_dcball_Mean width=env_pdf_Cat1_0_exp1_dcball_Sigma alpha1=env_pdf_Cat1_0_exp1_dcball_alpha1 n1=env_pdf_Cat1_0_exp1_dcball_n1 alpha2=env_pdf_Cat1_0_exp1_dcball_alpha2 n2=env_pdf_Cat1_0_exp1_dcball_n2 ] = 0.114937
+      RooBernstein::env_pdf_Cat1_0_exp1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_Cat1_0_exp1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_exp1_p1_Bernstein_mMuMNU) ] = 1.14557
+  RooAddPdf::env_pdf_Cat1_0_pow1_totalBckg[ env_pdf_Cat1_0_pow1_combFraction * env_pdf_Cat1_0_pow1_combTotal + [%] * env_pdf_Cat1_0_pow1_peakTotal ] = 0.0486262
+    RooProdPdf::env_pdf_Cat1_0_pow1_combTotal[ env_pdf_Cat1_0_pow1 * env_pdf_Cat1_0_pow1_combBckg_mMuMu ] = 2.08314e-06
+      RooAddPdf::env_pdf_Cat1_0_pow1[ env_pdf_Cat1_0_pow1_recursive_fraction_env_pdf_Cat1_0_pow1_e1 * env_pdf_Cat1_0_pow1_e1 ] = 2.74938e-06
+        RooPower::env_pdf_Cat1_0_pow1_e1[ x=mHZ c=env_pdf_Cat1_0_pow1_p1 ] = 2.74938e-06
+        RooRecursiveFraction::env_pdf_Cat1_0_pow1_recursive_fraction_env_pdf_Cat1_0_pow1_e1[ list=(1) ] = 1
+      RooAddPdf::env_pdf_Cat1_0_pow1_combBckg_mMuMu[ env_pdf_Cat1_0_pow1_fbckg1S * env_pdf_Cat1_0_pow1_bckg1S + env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_bckg2S * env_pdf_Cat1_0_pow1_bckg2S + env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_bckg3S * env_pdf_Cat1_0_pow1_bckg3S + env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_mBkg * env_pdf_Cat1_0_pow1_mBkg ] = 0.757675
+        RooDoubleCB::env_pdf_Cat1_0_pow1_bckg1S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_pow1_mean1S width=env_pdf_Cat1_0_pow1_sigma1S alpha1=env_pdf_Cat1_0_pow1_alpha1_1S n1=env_pdf_Cat1_0_pow1_npow1_1S alpha2=env_pdf_Cat1_0_pow1_alpha2_1S n2=env_pdf_Cat1_0_pow1_npow2_1S ] = 0.0280226
+          RooFormulaVar::env_pdf_Cat1_0_pow1_mean1S[ actualVars=(env_pdf_Cat1_0_pow1_mean_m) formula="@0" ] = 9.45545
+          RooFormulaVar::env_pdf_Cat1_0_pow1_sigma1S[ actualVars=(env_pdf_Cat1_0_pow1_sigmaUpsilon) formula="@0" ] = 0.0822964
+        RooDoubleCB::env_pdf_Cat1_0_pow1_bckg2S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_pow1_mean2S width=env_pdf_Cat1_0_pow1_sigma2S alpha1=env_pdf_Cat1_0_pow1_alpha1_2S n1=env_pdf_Cat1_0_pow1_npow1_2S alpha2=env_pdf_Cat1_0_pow1_alpha2_2S n2=env_pdf_Cat1_0_pow1_npow2_2S ] = 0.08738
+          RooFormulaVar::env_pdf_Cat1_0_pow1_mean2S[ actualVars=(env_pdf_Cat1_0_pow1_mean_m,env_pdf_Cat1_0_pow1_mscale,env_pdf_Cat1_0_pow1_shift2) formula="@0+@1*@2" ] = 10.0184
+          RooFormulaVar::env_pdf_Cat1_0_pow1_sigma2S[ actualVars=(env_pdf_Cat1_0_pow1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.0871936
+        RooRecursiveFraction::env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_bckg2S[ list=(env_pdf_Cat1_0_pow1_fbckg2S,env_pdf_Cat1_0_pow1_fbckg1S) ] = 0.0424322
+        RooDoubleCB::env_pdf_Cat1_0_pow1_bckg3S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_pow1_mean3S width=env_pdf_Cat1_0_pow1_sigma3S alpha1=env_pdf_Cat1_0_pow1_alpha1_3S n1=env_pdf_Cat1_0_pow1_npow1_3S alpha2=env_pdf_Cat1_0_pow1_alpha2_3S n2=env_pdf_Cat1_0_pow1_npow2_3S ] = 0.0160927
+          RooFormulaVar::env_pdf_Cat1_0_pow1_mean3S[ actualVars=(env_pdf_Cat1_0_pow1_mean_m,env_pdf_Cat1_0_pow1_mscale,env_pdf_Cat1_0_pow1_shift3) formula="@0+@1*@2" ] = 10.3503
+          RooFormulaVar::env_pdf_Cat1_0_pow1_sigma3S[ actualVars=(env_pdf_Cat1_0_pow1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.0900812
+        RooRecursiveFraction::env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_bckg3S[ list=(env_pdf_Cat1_0_pow1_fbckg3S,env_pdf_Cat1_0_pow1_fbckg2S,env_pdf_Cat1_0_pow1_fbckg1S) ] = 1.90767e-06
+        RooChebychev::env_pdf_Cat1_0_pow1_mBkg[ x=mMuMNU coefList=(env_pdf_Cat1_0_pow1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_Cat1_0_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_pow1_mBkg[ list=(1,env_pdf_Cat1_0_pow1_fbckg3S,env_pdf_Cat1_0_pow1_fbckg2S,env_pdf_Cat1_0_pow1_fbckg1S) ] = 0.748098
+    RooProdPdf::env_pdf_Cat1_0_pow1_peakTotal[ env_pdf_Cat1_0_pow1_dcball * env_pdf_Cat1_0_pow1_bernstein_PeakingBackground ] = 0.131669
+      RooDoubleCB::env_pdf_Cat1_0_pow1_dcball[ x=mHZ xp=NULL mean=env_pdf_Cat1_0_pow1_dcball_Mean width=env_pdf_Cat1_0_pow1_dcball_Sigma alpha1=env_pdf_Cat1_0_pow1_dcball_alpha1 n1=env_pdf_Cat1_0_pow1_dcball_n1 alpha2=env_pdf_Cat1_0_pow1_dcball_alpha2 n2=env_pdf_Cat1_0_pow1_dcball_n2 ] = 0.114937
+      RooBernstein::env_pdf_Cat1_0_pow1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_Cat1_0_pow1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_pow1_p1_Bernstein_mMuMNU) ] = 1.14557
+  RooAddPdf::env_pdf_Cat1_0_lau1_totalBckg[ env_pdf_Cat1_0_lau1_combFraction * env_pdf_Cat1_0_lau1_combTotal + [%] * env_pdf_Cat1_0_lau1_peakTotal ] = 0.0501786
+    RooProdPdf::env_pdf_Cat1_0_lau1_combTotal[ env_pdf_Cat1_0_lau1 * env_pdf_Cat1_0_lau1_combBckg_mMuMu ] = 9.27241e-09
+      RooAddPdf::env_pdf_Cat1_0_lau1[ env_pdf_Cat1_0_lau1_l1 * env_pdf_Cat1_0_lau1_pow0 + env_pdf_Cat1_0_lau1_recursive_fraction_env_pdf_Cat1_0_lau1_powl1 * env_pdf_Cat1_0_lau1_powl1 ] = 1.22774e-08
+        RooPower::env_pdf_Cat1_0_lau1_pow0[ x=mHZ c=-4 ] = 1.22774e-08
+        RooPower::env_pdf_Cat1_0_lau1_powl1[ x=mHZ c=-5 ] = 1.29236e-10
+        RooRecursiveFraction::env_pdf_Cat1_0_lau1_recursive_fraction_env_pdf_Cat1_0_lau1_powl1[ list=(1,env_pdf_Cat1_0_lau1_l1) ] = 1.73895e-06
+      RooAddPdf::env_pdf_Cat1_0_lau1_combBckg_mMuMu[ env_pdf_Cat1_0_lau1_fbckg1S * env_pdf_Cat1_0_lau1_bckg1S + env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_bckg2S * env_pdf_Cat1_0_lau1_bckg2S + env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_bckg3S * env_pdf_Cat1_0_lau1_bckg3S + env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_mBkg * env_pdf_Cat1_0_lau1_mBkg ] = 0.755245
+        RooDoubleCB::env_pdf_Cat1_0_lau1_bckg1S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_lau1_mean1S width=env_pdf_Cat1_0_lau1_sigma1S alpha1=env_pdf_Cat1_0_lau1_alpha1_1S n1=env_pdf_Cat1_0_lau1_npow1_1S alpha2=env_pdf_Cat1_0_lau1_alpha2_1S n2=env_pdf_Cat1_0_lau1_npow2_1S ] = 0.0280226
+          RooFormulaVar::env_pdf_Cat1_0_lau1_mean1S[ actualVars=(env_pdf_Cat1_0_lau1_mean_m) formula="@0" ] = 9.45545
+          RooFormulaVar::env_pdf_Cat1_0_lau1_sigma1S[ actualVars=(env_pdf_Cat1_0_lau1_sigmaUpsilon) formula="@0" ] = 0.0822964
+        RooDoubleCB::env_pdf_Cat1_0_lau1_bckg2S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_lau1_mean2S width=env_pdf_Cat1_0_lau1_sigma2S alpha1=env_pdf_Cat1_0_lau1_alpha1_2S n1=env_pdf_Cat1_0_lau1_npow1_2S alpha2=env_pdf_Cat1_0_lau1_alpha2_2S n2=env_pdf_Cat1_0_lau1_npow2_2S ] = 0.08738
+          RooFormulaVar::env_pdf_Cat1_0_lau1_mean2S[ actualVars=(env_pdf_Cat1_0_lau1_mean_m,env_pdf_Cat1_0_lau1_mscale,env_pdf_Cat1_0_lau1_shift2) formula="@0+@1*@2" ] = 10.0184
+          RooFormulaVar::env_pdf_Cat1_0_lau1_sigma2S[ actualVars=(env_pdf_Cat1_0_lau1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.0871936
+        RooRecursiveFraction::env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_bckg2S[ list=(env_pdf_Cat1_0_lau1_fbckg2S,env_pdf_Cat1_0_lau1_fbckg1S) ] = 0.0427753
+        RooDoubleCB::env_pdf_Cat1_0_lau1_bckg3S[ x=mMuMNU xp=NULL mean=env_pdf_Cat1_0_lau1_mean3S width=env_pdf_Cat1_0_lau1_sigma3S alpha1=env_pdf_Cat1_0_lau1_alpha1_3S n1=env_pdf_Cat1_0_lau1_npow1_3S alpha2=env_pdf_Cat1_0_lau1_alpha2_3S n2=env_pdf_Cat1_0_lau1_npow2_3S ] = 0.0160927
+          RooFormulaVar::env_pdf_Cat1_0_lau1_mean3S[ actualVars=(env_pdf_Cat1_0_lau1_mean_m,env_pdf_Cat1_0_lau1_mscale,env_pdf_Cat1_0_lau1_shift3) formula="@0+@1*@2" ] = 10.3503
+          RooFormulaVar::env_pdf_Cat1_0_lau1_sigma3S[ actualVars=(env_pdf_Cat1_0_lau1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.0900812
+        RooRecursiveFraction::env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_bckg3S[ list=(env_pdf_Cat1_0_lau1_fbckg3S,env_pdf_Cat1_0_lau1_fbckg2S,env_pdf_Cat1_0_lau1_fbckg1S) ] = 1.08759e-07
+        RooChebychev::env_pdf_Cat1_0_lau1_mBkg[ x=mMuMNU coefList=(env_pdf_Cat1_0_lau1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_Cat1_0_lau1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_lau1_mBkg[ list=(1,env_pdf_Cat1_0_lau1_fbckg3S,env_pdf_Cat1_0_lau1_fbckg2S,env_pdf_Cat1_0_lau1_fbckg1S) ] = 0.745577
+    RooProdPdf::env_pdf_Cat1_0_lau1_peakTotal[ env_pdf_Cat1_0_lau1_dcball * env_pdf_Cat1_0_lau1_bernstein_PeakingBackground ] = 0.131669
+      RooDoubleCB::env_pdf_Cat1_0_lau1_dcball[ x=mHZ xp=NULL mean=env_pdf_Cat1_0_lau1_dcball_Mean width=env_pdf_Cat1_0_lau1_dcball_Sigma alpha1=env_pdf_Cat1_0_lau1_dcball_alpha1 n1=env_pdf_Cat1_0_lau1_dcball_n1 alpha2=env_pdf_Cat1_0_lau1_dcball_alpha2 n2=env_pdf_Cat1_0_lau1_dcball_n2 ] = 0.114937
+      RooBernstein::env_pdf_Cat1_0_lau1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_Cat1_0_lau1_p0_Bernstein_mMuMNU,env_pdf_Cat1_0_lau1_p1_Bernstein_mMuMNU) ] = 1.14557
+
+datasets
+--------
+RooDataHist::roohist_data_mass_UntaggedTag_0(mHZ)
+RooDataSet::data_obs(mHZ,mMuMNU)
+
+------> analysisBranch: ZToUpsilonPhoton
+##### unblindReg_1: 70 - 80
+##### unblindReg_2: 100 - 120
+-----------> pdfName: env_pdf_Cat1_0_bern1_totalBckg
+-----------> pdfFancyName+ext: Bernstein 1st
+-----------> pdfName: env_pdf_Cat1_0_exp1_totalBckg
+-----------> pdfFancyName+ext: Exponencial 1st (Best Fit Pdf)
+-----------> pdfName: env_pdf_Cat1_0_pow1_totalBckg
+-----------> pdfFancyName+ext: Power Law 1st
+-----------> pdfName: env_pdf_Cat1_0_lau1_totalBckg
+-----------> pdfFancyName+ext: Laurent 1st
+------> analysisBranch: ZToUpsilonPhoton
+pdfs->getCurrentPdf()->GetName(): env_pdf_Cat1_0_exp1_totalBckg
+envPrefix: env_pdf_Cat1_0_exp1
+RooArgSet::env_pdf_Cat1_0_exp1_totalBckg_components = (env_pdf_Cat1_0_exp1_totalBckg,env_pdf_Cat1_0_exp1_combTotal,env_pdf_Cat1_0_exp1,env_pdf_Cat1_0_exp1_e1,env_pdf_Cat1_0_exp1_recursive_fraction_env_pdf_Cat1_0_exp1_e1,env_pdf_Cat1_0_exp1_combBckg_mMuMu,env_pdf_Cat1_0_exp1_bckg1S,env_pdf_Cat1_0_exp1_mean1S,env_pdf_Cat1_0_exp1_sigma1S,env_pdf_Cat1_0_exp1_bckg2S,env_pdf_Cat1_0_exp1_mean2S,env_pdf_Cat1_0_exp1_sigma2S,env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg2S,env_pdf_Cat1_0_exp1_bckg3S,env_pdf_Cat1_0_exp1_mean3S,env_pdf_Cat1_0_exp1_sigma3S,env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_bckg3S,env_pdf_Cat1_0_exp1_mBkg,env_pdf_Cat1_0_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_Cat1_0_exp1_mBkg,env_pdf_Cat1_0_exp1_peakTotal,env_pdf_Cat1_0_exp1_dcball,env_pdf_Cat1_0_exp1_bernstein_PeakingBackground)
+-----> <BEGIN> Extended Fit...
+-----> <END> Extended Fit...
+{
+    "HToUpsilonPhoton": {
+        "Cat0": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 231.99767361535527
+        }
+    },
+    "ZToUpsilonPhoton": {
+        "Cat0": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 453.90308512281496
+        },
+        "Cat1": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 199.9983307957376
+        }
+    }
+}
+[RESULT] Recommended options
+Cat 0
+	Bernstein - 1
+	Exponential - 1
+	Laurent - 1
+	PowerLaw - 1

@@ -1,0 +1,1856 @@
+Warning in <TClassTable::Add>: class RooPowerLaw already in TClassTable
+Warning in <TClassTable::Add>: class RooPowerLaw already in TClassTable
+Warning in <TClassTable::Add>: class RooPowerLawSum already in TClassTable
+Warning in <TClassTable::Add>: class WSTFileWrapper already in TClassTable
+Warning in <TClassTable::Add>: class RooExponentialSum already in TClassTable
+Warning in <TClassTable::Add>: class ProfileMultiplePdfs already in TClassTable
+Warning in <TClassTable::Add>: class PdfModelBuilder already in TClassTable
+-------> It a Z analysis!
+---> unblindReg_1: 70 - 80
+---> unblindReg_2: 100 - 120
+[INFO] got intL and sqrts 0x30bdb50, 0x3ff02d0
+[INFO] got intL and sqrts 0x30bdb50, 0x3ff02d0
+[INFO] Got mass from ws 0x393bc10
+RooAddPdf::ftest_pdf_0_13TeV_bern1_totalBckg[ ftest_pdf_0_13TeV_bern1_combFraction * ftest_pdf_0_13TeV_bern1_combTotal + [%] * ftest_pdf_0_13TeV_bern1_peakTotal ] = 0.16407
+----> Fitting...
+----> Fitted...
+[INFO]	 Bernstein 1 0 891.311 -1782.62 0
+RooAddPdf::ftest_pdf_0_13TeV_bern2_totalBckg[ ftest_pdf_0_13TeV_bern2_combFraction * ftest_pdf_0_13TeV_bern2_combTotal + [%] * ftest_pdf_0_13TeV_bern2_peakTotal ] = 0.144755
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.192188
+[INFO]	 Bernstein 2 891.311 890.461 1.70076 0.192188
+[INFO] Determining Envelope Functions for Family Bernstein, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 Bernstein 1 0 891.311 -1782.62 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  53.8458
+[INFO] p-value  =  0.989125
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  53.8458
+[INFO] p-value  =  0.989125
+-------> gofProb: 0.989125
+[INFO] Adding to Envelope env_pdf_0_13TeV_bern1_totalBckg 0.989125 2xNLL + c is 1803.62
+----> Fitting...
+----> Fitted...
+[INFO] 	 Bernstein 2 891.311 890.461 1.70076 0.192188
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 21 fitted parameters
+[INFO] Chi2 in Observed =  54.9119
+[INFO] p-value  =  0.982171
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 21 fitted parameters
+[INFO] Chi2 in Observed =  54.9119
+[INFO] p-value  =  0.982171
+-------> gofProb: 0.982171
+--------------------------
+RooAddPdf::ftest_pdf_0_13TeV_exp1_totalBckg[ ftest_pdf_0_13TeV_exp1_combFraction * ftest_pdf_0_13TeV_exp1_combTotal + [%] * ftest_pdf_0_13TeV_exp1_peakTotal ] = 0.123468
+----> Fitting...
+----> Fitted...
+[INFO]	 Exponential 1 0 890.702 -1781.4 0
+ERROR -- addExponential -- only odd number of params allowed
+--------------------------
+RooAddPdf::ftest_pdf_0_13TeV_exp3_totalBckg[ ftest_pdf_0_13TeV_exp3_combFraction * ftest_pdf_0_13TeV_exp3_combTotal + [%] * ftest_pdf_0_13TeV_exp3_peakTotal ] = 0.123464
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+Warning in <ROOT::Math::Fitter::CalculateHessErrors>: Error when calculating Hessian
+----> Fitted...
+[WARNING] Warning -- Fit status for ftest_pdf_0_13TeV_exp3_totalBckg at 300
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.998265
+[INFO]	 Exponential 3 890.702 890.7 0.0034729 0.998265
+[INFO] Determining Envelope Functions for Family Exponential, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+--------------------------
+----> Fitting...
+----> Fitted...
+[INFO] 	 Exponential 1 0 890.702 -1781.4 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  54.3246
+[INFO] p-value  =  0.987628
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  54.3246
+[INFO] p-value  =  0.987628
+-------> gofProb: 0.987628
+[INFO] Adding to Envelope env_pdf_0_13TeV_exp1_totalBckg 0.987628 2xNLL + c is 1802.4
+ERROR -- addExponential -- only odd number of params allowed
+--------------------------
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+Warning in <ROOT::Math::Fitter::CalculateHessErrors>: Error when calculating Hessian
+Warning in <ROOT::Math::Fitter::CalculateHessErrors>: Error when calculating Hessian
+[#0] ERROR:Fitting -- RooAbsPdf::fitTo(env_pdf_0_13TeV_exp3_totalBckg) ERROR: Cannot apply sum-of-weights correction to covariance matrix: correction matrix calculated with weight-squared is singular
+----> Fitted...
+[WARNING] Warning -- Fit status for env_pdf_0_13TeV_exp3_totalBckg at 604
+[INFO] 	 Exponential 3 890.702 895.966 0 1
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+---> getting GoodnessOfFit...
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  nan
+[INFO] p-value  =  nan
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+---> getting GoodnessOfFit...
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+ERROR evaluating range...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  nan
+[INFO] p-value  =  nan
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg2S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp3_normScale2S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3_normScale2S = 0.618164,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S[ list=(env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_fbckg3S) evaluation error, 
+ origin       : RooFormulaVar::env_pdf_0_13TeV_exp3_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp3normScale3S,env_pdf_0_13TeV_exp3_fbckg1S) formula="@0*@1" ]
+ message      : function value is NAN
+ server values: actualVars=(env_pdf_0_13TeV_exp3normScale3S = 0.501007,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S[ list=(env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg[ list=(1,env_pdf_0_13TeV_exp3_fbckg3S,env_pdf_0_13TeV_exp3_fbckg2S,env_pdf_0_13TeV_exp3_fbckg1S) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_fbckg3S = -nan,env_pdf_0_13TeV_exp3_fbckg2S = -nan,env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooRecursiveFraction::env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2[ list=(1,env_pdf_0_13TeV_exp3_f1) ]
+ message      : function value is NAN
+ server values: list=(1 = 1,env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan,env_pdf_0_13TeV_exp3_e2 = -nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_combBckg_mMuMu) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_combBckg_mMuMu[ env_pdf_0_13TeV_exp3_fbckg1S * env_pdf_0_13TeV_exp3_bckg1S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S * env_pdf_0_13TeV_exp3_bckg2S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S * env_pdf_0_13TeV_exp3_bckg3S + env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg * env_pdf_0_13TeV_exp3_mBkg ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_bckg1S = 0.0130743,env_pdf_0_13TeV_exp3_bckg2S = 0.0256054,env_pdf_0_13TeV_exp3_bckg3S = 6.52881e-08,env_pdf_0_13TeV_exp3_mBkg = 1), !coefficients=(env_pdf_0_13TeV_exp3_fbckg1S = -nan +/- 0.345821,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg2S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_bckg3S = -nan,env_pdf_0_13TeV_exp3_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp3_mBkg = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e1_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e1d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e1=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e1) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e1[ x=mHZ c=env_pdf_0_13TeV_exp3_p1 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p1=-nan +/- 0.226047
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_e2_Int[mHZ][ Int env_pdf_0_13TeV_exp3_e2d[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_e2=-nan, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_e2) evaluation error, 
+ origin       : RooExponential::env_pdf_0_13TeV_exp3_e2[ x=mHZ c=env_pdf_0_13TeV_exp3_p2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: x=mHZ=95, c=env_pdf_0_13TeV_exp3_p2=-nan +/- 0.295584
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3[ env_pdf_0_13TeV_exp3_f1 * env_pdf_0_13TeV_exp3_e1 + env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 * env_pdf_0_13TeV_exp3_e2 ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_e1 = -nan/-nan,env_pdf_0_13TeV_exp3_e2 = -nan/-nan), !coefficients=(env_pdf_0_13TeV_exp3_f1 = -nan +/- 0.307402,env_pdf_0_13TeV_exp3_recursive_fraction_env_pdf_0_13TeV_exp3_e2 = -nan)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_dcball_Int[mHZ]) evaluation error, 
+ origin       : RooRealIntegral::env_pdf_0_13TeV_exp3_dcball_Int[mHZ][ Int env_pdf_0_13TeV_exp3_dcballd[Ana](mHZ) ]
+ message      : function value is NAN
+ server values: !sumList=(), !intList=(), !anaList=(mHZ = 95), !jacList=(), !facList=(), !func=env_pdf_0_13TeV_exp3_dcball=0.122858, !sumCat=()
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_peakTotal) evaluation error, 
+ origin       : RooProdPdf::env_pdf_0_13TeV_exp3_peakTotal[ env_pdf_0_13TeV_exp3_dcball * env_pdf_0_13TeV_exp3_bernstein_PeakingBackground ]
+ message      : p.d.f value is Not-a-Number (nan), forcing value to zero
+ server values: !pdfs=(env_pdf_0_13TeV_exp3_dcball = 0.122858/nan,env_pdf_0_13TeV_exp3_bernstein_PeakingBackground = 1.11627/2.79068)
+[#0] ERROR:Eval -- RooAbsReal::logEvalError(env_pdf_0_13TeV_exp3_totalBckg) evaluation error, 
+ origin       : RooAddPdf::env_pdf_0_13TeV_exp3_totalBckg[ env_pdf_0_13TeV_exp3_combFraction * env_pdf_0_13TeV_exp3_combTotal + [%] * env_pdf_0_13TeV_exp3_peakTotal ]
+ message      : p.d.f value is Not-a-Number (-nan), forcing value to zero
+ server values: !refCoefNorm=(), !pdfs=(env_pdf_0_13TeV_exp3_combTotal = 0/1,env_pdf_0_13TeV_exp3_peakTotal = 0.137142/1), !coefficients=(env_pdf_0_13TeV_exp3_combFraction = -nan +/- 0.390431)
+-------> gofProb: nan
+RooAddPdf::ftest_pdf_0_13TeV_pow1_totalBckg[ ftest_pdf_0_13TeV_pow1_combFraction * ftest_pdf_0_13TeV_pow1_combTotal + [%] * ftest_pdf_0_13TeV_pow1_peakTotal ] = 0.123437
+----> Fitting...
+----> Fitted...
+[INFO]	 PowerLaw 1 0 892.419 -1784.84 0
+ERROR -- addPowerLaw -- only odd number of params allowed
+RooAddPdf::ftest_pdf_0_13TeV_pow3_totalBckg[ ftest_pdf_0_13TeV_pow3_combFraction * ftest_pdf_0_13TeV_pow3_combTotal + [%] * ftest_pdf_0_13TeV_pow3_peakTotal ] = 0.123436
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.189906
+[INFO]	 PowerLaw 3 892.419 890.757 3.32245 0.189906
+[INFO] Determining Envelope Functions for Family PowerLaw, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 PowerLaw 1 0 892.419 -1784.84 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  56.5512
+[INFO] p-value  =  0.978302
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  56.5512
+[INFO] p-value  =  0.978302
+-------> gofProb: 0.978302
+[INFO] Adding to Envelope env_pdf_0_13TeV_pow1_totalBckg 0.978302 2xNLL + c is 1805.84
+ERROR -- addPowerLaw -- only odd number of params allowed
+----> Fitting...
+----> Fitted...
+[INFO] 	 PowerLaw 3 892.419 890.757 3.32245 0.189906
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  55.2346
+[INFO] p-value  =  0.976331
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  55.2346
+[INFO] p-value  =  0.976331
+-------> gofProb: 0.976331
+RooAddPdf::ftest_pdf_0_13TeV_lau1_totalBckg[ ftest_pdf_0_13TeV_lau1_combFraction * ftest_pdf_0_13TeV_lau1_combTotal + [%] * ftest_pdf_0_13TeV_lau1_peakTotal ] = 0.123428
+----> Fitting...
+----> Fitted...
+[INFO]	 Laurent 1 0 894.327 -1788.65 0
+RooAddPdf::ftest_pdf_0_13TeV_lau2_totalBckg[ ftest_pdf_0_13TeV_lau2_combFraction * ftest_pdf_0_13TeV_lau2_combTotal + [%] * ftest_pdf_0_13TeV_lau2_peakTotal ] = 0.123428
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 0.00860398
+[INFO]	 Laurent 2 894.327 890.876 6.90324 0.00860398
+RooAddPdf::ftest_pdf_0_13TeV_lau3_totalBckg[ ftest_pdf_0_13TeV_lau3_combFraction * ftest_pdf_0_13TeV_lau3_combTotal + [%] * ftest_pdf_0_13TeV_lau3_peakTotal ] = 0.123428
+----> Fitting...
+----> Fitted...
+[INFO]  F-test Prob(chi2>chi2(data)) == 1
+[INFO]	 Laurent 3 890.876 894.327 0 1
+[INFO] Determining Envelope Functions for Family Laurent, cat 0
+[INFO] Upper end Threshold for highest order function 0.1
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 1 0 894.327 -1788.65 0
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  64.1299
+[INFO] p-value  =  0.902359
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 20 fitted parameters
+[INFO] Chi2 in Observed =  64.1299
+[INFO] p-value  =  0.902359
+-------> gofProb: 0.902359
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 2 894.327 890.876 6.90324 0.00860398
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 21 fitted parameters
+[INFO] Chi2 in Observed =  56.0763
+[INFO] p-value  =  0.97633
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 21 fitted parameters
+[INFO] Chi2 in Observed =  56.0763
+[INFO] p-value  =  0.97633
+-------> gofProb: 0.97633
+[INFO] Adding to Envelope env_pdf_0_13TeV_lau2_totalBckg 0.97633 2xNLL + c is 1803.75
+----> Fitting...
+----> Fitted...
+[INFO] 	 Laurent 3 890.876 894.327 0 1
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  65.0847
+[INFO] p-value  =  0.851567
+---> getting GoodnessOfFit...
+[INFO] Calculating GOF for pdf ext, using 22 fitted parameters
+[INFO] Chi2 in Observed =  65.0847
+[INFO] p-value  =  0.851567
+-------> gofProb: 0.851567
+------> analysisBranch: ZToUpsilonPhoton
+
+
+-----> nBackground:
+RooRealVar::CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_norm = 197  L(0 - 1000) 
+From analysis code: 197
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+----> Fitting...
+----> Fitted...
+// ------------------------------------------------------------------------- //
+[INFO] Created MultiPdf CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape, in Category 0 with a total of 4 pdfs
+RooArgList::store = (env_pdf_0_13TeV_bern1_totalBckg,env_pdf_0_13TeV_exp1_totalBckg,env_pdf_0_13TeV_pow1_totalBckg,env_pdf_0_13TeV_lau2_totalBckg)
+[INFO] Best Fit Pdf = 1, env_pdf_0_13TeV_exp1_totalBckg
+// ------------------------------------------------------------------------- //
+[INFO] Simple check of index 1
+[#0] ERROR:ObjectHandling -- RooWorkSpace::import(multipdf) ERROR importing object named pdfindex_UntaggedTag_0_13TeV_Cat1: another instance with same name already in the workspace and no conflict resolution protocol specified
+[#0] ERROR:ObjectHandling -- RooWorkspace::import(multipdf) ERROR dataset with name data_obs already exists in workspace, import aborted
+ ######################################################## 
+ --------> var->GetName(): IntLumi
+C  L(-INF - +INF) 
+
+36.86
+
+ --------> var->GetName(): SqrtS
+C  L(-INF - +INF) 
+
+13
+
+ --------> var->GetName(): mHZ
+ L(70 - 120) // [GeV]
+
+95
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_p0
+C  L(-5 - 5) 
+
+0.468385 +/- 0.100262
+
+ --------> var->GetName(): mMuMNU
+ L(8.5 - 11) // [GeV]
+
+9.75
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_mean_m
+C  L(-INF - +INF) 
+
+9.4603
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_mscale
+C  L(-INF - +INF) 
+
+1.00048
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0968335
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_fbckg1S
+C  L(0 - 1) 
+
+0.134956 +/- 0.0488091
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_normScale2S
+C  L(-INF - +INF) 
+
+0.618164
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1normScale3S
+C  L(-INF - +INF) 
+
+0.501007
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_bkg_a1
+C  L(-1 - 1) 
+
+-0.265655 +/- 0.204242
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_combFraction
+C  L(0 - 1) 
+
+0.639126 +/- 0.0600611
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_Mean
+C  L(70 - 120) 
+
+91.0221
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_Sigma
+C  L(0.5 - 4) 
+
+1.50585
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_alpha1
+C  L(0 - 10) 
+
+0.928015 +/- 0.329923
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_n1
+C  L(0.1 - 50) 
+
+3.17812
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_alpha2
+C  L(0 - 10) 
+
+1.22876
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_dcball_n2
+C  L(0.1 - 50) 
+
+2.71133
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_0_13TeV_bern1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.23254
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_p1
+C  L(-1 - 0) 
+
+-0.0297212 +/- 0.00691905
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_mean_m
+C  L(-INF - +INF) 
+
+9.4603
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_mscale
+C  L(-INF - +INF) 
+
+1.00048
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0968335
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_fbckg1S
+C  L(0 - 1) 
+
+0.136042 +/- 0.0494478
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_normScale2S
+C  L(-INF - +INF) 
+
+0.618164
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1normScale3S
+C  L(-INF - +INF) 
+
+0.501007
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_bkg_a1
+C  L(-1 - 1) 
+
+-0.271943 +/- 0.20627
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_combFraction
+C  L(0 - 1) 
+
+0.625934 +/- 0.0574619
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_Mean
+C  L(70 - 120) 
+
+91.0221
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_Sigma
+C  L(0.5 - 4) 
+
+1.50585
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_alpha1
+C  L(0 - 10) 
+
+0.933147 +/- 0.308997
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_n1
+C  L(0.1 - 50) 
+
+3.17812
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_alpha2
+C  L(0 - 10) 
+
+1.22876
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_dcball_n2
+C  L(0.1 - 50) 
+
+2.71133
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_0_13TeV_exp1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.23254
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_p1
+C  L(-9 - 1) 
+
+-2.83145 +/- 0.583059
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_mean_m
+C  L(-INF - +INF) 
+
+9.4603
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_mscale
+C  L(-INF - +INF) 
+
+1.00048
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0968335
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_fbckg1S
+C  L(0 - 1) 
+
+0.130574 +/- 0.0457501
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_normScale2S
+C  L(-INF - +INF) 
+
+0.618164
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1normScale3S
+C  L(-INF - +INF) 
+
+0.501007
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_bkg_a1
+C  L(-1 - 1) 
+
+-0.22998 +/- 0.191818
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_combFraction
+C  L(0 - 1) 
+
+0.678322 +/- 0.0445247
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_Mean
+C  L(70 - 120) 
+
+91.0221
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_Sigma
+C  L(0.5 - 4) 
+
+1.50585
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_alpha1
+C  L(0 - 10) 
+
+6.60963 +/- 1229.07
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_n1
+C  L(0.1 - 50) 
+
+3.17812
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_alpha2
+C  L(0 - 10) 
+
+1.22876
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_dcball_n2
+C  L(0.1 - 50) 
+
+2.71133
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_0_13TeV_pow1_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.23254
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_l1
+C  L(1e-06 - 0.999999) 
+
+1.62401e-06 +/- 0.000102488
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_h1
+C  L(1e-06 - 0.999999) 
+
+3.07487e-05 +/- 0.000493859
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_mean_m
+C  L(-INF - +INF) 
+
+9.4603
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_mscale
+C  L(-INF - +INF) 
+
+1.00048
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_sigmaUpsilon
+C  L(-INF - +INF) 
+
+0.0968335
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_fbckg1S
+C  L(0 - 1) 
+
+0.136335 +/- 0.0498763
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_shift2
+C  L(-INF - +INF) 
+
+0.56296
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_normScale2S
+C  L(-INF - +INF) 
+
+0.618164
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_shift3
+C  L(-INF - +INF) 
+
+0.8949
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2normScale3S
+C  L(-INF - +INF) 
+
+0.501007
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_bkg_a1
+C  L(-1 - 1) 
+
+-0.274302 +/- 0.207608
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_combFraction
+C  L(0 - 1) 
+
+0.617222 +/- 0.0564887
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_Mean
+C  L(70 - 120) 
+
+91.0221
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_Sigma
+C  L(0.5 - 4) 
+
+1.50585
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_alpha1
+C  L(0 - 10) 
+
+0.93124 +/- 0.289198
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_n1
+C  L(0.1 - 50) 
+
+3.17812
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_alpha2
+C  L(0 - 10) 
+
+1.22876
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_dcball_n2
+C  L(0.1 - 50) 
+
+2.71133
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_p0_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1
+
+ --------> var->GetName(): env_pdf_0_13TeV_lau2_p1_Bernstein_mMuMNU
+C  L(-INF - +INF) 
+
+1.23254
+
+ --------> var->GetName(): CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_norm
+ L(0 - 1000) 
+
+197
+
+ ######################################################## 
+
+RooWorkspace(multipdf)  contents
+
+variables
+---------
+(CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape_norm,IntLumi,SqrtS,env_pdf_0_13TeV_bern1_bkg_a1,env_pdf_0_13TeV_bern1_combFraction,env_pdf_0_13TeV_bern1_dcball_Mean,env_pdf_0_13TeV_bern1_dcball_Sigma,env_pdf_0_13TeV_bern1_dcball_alpha1,env_pdf_0_13TeV_bern1_dcball_alpha2,env_pdf_0_13TeV_bern1_dcball_n1,env_pdf_0_13TeV_bern1_dcball_n2,env_pdf_0_13TeV_bern1_fbckg1S,env_pdf_0_13TeV_bern1_mean_m,env_pdf_0_13TeV_bern1_mscale,env_pdf_0_13TeV_bern1_normScale2S,env_pdf_0_13TeV_bern1_p0,env_pdf_0_13TeV_bern1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_bern1_p1_Bernstein_mMuMNU,env_pdf_0_13TeV_bern1_shift2,env_pdf_0_13TeV_bern1_shift3,env_pdf_0_13TeV_bern1_sigmaUpsilon,env_pdf_0_13TeV_bern1normScale3S,env_pdf_0_13TeV_exp1_bkg_a1,env_pdf_0_13TeV_exp1_combFraction,env_pdf_0_13TeV_exp1_dcball_Mean,env_pdf_0_13TeV_exp1_dcball_Sigma,env_pdf_0_13TeV_exp1_dcball_alpha1,env_pdf_0_13TeV_exp1_dcball_alpha2,env_pdf_0_13TeV_exp1_dcball_n1,env_pdf_0_13TeV_exp1_dcball_n2,env_pdf_0_13TeV_exp1_fbckg1S,env_pdf_0_13TeV_exp1_mean_m,env_pdf_0_13TeV_exp1_mscale,env_pdf_0_13TeV_exp1_normScale2S,env_pdf_0_13TeV_exp1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_exp1_p1,env_pdf_0_13TeV_exp1_p1_Bernstein_mMuMNU,env_pdf_0_13TeV_exp1_shift2,env_pdf_0_13TeV_exp1_shift3,env_pdf_0_13TeV_exp1_sigmaUpsilon,env_pdf_0_13TeV_exp1normScale3S,env_pdf_0_13TeV_lau2_bkg_a1,env_pdf_0_13TeV_lau2_combFraction,env_pdf_0_13TeV_lau2_dcball_Mean,env_pdf_0_13TeV_lau2_dcball_Sigma,env_pdf_0_13TeV_lau2_dcball_alpha1,env_pdf_0_13TeV_lau2_dcball_alpha2,env_pdf_0_13TeV_lau2_dcball_n1,env_pdf_0_13TeV_lau2_dcball_n2,env_pdf_0_13TeV_lau2_fbckg1S,env_pdf_0_13TeV_lau2_h1,env_pdf_0_13TeV_lau2_l1,env_pdf_0_13TeV_lau2_mean_m,env_pdf_0_13TeV_lau2_mscale,env_pdf_0_13TeV_lau2_normScale2S,env_pdf_0_13TeV_lau2_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_lau2_p1_Bernstein_mMuMNU,env_pdf_0_13TeV_lau2_shift2,env_pdf_0_13TeV_lau2_shift3,env_pdf_0_13TeV_lau2_sigmaUpsilon,env_pdf_0_13TeV_lau2normScale3S,env_pdf_0_13TeV_pow1_bkg_a1,env_pdf_0_13TeV_pow1_combFraction,env_pdf_0_13TeV_pow1_dcball_Mean,env_pdf_0_13TeV_pow1_dcball_Sigma,env_pdf_0_13TeV_pow1_dcball_alpha1,env_pdf_0_13TeV_pow1_dcball_alpha2,env_pdf_0_13TeV_pow1_dcball_n1,env_pdf_0_13TeV_pow1_dcball_n2,env_pdf_0_13TeV_pow1_fbckg1S,env_pdf_0_13TeV_pow1_mean_m,env_pdf_0_13TeV_pow1_mscale,env_pdf_0_13TeV_pow1_normScale2S,env_pdf_0_13TeV_pow1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_pow1_p1,env_pdf_0_13TeV_pow1_p1_Bernstein_mMuMNU,env_pdf_0_13TeV_pow1_shift2,env_pdf_0_13TeV_pow1_shift3,env_pdf_0_13TeV_pow1_sigmaUpsilon,env_pdf_0_13TeV_pow1normScale3S,mHZ,mMuMNU,pdfindex_UntaggedTag_0_13TeV_Cat1)
+
+p.d.f.s
+-------
+RooMultiPdf::CMS_HZToUpsilonPhoton_UntaggedTag_0_13TeV_bkgshape[ _pdfs=(env_pdf_0_13TeV_bern1_totalBckg,env_pdf_0_13TeV_exp1_totalBckg,env_pdf_0_13TeV_pow1_totalBckg,env_pdf_0_13TeV_lau2_totalBckg) _index=pdfindex_UntaggedTag_0_13TeV_Cat1 ] = 0.0788499
+  RooAddPdf::env_pdf_0_13TeV_bern1_totalBckg[ env_pdf_0_13TeV_bern1_combFraction * env_pdf_0_13TeV_bern1_combTotal + [%] * env_pdf_0_13TeV_bern1_peakTotal ] = 0.338969
+    RooProdPdf::env_pdf_0_13TeV_bern1_combTotal[ env_pdf_0_13TeV_bern1 * env_pdf_0_13TeV_bern1_combBckg_mMuMu ] = 0.452928
+      RooBernsteinFast<1>::env_pdf_0_13TeV_bern1[ x=mHZ coefList=(env_pdf_0_13TeV_bern1_p0_sq) ] = 0.609692
+        RooFormulaVar::env_pdf_0_13TeV_bern1_p0_sq[ actualVars=(env_pdf_0_13TeV_bern1_p0) formula="@0*@0" ] = 0.219384
+      RooAddPdf::env_pdf_0_13TeV_bern1_combBckg_mMuMu[ env_pdf_0_13TeV_bern1_fbckg1S * env_pdf_0_13TeV_bern1_bckg1S + env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_bckg2S * env_pdf_0_13TeV_bern1_bckg2S + env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_bckg3S * env_pdf_0_13TeV_bern1_bckg3S + env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_mBkg * env_pdf_0_13TeV_bern1_mBkg ] = 0.742881
+        RooGaussian::env_pdf_0_13TeV_bern1_bckg1S[ x=mMuMNU mean=env_pdf_0_13TeV_bern1_mean1S sigma=env_pdf_0_13TeV_bern1_sigma1S ] = 0.0130743
+          RooFormulaVar::env_pdf_0_13TeV_bern1_mean1S[ actualVars=(env_pdf_0_13TeV_bern1_mean_m,env_pdf_0_13TeV_bern1_mscale) formula="@0*@1" ] = 9.46481
+          RooFormulaVar::env_pdf_0_13TeV_bern1_sigma1S[ actualVars=(env_pdf_0_13TeV_bern1_sigmaUpsilon) formula="@0" ] = 0.0968335
+        RooGaussian::env_pdf_0_13TeV_bern1_bckg2S[ x=mMuMNU mean=env_pdf_0_13TeV_bern1_mean2S sigma=env_pdf_0_13TeV_bern1_sigma2S ] = 0.0256054
+          RooFormulaVar::env_pdf_0_13TeV_bern1_mean2S[ actualVars=(env_pdf_0_13TeV_bern1_mean_m,env_pdf_0_13TeV_bern1_mscale,env_pdf_0_13TeV_bern1_shift2) formula="@0*@1+@2" ] = 10.0278
+          RooFormulaVar::env_pdf_0_13TeV_bern1_sigma2S[ actualVars=(env_pdf_0_13TeV_bern1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.102596
+        RooRecursiveFraction::env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_bckg2S[ list=(env_pdf_0_13TeV_bern1_fbckg2S,env_pdf_0_13TeV_bern1_fbckg1S) ] = 0.0721662
+          RooFormulaVar::env_pdf_0_13TeV_bern1_fbckg2S[ actualVars=(env_pdf_0_13TeV_bern1_normScale2S,env_pdf_0_13TeV_bern1_fbckg1S) formula="@0*@1" ] = 0.0834249
+        RooGaussian::env_pdf_0_13TeV_bern1_bckg3S[ x=mMuMNU mean=env_pdf_0_13TeV_bern1_mean3S sigma=env_pdf_0_13TeV_bern1_sigma3S ] = 6.52881e-08
+          RooFormulaVar::env_pdf_0_13TeV_bern1_mean3S[ actualVars=(env_pdf_0_13TeV_bern1_mean_m,env_pdf_0_13TeV_bern1_mscale,env_pdf_0_13TeV_bern1_shift3) formula="@0*@1+@2" ] = 10.3597
+          RooFormulaVar::env_pdf_0_13TeV_bern1_sigma3S[ actualVars=(env_pdf_0_13TeV_bern1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.105993
+        RooRecursiveFraction::env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_bckg3S[ list=(env_pdf_0_13TeV_bern1_fbckg3S,env_pdf_0_13TeV_bern1_fbckg2S,env_pdf_0_13TeV_bern1_fbckg1S) ] = 0.0536096
+          RooFormulaVar::env_pdf_0_13TeV_bern1_fbckg3S[ actualVars=(env_pdf_0_13TeV_bern1normScale3S,env_pdf_0_13TeV_bern1_fbckg1S) formula="@0*@1" ] = 0.0676139
+          RooFormulaVar::env_pdf_0_13TeV_bern1_fbckg2S[ actualVars=(env_pdf_0_13TeV_bern1_normScale2S,env_pdf_0_13TeV_bern1_fbckg1S) formula="@0*@1" ] = 0.0834249
+        RooChebychev::env_pdf_0_13TeV_bern1_mBkg[ x=mMuMNU coefList=(env_pdf_0_13TeV_bern1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_0_13TeV_bern1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_bern1_mBkg[ list=(1,env_pdf_0_13TeV_bern1_fbckg3S,env_pdf_0_13TeV_bern1_fbckg2S,env_pdf_0_13TeV_bern1_fbckg1S) ] = 0.739268
+          RooFormulaVar::env_pdf_0_13TeV_bern1_fbckg3S[ actualVars=(env_pdf_0_13TeV_bern1normScale3S,env_pdf_0_13TeV_bern1_fbckg1S) formula="@0*@1" ] = 0.0676139
+          RooFormulaVar::env_pdf_0_13TeV_bern1_fbckg2S[ actualVars=(env_pdf_0_13TeV_bern1_normScale2S,env_pdf_0_13TeV_bern1_fbckg1S) formula="@0*@1" ] = 0.0834249
+    RooProdPdf::env_pdf_0_13TeV_bern1_peakTotal[ env_pdf_0_13TeV_bern1_dcball * env_pdf_0_13TeV_bern1_bernstein_PeakingBackground ] = 0.137142
+      RooDoubleCB::env_pdf_0_13TeV_bern1_dcball[ x=mHZ xp=NULL mean=env_pdf_0_13TeV_bern1_dcball_Mean width=env_pdf_0_13TeV_bern1_dcball_Sigma alpha1=env_pdf_0_13TeV_bern1_dcball_alpha1 n1=env_pdf_0_13TeV_bern1_dcball_n1 alpha2=env_pdf_0_13TeV_bern1_dcball_alpha2 n2=env_pdf_0_13TeV_bern1_dcball_n2 ] = 0.122858
+      RooBernstein::env_pdf_0_13TeV_bern1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_0_13TeV_bern1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_bern1_p1_Bernstein_mMuMNU) ] = 1.11627
+  RooAddPdf::env_pdf_0_13TeV_exp1_totalBckg[ env_pdf_0_13TeV_exp1_combFraction * env_pdf_0_13TeV_exp1_combTotal + [%] * env_pdf_0_13TeV_exp1_peakTotal ] = 0.0788499
+    RooProdPdf::env_pdf_0_13TeV_exp1_combTotal[ env_pdf_0_13TeV_exp1 * env_pdf_0_13TeV_exp1_combBckg_mMuMu ] = 0.0440137
+      RooAddPdf::env_pdf_0_13TeV_exp1[ env_pdf_0_13TeV_exp1_recursive_fraction_env_pdf_0_13TeV_exp1_e1 * env_pdf_0_13TeV_exp1_e1 ] = 0.059397
+        RooExponential::env_pdf_0_13TeV_exp1_e1[ x=mHZ c=env_pdf_0_13TeV_exp1_p1 ] = 0.059397
+        RooRecursiveFraction::env_pdf_0_13TeV_exp1_recursive_fraction_env_pdf_0_13TeV_exp1_e1[ list=(1) ] = 1
+      RooAddPdf::env_pdf_0_13TeV_exp1_combBckg_mMuMu[ env_pdf_0_13TeV_exp1_fbckg1S * env_pdf_0_13TeV_exp1_bckg1S + env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg2S * env_pdf_0_13TeV_exp1_bckg2S + env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg3S * env_pdf_0_13TeV_exp1_bckg3S + env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_mBkg * env_pdf_0_13TeV_exp1_mBkg ] = 0.741009
+        RooGaussian::env_pdf_0_13TeV_exp1_bckg1S[ x=mMuMNU mean=env_pdf_0_13TeV_exp1_mean1S sigma=env_pdf_0_13TeV_exp1_sigma1S ] = 0.0130743
+          RooFormulaVar::env_pdf_0_13TeV_exp1_mean1S[ actualVars=(env_pdf_0_13TeV_exp1_mean_m,env_pdf_0_13TeV_exp1_mscale) formula="@0*@1" ] = 9.46481
+          RooFormulaVar::env_pdf_0_13TeV_exp1_sigma1S[ actualVars=(env_pdf_0_13TeV_exp1_sigmaUpsilon) formula="@0" ] = 0.0968335
+        RooGaussian::env_pdf_0_13TeV_exp1_bckg2S[ x=mMuMNU mean=env_pdf_0_13TeV_exp1_mean2S sigma=env_pdf_0_13TeV_exp1_sigma2S ] = 0.0256054
+          RooFormulaVar::env_pdf_0_13TeV_exp1_mean2S[ actualVars=(env_pdf_0_13TeV_exp1_mean_m,env_pdf_0_13TeV_exp1_mscale,env_pdf_0_13TeV_exp1_shift2) formula="@0*@1+@2" ] = 10.0278
+          RooFormulaVar::env_pdf_0_13TeV_exp1_sigma2S[ actualVars=(env_pdf_0_13TeV_exp1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.102596
+        RooRecursiveFraction::env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg2S[ list=(env_pdf_0_13TeV_exp1_fbckg2S,env_pdf_0_13TeV_exp1_fbckg1S) ] = 0.0726554
+          RooFormulaVar::env_pdf_0_13TeV_exp1_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp1_normScale2S,env_pdf_0_13TeV_exp1_fbckg1S) formula="@0*@1" ] = 0.084096
+        RooGaussian::env_pdf_0_13TeV_exp1_bckg3S[ x=mMuMNU mean=env_pdf_0_13TeV_exp1_mean3S sigma=env_pdf_0_13TeV_exp1_sigma3S ] = 6.52881e-08
+          RooFormulaVar::env_pdf_0_13TeV_exp1_mean3S[ actualVars=(env_pdf_0_13TeV_exp1_mean_m,env_pdf_0_13TeV_exp1_mscale,env_pdf_0_13TeV_exp1_shift3) formula="@0*@1+@2" ] = 10.3597
+          RooFormulaVar::env_pdf_0_13TeV_exp1_sigma3S[ actualVars=(env_pdf_0_13TeV_exp1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.105993
+        RooRecursiveFraction::env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg3S[ list=(env_pdf_0_13TeV_exp1_fbckg3S,env_pdf_0_13TeV_exp1_fbckg2S,env_pdf_0_13TeV_exp1_fbckg1S) ] = 0.0539335
+          RooFormulaVar::env_pdf_0_13TeV_exp1_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp1normScale3S,env_pdf_0_13TeV_exp1_fbckg1S) formula="@0*@1" ] = 0.0681578
+          RooFormulaVar::env_pdf_0_13TeV_exp1_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp1_normScale2S,env_pdf_0_13TeV_exp1_fbckg1S) formula="@0*@1" ] = 0.084096
+        RooChebychev::env_pdf_0_13TeV_exp1_mBkg[ x=mMuMNU coefList=(env_pdf_0_13TeV_exp1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_mBkg[ list=(1,env_pdf_0_13TeV_exp1_fbckg3S,env_pdf_0_13TeV_exp1_fbckg2S,env_pdf_0_13TeV_exp1_fbckg1S) ] = 0.73737
+          RooFormulaVar::env_pdf_0_13TeV_exp1_fbckg3S[ actualVars=(env_pdf_0_13TeV_exp1normScale3S,env_pdf_0_13TeV_exp1_fbckg1S) formula="@0*@1" ] = 0.0681578
+          RooFormulaVar::env_pdf_0_13TeV_exp1_fbckg2S[ actualVars=(env_pdf_0_13TeV_exp1_normScale2S,env_pdf_0_13TeV_exp1_fbckg1S) formula="@0*@1" ] = 0.084096
+    RooProdPdf::env_pdf_0_13TeV_exp1_peakTotal[ env_pdf_0_13TeV_exp1_dcball * env_pdf_0_13TeV_exp1_bernstein_PeakingBackground ] = 0.137142
+      RooDoubleCB::env_pdf_0_13TeV_exp1_dcball[ x=mHZ xp=NULL mean=env_pdf_0_13TeV_exp1_dcball_Mean width=env_pdf_0_13TeV_exp1_dcball_Sigma alpha1=env_pdf_0_13TeV_exp1_dcball_alpha1 n1=env_pdf_0_13TeV_exp1_dcball_n1 alpha2=env_pdf_0_13TeV_exp1_dcball_alpha2 n2=env_pdf_0_13TeV_exp1_dcball_n2 ] = 0.122858
+      RooBernstein::env_pdf_0_13TeV_exp1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_0_13TeV_exp1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_exp1_p1_Bernstein_mMuMNU) ] = 1.11627
+  RooAddPdf::env_pdf_0_13TeV_pow1_totalBckg[ env_pdf_0_13TeV_pow1_combFraction * env_pdf_0_13TeV_pow1_combTotal + [%] * env_pdf_0_13TeV_pow1_peakTotal ] = 0.0441168
+    RooProdPdf::env_pdf_0_13TeV_pow1_combTotal[ env_pdf_0_13TeV_pow1 * env_pdf_0_13TeV_pow1_combBckg_mMuMu ] = 1.88586e-06
+      RooAddPdf::env_pdf_0_13TeV_pow1[ env_pdf_0_13TeV_pow1_recursive_fraction_env_pdf_0_13TeV_pow1_e1 * env_pdf_0_13TeV_pow1_e1 ] = 2.51291e-06
+        RooPower::env_pdf_0_13TeV_pow1_e1[ x=mHZ c=env_pdf_0_13TeV_pow1_p1 ] = 2.51291e-06
+        RooRecursiveFraction::env_pdf_0_13TeV_pow1_recursive_fraction_env_pdf_0_13TeV_pow1_e1[ list=(1) ] = 1
+      RooAddPdf::env_pdf_0_13TeV_pow1_combBckg_mMuMu[ env_pdf_0_13TeV_pow1_fbckg1S * env_pdf_0_13TeV_pow1_bckg1S + env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_bckg2S * env_pdf_0_13TeV_pow1_bckg2S + env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_bckg3S * env_pdf_0_13TeV_pow1_bckg3S + env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_mBkg * env_pdf_0_13TeV_pow1_mBkg ] = 0.750467
+        RooGaussian::env_pdf_0_13TeV_pow1_bckg1S[ x=mMuMNU mean=env_pdf_0_13TeV_pow1_mean1S sigma=env_pdf_0_13TeV_pow1_sigma1S ] = 0.0130743
+          RooFormulaVar::env_pdf_0_13TeV_pow1_mean1S[ actualVars=(env_pdf_0_13TeV_pow1_mean_m,env_pdf_0_13TeV_pow1_mscale) formula="@0*@1" ] = 9.46481
+          RooFormulaVar::env_pdf_0_13TeV_pow1_sigma1S[ actualVars=(env_pdf_0_13TeV_pow1_sigmaUpsilon) formula="@0" ] = 0.0968335
+        RooGaussian::env_pdf_0_13TeV_pow1_bckg2S[ x=mMuMNU mean=env_pdf_0_13TeV_pow1_mean2S sigma=env_pdf_0_13TeV_pow1_sigma2S ] = 0.0256054
+          RooFormulaVar::env_pdf_0_13TeV_pow1_mean2S[ actualVars=(env_pdf_0_13TeV_pow1_mean_m,env_pdf_0_13TeV_pow1_mscale,env_pdf_0_13TeV_pow1_shift2) formula="@0*@1+@2" ] = 10.0278
+          RooFormulaVar::env_pdf_0_13TeV_pow1_sigma2S[ actualVars=(env_pdf_0_13TeV_pow1_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.102596
+        RooRecursiveFraction::env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_bckg2S[ list=(env_pdf_0_13TeV_pow1_fbckg2S,env_pdf_0_13TeV_pow1_fbckg1S) ] = 0.0701767
+          RooFormulaVar::env_pdf_0_13TeV_pow1_fbckg2S[ actualVars=(env_pdf_0_13TeV_pow1_normScale2S,env_pdf_0_13TeV_pow1_fbckg1S) formula="@0*@1" ] = 0.0807162
+        RooGaussian::env_pdf_0_13TeV_pow1_bckg3S[ x=mMuMNU mean=env_pdf_0_13TeV_pow1_mean3S sigma=env_pdf_0_13TeV_pow1_sigma3S ] = 6.52881e-08
+          RooFormulaVar::env_pdf_0_13TeV_pow1_mean3S[ actualVars=(env_pdf_0_13TeV_pow1_mean_m,env_pdf_0_13TeV_pow1_mscale,env_pdf_0_13TeV_pow1_shift3) formula="@0*@1+@2" ] = 10.3597
+          RooFormulaVar::env_pdf_0_13TeV_pow1_sigma3S[ actualVars=(env_pdf_0_13TeV_pow1_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.105993
+        RooRecursiveFraction::env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_bckg3S[ list=(env_pdf_0_13TeV_pow1_fbckg3S,env_pdf_0_13TeV_pow1_fbckg2S,env_pdf_0_13TeV_pow1_fbckg1S) ] = 0.0522857
+          RooFormulaVar::env_pdf_0_13TeV_pow1_fbckg3S[ actualVars=(env_pdf_0_13TeV_pow1normScale3S,env_pdf_0_13TeV_pow1_fbckg1S) formula="@0*@1" ] = 0.0654186
+          RooFormulaVar::env_pdf_0_13TeV_pow1_fbckg2S[ actualVars=(env_pdf_0_13TeV_pow1_normScale2S,env_pdf_0_13TeV_pow1_fbckg1S) formula="@0*@1" ] = 0.0807162
+        RooChebychev::env_pdf_0_13TeV_pow1_mBkg[ x=mMuMNU coefList=(env_pdf_0_13TeV_pow1_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_0_13TeV_pow1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_pow1_mBkg[ list=(1,env_pdf_0_13TeV_pow1_fbckg3S,env_pdf_0_13TeV_pow1_fbckg2S,env_pdf_0_13TeV_pow1_fbckg1S) ] = 0.746963
+          RooFormulaVar::env_pdf_0_13TeV_pow1_fbckg3S[ actualVars=(env_pdf_0_13TeV_pow1normScale3S,env_pdf_0_13TeV_pow1_fbckg1S) formula="@0*@1" ] = 0.0654186
+          RooFormulaVar::env_pdf_0_13TeV_pow1_fbckg2S[ actualVars=(env_pdf_0_13TeV_pow1_normScale2S,env_pdf_0_13TeV_pow1_fbckg1S) formula="@0*@1" ] = 0.0807162
+    RooProdPdf::env_pdf_0_13TeV_pow1_peakTotal[ env_pdf_0_13TeV_pow1_dcball * env_pdf_0_13TeV_pow1_bernstein_PeakingBackground ] = 0.137142
+      RooDoubleCB::env_pdf_0_13TeV_pow1_dcball[ x=mHZ xp=NULL mean=env_pdf_0_13TeV_pow1_dcball_Mean width=env_pdf_0_13TeV_pow1_dcball_Sigma alpha1=env_pdf_0_13TeV_pow1_dcball_alpha1 n1=env_pdf_0_13TeV_pow1_dcball_n1 alpha2=env_pdf_0_13TeV_pow1_dcball_alpha2 n2=env_pdf_0_13TeV_pow1_dcball_n2 ] = 0.122858
+      RooBernstein::env_pdf_0_13TeV_pow1_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_0_13TeV_pow1_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_pow1_p1_Bernstein_mMuMNU) ] = 1.11627
+  RooAddPdf::env_pdf_0_13TeV_lau2_totalBckg[ env_pdf_0_13TeV_lau2_combFraction * env_pdf_0_13TeV_lau2_combTotal + [%] * env_pdf_0_13TeV_lau2_peakTotal ] = 0.0524955
+    RooProdPdf::env_pdf_0_13TeV_lau2_combTotal[ env_pdf_0_13TeV_lau2 * env_pdf_0_13TeV_lau2_combBckg_mMuMu ] = 8.63658e-07
+      RooAddPdf::env_pdf_0_13TeV_lau2[ env_pdf_0_13TeV_lau2_l1 * env_pdf_0_13TeV_lau2_pow0 + env_pdf_0_13TeV_lau2_recursive_fraction_env_pdf_0_13TeV_lau2_powl1 * env_pdf_0_13TeV_lau2_powl1 + env_pdf_0_13TeV_lau2_recursive_fraction_env_pdf_0_13TeV_lau2_powh1 * env_pdf_0_13TeV_lau2_powh1 ] = 1.16631e-06
+        RooPower::env_pdf_0_13TeV_lau2_pow0[ x=mHZ c=-4 ] = 1.22774e-08
+        RooPower::env_pdf_0_13TeV_lau2_powl1[ x=mHZ c=-5 ] = 1.29236e-10
+        RooRecursiveFraction::env_pdf_0_13TeV_lau2_recursive_fraction_env_pdf_0_13TeV_lau2_powl1[ list=(env_pdf_0_13TeV_lau2_h1,env_pdf_0_13TeV_lau2_l1) ] = 3.07487e-05
+        RooPower::env_pdf_0_13TeV_lau2_powh1[ x=mHZ c=-3 ] = 1.16635e-06
+        RooRecursiveFraction::env_pdf_0_13TeV_lau2_recursive_fraction_env_pdf_0_13TeV_lau2_powh1[ list=(1,env_pdf_0_13TeV_lau2_h1,env_pdf_0_13TeV_lau2_l1) ] = 0.999968
+      RooAddPdf::env_pdf_0_13TeV_lau2_combBckg_mMuMu[ env_pdf_0_13TeV_lau2_fbckg1S * env_pdf_0_13TeV_lau2_bckg1S + env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_bckg2S * env_pdf_0_13TeV_lau2_bckg2S + env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_bckg3S * env_pdf_0_13TeV_lau2_bckg3S + env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_mBkg * env_pdf_0_13TeV_lau2_mBkg ] = 0.740503
+        RooGaussian::env_pdf_0_13TeV_lau2_bckg1S[ x=mMuMNU mean=env_pdf_0_13TeV_lau2_mean1S sigma=env_pdf_0_13TeV_lau2_sigma1S ] = 0.0130743
+          RooFormulaVar::env_pdf_0_13TeV_lau2_mean1S[ actualVars=(env_pdf_0_13TeV_lau2_mean_m,env_pdf_0_13TeV_lau2_mscale) formula="@0*@1" ] = 9.46481
+          RooFormulaVar::env_pdf_0_13TeV_lau2_sigma1S[ actualVars=(env_pdf_0_13TeV_lau2_sigmaUpsilon) formula="@0" ] = 0.0968335
+        RooGaussian::env_pdf_0_13TeV_lau2_bckg2S[ x=mMuMNU mean=env_pdf_0_13TeV_lau2_mean2S sigma=env_pdf_0_13TeV_lau2_sigma2S ] = 0.0256054
+          RooFormulaVar::env_pdf_0_13TeV_lau2_mean2S[ actualVars=(env_pdf_0_13TeV_lau2_mean_m,env_pdf_0_13TeV_lau2_mscale,env_pdf_0_13TeV_lau2_shift2) formula="@0*@1+@2" ] = 10.0278
+          RooFormulaVar::env_pdf_0_13TeV_lau2_sigma2S[ actualVars=(env_pdf_0_13TeV_lau2_sigmaUpsilon,1.05951) formula="@0*@1" ] = 0.102596
+        RooRecursiveFraction::env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_bckg2S[ list=(env_pdf_0_13TeV_lau2_fbckg2S,env_pdf_0_13TeV_lau2_fbckg1S) ] = 0.0727875
+          RooFormulaVar::env_pdf_0_13TeV_lau2_fbckg2S[ actualVars=(env_pdf_0_13TeV_lau2_normScale2S,env_pdf_0_13TeV_lau2_fbckg1S) formula="@0*@1" ] = 0.0842775
+        RooGaussian::env_pdf_0_13TeV_lau2_bckg3S[ x=mMuMNU mean=env_pdf_0_13TeV_lau2_mean3S sigma=env_pdf_0_13TeV_lau2_sigma3S ] = 6.52881e-08
+          RooFormulaVar::env_pdf_0_13TeV_lau2_mean3S[ actualVars=(env_pdf_0_13TeV_lau2_mean_m,env_pdf_0_13TeV_lau2_mscale,env_pdf_0_13TeV_lau2_shift3) formula="@0*@1+@2" ] = 10.3597
+          RooFormulaVar::env_pdf_0_13TeV_lau2_sigma3S[ actualVars=(env_pdf_0_13TeV_lau2_sigmaUpsilon,1.0946) formula="@0*@1" ] = 0.105993
+        RooRecursiveFraction::env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_bckg3S[ list=(env_pdf_0_13TeV_lau2_fbckg3S,env_pdf_0_13TeV_lau2_fbckg2S,env_pdf_0_13TeV_lau2_fbckg1S) ] = 0.0540208
+          RooFormulaVar::env_pdf_0_13TeV_lau2_fbckg3S[ actualVars=(env_pdf_0_13TeV_lau2normScale3S,env_pdf_0_13TeV_lau2_fbckg1S) formula="@0*@1" ] = 0.0683049
+          RooFormulaVar::env_pdf_0_13TeV_lau2_fbckg2S[ actualVars=(env_pdf_0_13TeV_lau2_normScale2S,env_pdf_0_13TeV_lau2_fbckg1S) formula="@0*@1" ] = 0.0842775
+        RooChebychev::env_pdf_0_13TeV_lau2_mBkg[ x=mMuMNU coefList=(env_pdf_0_13TeV_lau2_bkg_a1) ] = 1
+        RooRecursiveFraction::env_pdf_0_13TeV_lau2_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_lau2_mBkg[ list=(1,env_pdf_0_13TeV_lau2_fbckg3S,env_pdf_0_13TeV_lau2_fbckg2S,env_pdf_0_13TeV_lau2_fbckg1S) ] = 0.736857
+          RooFormulaVar::env_pdf_0_13TeV_lau2_fbckg3S[ actualVars=(env_pdf_0_13TeV_lau2normScale3S,env_pdf_0_13TeV_lau2_fbckg1S) formula="@0*@1" ] = 0.0683049
+          RooFormulaVar::env_pdf_0_13TeV_lau2_fbckg2S[ actualVars=(env_pdf_0_13TeV_lau2_normScale2S,env_pdf_0_13TeV_lau2_fbckg1S) formula="@0*@1" ] = 0.0842775
+    RooProdPdf::env_pdf_0_13TeV_lau2_peakTotal[ env_pdf_0_13TeV_lau2_dcball * env_pdf_0_13TeV_lau2_bernstein_PeakingBackground ] = 0.137142
+      RooDoubleCB::env_pdf_0_13TeV_lau2_dcball[ x=mHZ xp=NULL mean=env_pdf_0_13TeV_lau2_dcball_Mean width=env_pdf_0_13TeV_lau2_dcball_Sigma alpha1=env_pdf_0_13TeV_lau2_dcball_alpha1 n1=env_pdf_0_13TeV_lau2_dcball_n1 alpha2=env_pdf_0_13TeV_lau2_dcball_alpha2 n2=env_pdf_0_13TeV_lau2_dcball_n2 ] = 0.122858
+      RooBernstein::env_pdf_0_13TeV_lau2_bernstein_PeakingBackground[ x=mMuMNU coefList=(env_pdf_0_13TeV_lau2_p0_Bernstein_mMuMNU,env_pdf_0_13TeV_lau2_p1_Bernstein_mMuMNU) ] = 1.11627
+
+datasets
+--------
+RooDataHist::roohist_data_mass_UntaggedTag_0(mHZ)
+RooDataSet::data_obs(mHZ,mMuMNU)
+
+------> analysisBranch: ZToUpsilonPhoton
+##### unblindReg_1: 70 - 80
+##### unblindReg_2: 100 - 120
+-----------> pdfName: env_pdf_0_13TeV_bern1_totalBckg
+-----------> pdfFancyName+ext: Bernstein 1st
+-----------> pdfName: env_pdf_0_13TeV_exp1_totalBckg
+-----------> pdfFancyName+ext: Exponencial 1st (Best Fit Pdf)
+-----------> pdfName: env_pdf_0_13TeV_pow1_totalBckg
+-----------> pdfFancyName+ext: Power Law 1st
+-----------> pdfName: env_pdf_0_13TeV_lau2_totalBckg
+-----------> pdfFancyName+ext: Laurent 2nd
+------> analysisBranch: ZToUpsilonPhoton
+pdfs->getCurrentPdf()->GetName(): env_pdf_0_13TeV_exp1_totalBckg
+envPrefix: env_pdf_0_13TeV_exp1
+RooArgSet::env_pdf_0_13TeV_exp1_totalBckg_components = (env_pdf_0_13TeV_exp1_totalBckg,env_pdf_0_13TeV_exp1_combTotal,env_pdf_0_13TeV_exp1,env_pdf_0_13TeV_exp1_e1,env_pdf_0_13TeV_exp1_recursive_fraction_env_pdf_0_13TeV_exp1_e1,env_pdf_0_13TeV_exp1_combBckg_mMuMu,env_pdf_0_13TeV_exp1_bckg1S,env_pdf_0_13TeV_exp1_mean1S,env_pdf_0_13TeV_exp1_sigma1S,env_pdf_0_13TeV_exp1_bckg2S,env_pdf_0_13TeV_exp1_mean2S,env_pdf_0_13TeV_exp1_sigma2S,env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg2S,env_pdf_0_13TeV_exp1_fbckg2S,env_pdf_0_13TeV_exp1_bckg3S,env_pdf_0_13TeV_exp1_mean3S,env_pdf_0_13TeV_exp1_sigma3S,env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_bckg3S,env_pdf_0_13TeV_exp1_fbckg3S,env_pdf_0_13TeV_exp1_mBkg,env_pdf_0_13TeV_exp1_combBckg_mMuMu_recursive_fraction_env_pdf_0_13TeV_exp1_mBkg,env_pdf_0_13TeV_exp1_peakTotal,env_pdf_0_13TeV_exp1_dcball,env_pdf_0_13TeV_exp1_bernstein_PeakingBackground)
+-----> <BEGIN> Extended Fit...
+-----> <END> Extended Fit...
+{
+    "HToUpsilonPhoton": {
+        "Cat0": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 230.85323200090312
+        }
+    },
+    "ZToUpsilonPhoton": {
+        "Cat0": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 446.90233302571517
+        },
+        "Cat1": {
+            "nCombBCKG": 10.0,
+            "nPeakBCKG": 10.0,
+            "nTotalBCKG": 196.94055256243524
+        }
+    }
+}
+[RESULT] Recommended options
+Cat 0
+	Bernstein - 1
+	Exponential - 1
+	Laurent - 2
+	PowerLaw - 1

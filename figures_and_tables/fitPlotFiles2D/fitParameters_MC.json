@@ -1,0 +1,428 @@
+{
+    "HToUpsilon1SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alphaPeakingBackground": 1.6718963906651854,
+                "mean_cbPeakingBackground": 124.75848418026555,
+                "nPeakingBackground": 1.6792606990528651,
+                "p0": 5.0,
+                "p1": 0.9695044581409162,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_cbPeakingBackground": 1.7547631160685768
+            },
+            "signal": {
+                "alpha1_mMuMNU": 1.35,
+                "alpha2_mMuMNU": 1.2600552438923303,
+                "alpha_cb_mHZ": 1.9438762552058477,
+                "cb_fraction_mHZ": 0.9119214551138545,
+                "mean_Higgs_mHZ_Cat0": 124.85901169198432,
+                "mean_mMuMNU_Cat0": 9.448869448525485,
+                "n1_mMuMNU": 3.5000162033636415,
+                "n2_mMuMNU": 5.853554581379036,
+                "n_mHZ": 1.2493360117751091,
+                "sigma_cb_mHZ_Cat0": 1.408001413688585,
+                "sigma_gauss_mHZ": 3.1888330598211665,
+                "sigma_mMuMNU_Cat0": 0.08845469563511087
+            }
+        }
+    },
+    "HToUpsilon2SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alphaPeakingBackground": 1.6718963906651854,
+                "mean_cbPeakingBackground": 124.75848418026555,
+                "nPeakingBackground": 1.6792606990528651,
+                "p0": 5.0,
+                "p1": 0.9695044581409162,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_cbPeakingBackground": 1.7547631160685768
+            },
+            "signal": {
+                "alpha1_mMuMNU": 1.35,
+                "alpha2_mMuMNU": 1.3297729505310674,
+                "alpha_cb_mHZ": 1.938512847574012,
+                "cb_fraction_mHZ": 0.8772349090036836,
+                "mean_Higgs_mHZ_Cat0": 124.81808743669866,
+                "mean_mMuMNU_Cat0": 10.007507139400989,
+                "n1_mMuMNU": 3.500005910482483,
+                "n2_mMuMNU": 5.965792102028135,
+                "n_mHZ": 1.292930026092789,
+                "sigma_cb_mHZ_Cat0": 1.4116829957974355,
+                "sigma_gauss_mHZ": 2.9737206663393687,
+                "sigma_mMuMNU_Cat0": 0.09588018442886218
+            }
+        }
+    },
+    "HToUpsilon3SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alphaPeakingBackground": 1.6718963906651854,
+                "mean_cbPeakingBackground": 124.75848418026555,
+                "nPeakingBackground": 1.6792606990528651,
+                "p0": 5.0,
+                "p1": 0.9695044581409162,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_cbPeakingBackground": 1.7547631160685768
+            },
+            "signal": {
+                "alpha1_mMuMNU": 1.35,
+                "alpha2_mMuMNU": 1.3228596017982004,
+                "alpha_cb_mHZ": 1.9457838823251357,
+                "cb_fraction_mHZ": 0.9014132040644373,
+                "mean_Higgs_mHZ_Cat0": 124.81678807025989,
+                "mean_mMuMNU_Cat0": 10.339875549279498,
+                "n1_mMuMNU": 3.5000049731415643,
+                "n2_mMuMNU": 5.981551345499035,
+                "n_mHZ": 1.2922566493406697,
+                "sigma_cb_mHZ_Cat0": 1.3933101366066771,
+                "sigma_gauss_mHZ": 2.9347720338500762,
+                "sigma_mMuMNU_Cat0": 0.10146018976030531
+            }
+        }
+    },
+    "ZToUpsilon1SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9035884276009803,
+                "alpha2_mHZ_PeakingBackground": 1.393701146052289,
+                "mean_mHZ_PeakingBackground": 91.0071040094172,
+                "n1_mHZ_PeakingBackground": 4.113132676161782,
+                "n2_mHZ_PeakingBackground": 2.5965301824179288,
+                "p0": 5.0,
+                "p1": 1.2473633789719156,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.8506747832969381
+            },
+            "signal": {
+                "alpha1_mHZ": 1.5923708096698372,
+                "alpha1_mMuMNU": 2.787447487478729,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.7717581219326806,
+                "mean_mHZ_Cat0": 91.04652961734382,
+                "mean_mMuMNU_Cat0": 9.449910722204683,
+                "n1_mHZ": 2.991590928908571,
+                "n1_mMuMNU": 0.0001807046934504397,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 5.334693790553515,
+                "sigma_mHZ_Cat0": 1.276978185489587,
+                "sigma_mMuMNU_Cat0": 0.11107443892730806
+            }
+        },
+        "EB High R9": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9176686592892497,
+                "alpha2_mHZ_PeakingBackground": 1.228756424062731,
+                "mean_mHZ_PeakingBackground": 91.02206863505421,
+                "n1_mHZ_PeakingBackground": 3.1781191600434253,
+                "n2_mHZ_PeakingBackground": 2.711326292301226,
+                "p0": 5.0,
+                "p1": 1.2325407985548336,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.505846630380435
+            },
+            "signal": {
+                "alpha1_mHZ": 1.7432476336391183,
+                "alpha1_mMuMNU": 1.6459788087971479,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.8340576729597402,
+                "mean_mHZ_Cat1": 91.06463838958116,
+                "mean_mMuMNU_Cat1": 9.456669432762942,
+                "n1_mHZ": 2.758033879358309,
+                "n1_mMuMNU": 1.5871120662494287,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 4.8548211816981555,
+                "sigma_mHZ_Cat1": 0.9228912009207746,
+                "sigma_mMuMNU_Cat1": 0.09126090160907635
+            }
+        },
+        "Cat2": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.8909542527263753,
+                "alpha2_mHZ_PeakingBackground": 1.5711851994091763,
+                "mean_mHZ_PeakingBackground": 90.9463597475121,
+                "n1_mHZ_PeakingBackground": 4.763678835082822,
+                "n2_mHZ_PeakingBackground": 2.2345349344456493,
+                "p0": 5.0,
+                "p1": 1.207772797097319,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.025841218824443
+            },
+            "signal": {
+                "alpha1_mHZ": 1.4879216621295797,
+                "alpha1_mMuMNU": 2.853802192683869,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.757457273885703,
+                "mean_mHZ_Cat2": 90.97933805091645,
+                "mean_mMuMNU_Cat2": 9.450843110268458,
+                "n1_mHZ": 2.8721471683176594,
+                "n1_mMuMNU": 9.094548922283785e-06,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 5.330394239638983,
+                "sigma_mHZ_Cat2": 1.3127901764471015,
+                "sigma_mMuMNU_Cat2": 0.10456768549482881
+            }
+        },
+        "Cat3": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9954489993898163,
+                "alpha2_mHZ_PeakingBackground": 1.7014953050498831,
+                "mean_mHZ_PeakingBackground": 90.97582239198407,
+                "n1_mHZ_PeakingBackground": 5.629646758689972,
+                "n2_mHZ_PeakingBackground": 2.1269860280356583,
+                "p0": 5.0,
+                "p1": 1.3373829603283516,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.415672688934332
+            },
+            "signal": {
+                "alpha1_mHZ": 1.9928466253769899,
+                "alpha1_mMuMNU": 2.711980452792372,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 2.0306886649153864,
+                "mean_mHZ_Cat3": 90.98910649192865,
+                "mean_mMuMNU_Cat3": 9.450294398241414,
+                "n1_mHZ": 2.7044883673112956,
+                "n1_mMuMNU": 1.558736983320319e-05,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 4.098760177008289,
+                "sigma_mHZ_Cat3": 1.8669790747227766,
+                "sigma_mMuMNU_Cat3": 0.14999282993382362
+            }
+        }
+    },
+    "ZToUpsilon2SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9035884276009803,
+                "alpha2_mHZ_PeakingBackground": 1.393701146052289,
+                "mean_mHZ_PeakingBackground": 91.0071040094172,
+                "n1_mHZ_PeakingBackground": 4.113132676161782,
+                "n2_mHZ_PeakingBackground": 2.5965301824179288,
+                "p0": 5.0,
+                "p1": 1.2473633789719156,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.8506747832969381
+            },
+            "signal": {
+                "alpha1_mHZ": 1.5292664913817953,
+                "alpha1_mMuMNU": 1.3247769257853577,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.3294370991944837,
+                "mean_mHZ_Cat0": 91.05616234031196,
+                "mean_mMuMNU_Cat0": 10.019433974110392,
+                "n1_mHZ": 2.6236629741127877,
+                "n1_mMuMNU": 2.2823571725658685,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 7.847200337153042,
+                "sigma_mHZ_Cat0": 1.2564345890727115,
+                "sigma_mMuMNU_Cat0": 0.0970859443993326
+            }
+        },
+        "Cat1": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9176686592892497,
+                "alpha2_mHZ_PeakingBackground": 1.228756424062731,
+                "mean_mHZ_PeakingBackground": 91.02206863505421,
+                "n1_mHZ_PeakingBackground": 3.1781191600434253,
+                "n2_mHZ_PeakingBackground": 2.711326292301226,
+                "p0": 5.0,
+                "p1": 1.2325407985548336,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.505846630380435
+            },
+            "signal": {
+                "alpha1_mHZ": 1.747569107680654,
+                "alpha1_mMuMNU": 1.6011545025067797,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.5506528120568701,
+                "mean_mHZ_Cat1": 91.04226986476479,
+                "mean_mMuMNU_Cat1": 10.014721122217468,
+                "n1_mHZ": 2.1992122407436274,
+                "n1_mMuMNU": 1.652411327771703,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 7.63709605297358,
+                "sigma_mHZ_Cat1": 0.930061530049735,
+                "sigma_mMuMNU_Cat1": 0.09440671612503249
+            }
+        },
+        "Cat2": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.8909542527263753,
+                "alpha2_mHZ_PeakingBackground": 1.5711851994091763,
+                "mean_mHZ_PeakingBackground": 90.9463597475121,
+                "n1_mHZ_PeakingBackground": 4.763678835082822,
+                "n2_mHZ_PeakingBackground": 2.2345349344456493,
+                "p0": 5.0,
+                "p1": 1.207772797097319,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.025841218824443
+            },
+            "signal": {
+                "alpha1_mHZ": 1.5413762799258968,
+                "alpha1_mMuMNU": 1.339832980411586,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.4168772460598151,
+                "mean_mHZ_Cat2": 90.95832417737054,
+                "mean_mMuMNU_Cat2": 10.018637470435406,
+                "n1_mHZ": 2.462734152721109,
+                "n1_mMuMNU": 2.0779467250128976,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 6.480860114519347,
+                "sigma_mHZ_Cat2": 1.3482904019594795,
+                "sigma_mMuMNU_Cat2": 0.09065523479827664
+            }
+        },
+        "Cat3": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9954489993898163,
+                "alpha2_mHZ_PeakingBackground": 1.7014953050498831,
+                "mean_mHZ_PeakingBackground": 90.97582239198407,
+                "n1_mHZ_PeakingBackground": 5.629646758689972,
+                "n2_mHZ_PeakingBackground": 2.1269860280356583,
+                "p0": 5.0,
+                "p1": 1.3373829603283516,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.415672688934332
+            },
+            "signal": {
+                "alpha1_mHZ": 2.2578020518873627,
+                "alpha1_mMuMNU": 1.6672399737084787,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 2.309980699958218,
+                "mean_mHZ_Cat3": 90.90012946169325,
+                "mean_mMuMNU_Cat3": 10.021261338959759,
+                "n1_mHZ": 1.5771494595215123,
+                "n1_mMuMNU": 1.8487203591598305,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 2.1251647970312955,
+                "sigma_mHZ_Cat3": 1.8473614355622892,
+                "sigma_mMuMNU_Cat3": 0.1551728673831319
+            }
+        }
+    },
+    "ZToUpsilon3SPhoton": {
+        "Cat0": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9035884276009803,
+                "alpha2_mHZ_PeakingBackground": 1.393701146052289,
+                "mean_mHZ_PeakingBackground": 91.0071040094172,
+                "n1_mHZ_PeakingBackground": 4.113132676161782,
+                "n2_mHZ_PeakingBackground": 2.5965301824179288,
+                "p0": 5.0,
+                "p1": 1.2473633789719156,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.8506747832969381
+            },
+            "signal": {
+                "alpha1_mHZ": 1.538683907312353,
+                "alpha1_mMuMNU": 1.5927514291912899,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.7391425172655839,
+                "mean_mHZ_Cat0": 91.02564067763426,
+                "mean_mMuMNU_Cat0": 10.34828042853875,
+                "n1_mHZ": 2.8446534657672546,
+                "n1_mMuMNU": 1.7266455772380058,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 3.3234112138501115,
+                "sigma_mHZ_Cat0": 1.2774730863823194,
+                "sigma_mMuMNU_Cat0": 0.1113023105690516
+            }
+        },
+        "Cat1": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9176686592892497,
+                "alpha2_mHZ_PeakingBackground": 1.228756424062731,
+                "mean_mHZ_PeakingBackground": 91.02206863505421,
+                "n1_mHZ_PeakingBackground": 3.1781191600434253,
+                "n2_mHZ_PeakingBackground": 2.711326292301226,
+                "p0": 5.0,
+                "p1": 1.2325407985548336,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 1.505846630380435
+            },
+            "signal": {
+                "alpha1_mHZ": 1.6952630454923006,
+                "alpha1_mMuMNU": 1.5981296830003155,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.5009674326543014,
+                "mean_mHZ_Cat1": 91.0554866610051,
+                "mean_mMuMNU_Cat1": 10.347955577150191,
+                "n1_mHZ": 2.089475627657455,
+                "n1_mMuMNU": 1.655056182213141,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 6.987503560965319,
+                "sigma_mHZ_Cat1": 0.8824947084069759,
+                "sigma_mMuMNU_Cat1": 0.09512908562053624
+            }
+        },
+        "Cat2": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.8909542527263753,
+                "alpha2_mHZ_PeakingBackground": 1.5711851994091763,
+                "mean_mHZ_PeakingBackground": 90.9463597475121,
+                "n1_mHZ_PeakingBackground": 4.763678835082822,
+                "n2_mHZ_PeakingBackground": 2.2345349344456493,
+                "p0": 5.0,
+                "p1": 1.207772797097319,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.025841218824443
+            },
+            "signal": {
+                "alpha1_mHZ": 1.4186960629572196,
+                "alpha1_mMuMNU": 1.653724490637274,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 2.211078143943259,
+                "mean_mHZ_Cat2": 90.99031625141933,
+                "mean_mMuMNU_Cat2": 10.34992090761325,
+                "n1_mHZ": 2.624299022887155,
+                "n1_mMuMNU": 1.6438750274387859,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 1.5985033267861404,
+                "sigma_mHZ_Cat2": 1.3042040198827278,
+                "sigma_mMuMNU_Cat2": 0.10959015805902611
+            }
+        },
+        "Cat3": {
+            "peakingBackground": {
+                "alpha1_mHZ_PeakingBackground": 0.9954489993898163,
+                "alpha2_mHZ_PeakingBackground": 1.7014953050498831,
+                "mean_mHZ_PeakingBackground": 90.97582239198407,
+                "n1_mHZ_PeakingBackground": 5.629646758689972,
+                "n2_mHZ_PeakingBackground": 2.1269860280356583,
+                "p0": 5.0,
+                "p1": 1.3373829603283516,
+                "p2": 5.0,
+                "p3": 5.0,
+                "sigma_mHZ_PeakingBackground": 2.415672688934332
+            },
+            "signal": {
+                "alpha1_mHZ": 2.0705044539491215,
+                "alpha1_mMuMNU": 1.6017564003519613,
+                "alpha2_mHZ": 3.0,
+                "alpha2_mMuMNU": 1.9635757507338463,
+                "mean_mHZ_Cat3": 90.91413925679342,
+                "mean_mMuMNU_Cat3": 10.35179157414156,
+                "n1_mHZ": 2.226567440855513,
+                "n1_mMuMNU": 2.0286481194043846,
+                "n2_mHZ": 0.5,
+                "n2_mMuMNU": 3.4963283384807835,
+                "sigma_mHZ_Cat3": 1.8318530467976348,
+                "sigma_mMuMNU_Cat3": 0.15937424832416935
+            }
+        }
+    }
+}
