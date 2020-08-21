@@ -59,7 +59,9 @@ After the full selection, a background and signal modeling process is applied, b
 
 In this study, the same trigger requirements are applied to both data and simulated samples. For the first trigger level (L1), events are selected if they present at least one muon with transverse momentum greater than 5 GeV and an isolated~\footnote{The concept of isolation will be detailed later, but in summary, it means a object which has very small activity (above a certain threshold of energy/momentum) around it. In hadron-hadron collider, isolation is a characteristics of hard interactions.} photon or electron with transverse momentum greater than 18 GeV (at L1, there is no differentiation between photons and electrons). At the software level of the trigger system (HLT), the events are required to have at least one muon with transverse momentum greater than 17 GeV and a photon with transverse momentum greater than 30 GeV.
 
-In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based on the the \PT of the reconstructed muon and photon. Considering the similarity of this analysis with the $H/Z \rightarrow J/\psi + \gamma$ analysis~\cite{papper_jpsi}, not only in therm of data samples, but also for triggering and physics object selection, the same scale factors were applied.
+In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based on the the \PT of the reconstructed muon and photon. These scale factor computed by the ratio between efficiency of the trigger for the Data sample over the efficiency for a MC sample. These efficiencies are calculated with the tag-and-probe method, exploring the the resonance of a final state composted by two muon and one photon in the vicinity of the $Z$ boson invariant mass. To this final state, a selections was applied to ensure that the photon comes from a Final State Radiation process, allowing us to use the tag-and-probe method.
+
+Considering the similarity of this analysis with the $H/Z \rightarrow J/\psi + \gamma$ analysis~\cite{papper_jpsi}, not only in therm of data samples, but also for triggering and physics object selection, the same scale factors were applied. More details are given in the same paper.
 
 \subsection{Muon Identification}
 \label{sec:muon_id}
@@ -865,7 +867,7 @@ Figure \ref{fig:r9_reweighting} show the R9 distribution before and after the re
 \end{figure}
 
 \subsection{Event counting and yields}
-\label{sec:yeilds}
+\label{sec:yields}
 
 Tables \ref{tab:Z_yields} and \ref{tab:HIGGS_yields} show the total number of events before and after the full selection. Two things are important to notice.
 

@@ -1,0 +1,125 @@
+\section{Systematic uncertainties}
+
+Two sources of systematics are considered: the ones that affect the predicted yields~\footnote{Number of events, per process, after full selection and corrected by the expected SM cross sections.} and the ones that affect the shape of the pdfs used to compose the signal and background model.
+
+Those that affect the predicted yields, presented in Section~\ref{sec:yields}, it is considered integrated luminosity measurement~\cite{CMS-PAS-LUM-17-001}, the pile-up description in the Monte-Carlo simulations, the corrections applied to the simulated events in order to compensate for the differences in performance of the some selection criteria, such as trigger, object reconstruction and identification, the $\Upsilon$ polarization and the theoretical uncertainties, such as the effects of the \textit{parton density functions} (PDF) to the signal cross section~\cite{NNPDF3,deFlorian:2016spz,Butterworth:2015oua}, the variations of the renormalization and factorization scales~\cite{Martin:2009iq,Lai:2010vv,Alekhin:2011sk,Botje:2011sn,Ball:2011mu}, and the prediction of the decay branching ratios. 
+
+For the systematics on the signal modeling, it is considered possible imprecisions of the momentum scale and resolution. They are measured on how they affect the mean ($\mu$) and the standard deviation ($\sigma$) of the signal model. For the background modeling, since it is derived from data, the choice of the \textit{pdf} (Probability distribution function) is the only systematic uncertainties considered. It is treated by the Discrete Profiling method, as described in section \ref{sec:background_modeling}. 
+
+The two kinds of systematics uncertainties are described in details below.
+
+\subsection{Uncertainties on the predicted yields}
+
+The theoretical sources of uncertainties includes: parton distribution functions uncertainties, strong coupling constant ($\alpha_{s}$) uncertainty and uncertainty on the $\mathrm{H} \to \gamma\gamma$ branching fraction (used to derive the Higgs Dalitz Decays cross-section). The values for these theoretical uncertainties are taken from the Higgs Combination Group~\cite{CERNYellowReportPageAt13TeV} and also from~\cite{Passarino:2013nka,Botje:2011sn}.
+
+An uncertainty value of $2.5\%$ is used on the integrated luminosity of the data samples, as recommended by CMS~\cite{CMS-PAS-LUM-17-001}. To evaluate the impact of the pile-up reweighting in the final result, the The total inelastic cross section of $69.2~mb$ is varied by $\pm~4.6\%$ and the analysis is ran with these extreme values. The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value, as recommended by CMS. 
+
+The impact of the trigger scale factor is evaluated by running this analysis with $\pm~1\sigma$ on the Trigger Efficiency Scale factors (section \ref{sec:trigger}). The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value.
+
+For the final state object identification and isolation associated uncertainty, the scale factors, provided by CMS, to match the performance of MC and Data samples are varied in  $\pm~1\sigma$. The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal value. This procedure is applied on the scale factors for the Photon MVA ID and the Electron Veto (section \ref{sec:photon_id}) and for  Muon Identification and Isolation(section \ref{sec:muon_id}). 
+
+Finally, the $\Upsilon$ Polarization is assessed applying the extremes scenarios of the $\Upsilon$ polarization (Transverse and Longitudinal Polarization to the signal samples (section \ref{sec:polarization}). The systematic uncertainty quoted is the maximum difference in the yields with respect to nominal (Unpolarized) yield. This procedure is applied only for the Z decay. For the Higgs decay, the only polarization considered is the transverse polarization.
+
+The effect of all systematic uncertainties in the signal and peaking background yields are summarized on table \ref{tab:FinalZSystLatex}, for the \Z decay and table \ref{tab:FinalHSystLatex}, for the Higgs decay. Clearly, the main contribution to the systematics uncertainties on the yields is Polarization of the $\Upsilon(nS)$ (only for the Z decay), around 15\%.
+
+\begin{table}[ht]
+  \begin{center}
+    \input{figures_and_tables/tables/FinalZSystLatex.tex}
+    \caption{ A summary table of systematic uncertainties in the \Z boson decaying in $\Upsilon(1S,2S,3S) + \gamma$, affecting the final yields of the MC samples.}
+    \label{tab:FinalZSystLatex}
+  \end{center}
+\end{table}
+
+
+\begin{table}[ht]
+  \begin{center}
+    \input{figures_and_tables/tables/FinalHSystLatex.tex}
+    \caption{A summary table of systematic uncertainties in the Higgs boson decaying in $ \Upsilon(1S,2S,3S) + \gamma$, affecting the final yields of the MC samples.}
+    \label{tab:FinalHSystLatex}
+  \end{center}
+\end{table}
+
+
+\subsection{Uncertainties that affect the signal fits}
+
+Smearing and scaling corrections are applied on simulated events since the resolution of Monte Carlo is better than that on data and the detector might not catch all the possible differences in the detector performance, with respect to the data observation. They need to be estimated and included on the systematics. The corrections are:
+
+\begin{itemize}  
+  \item \textbf{Muon Momentum Scale and Resolution}: extracted by running the analysis with different setups of the official CMS Muon scaling and smearing package~\cite{cms_muon_performance}. The deviations, with respect to the default correction are summed in quadrature. Once the nominal parameters (mean or sigma) are obtained, the default corrections are shifted by $\pm~1\sigma$ and the fits are re-done, with the parameters of interest free to float and all others fixed. The systematic uncertainty quoted is the maximum difference of the parameter with respect to nominal value.
+  
+  \item \textbf{Photon Energy Scale and Resolution}: extracted by running the analysis with different sets of corrections, provided by the CMS~\footnote{CMS has not published, yet, a paper on the Run2 performance of the Photon reconstruction (This document is under internal review process.). Just as a reference, we cite the Run1 paper~\cite{egamma_run1_papper}.}. Once the nominal mean is obtained, the sets are changed and the fits are re-done, with the mean free to float and all others parameters fixed. The corrections are shifted by $\pm~1\sigma$ on each source of systematics (following standard CMS recommendations). The quoted as systematic uncertainty is the quadrature sum of the maximum deviation within each set.
+  
+\end{itemize}
+
+The effective systematic uncertainty associated with the scale and resolution are the quadrature sum of the muon and photon contributions. The effect of all systematic uncertainties in the Signal fits are summarized on table \ref{tab:FinalZSystShapeLatex}, for the \Z and Higgs decay. 
+
+\begin{table}[ht]
+  \begin{center}
+    \input{figures_and_tables/tables/FinalSystShapeLatex.tex}
+    \caption{A summary table of systematic uncertainties in the \Z(H) decaying in $ \Upsilon(1S,2S,3S) + \gamma$, affecting the signal fits.}
+    \label{tab:FinalZSystShapeLatex}
+  \end{center}
+\end{table}
+
+%\begin{table}[ht]
+  %\begin{center}
+    %\input{figures_and_tables/tables/FinalHSystShapeLatex.tex}
+    %\caption{A summary table of systematic uncertainties in the Higgs boson decaying in $ \Upsilon(1S,2S,3S) + \gamma$, affecting the signal fits.}
+    %\label{tab:FinalHSystShapeLatex}
+    %\end{center}
+    %\end{table}
+    
+    
+    %%%
+    %The effects of the \textit{parton density functions}(PDF) choice on the signal cross section [REFs2] couse the theoretical uncertainties, the lack of higher-order calculations for the scale [REF3], and the prediction of the decay branching ratios [REF4].
+    %The other uncertainty affect the shape of the signal model arises from the impreciseness of the momentum (energy) scale and resolution are varied, and the effect on the mean and sigma value of the signal model is introduced as a shape nuisance parameter in the estimation of the limit.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %REF1 -CMS Collaboration Collaboration, "CMS Luminosity Measurements for the 2016 Data Taking Period" , Technical Report CMS-PAS-LUM-17-001, CERN, Geneva, 2017.
+    
+    %REFs2 - LHC Higgs Cross Section Working Group Collaboration, "Handbook of LHC Higgs Cross Sections: 4. Deciphering the Nature of the Higgs Sector",
+    %doi:10.23731/CYRM-2017-002, arXiv:1610.07922.
+    %- NNPDF Collaboration, "Parton distributions for the LHC Run II" JHEP 04 (2015) 040,doi:10.1007/JHEP04(2015)040, arXiv:1410.8849.
+    %- J. Butterworth et al., “PDF4LHC recommendations for LHC Run II”, J. Phys. G43 (2016) 023001, doi:10.1088/0954-3899/43/2/023001, arXiv:1510.03865.
+    %REF3 
+    %- A. D. Martin,W. J. Stirling, R. S. Thorne, and G.Watt, “Parton distributions for the LHC” Eur. Phys. J. C 63 (2009) 189, doi:10.1140/epjc/s10052-009-1072-5,arXiv:0901.0002.
+    %- H. Lai et al., “New parton distributions for collider physics”, Phys. Rev. D 82 (2010) 74024, doi:10.1103/PhysRevD.82.074024, arXiv:1007.2241.
+    %- S. Alekhin et al., “The PDF4LHC Working Group Interim Report”, (2011).arXiv:1101.0536.
+    %- M. Botje et al., “The PDF4LHC Working Group Interim Recommendations”, (2011).arXiv:1101.0538.
+    %- R. D. Ball et al., “Impact of Heavy Quark Masses on Parton Distributions and LHC Phenomenology”, Nucl. Phys. B 849 (2011) 296,doi:10.1016/j.nuclphysb.2011.03.021, arXiv:1101.1300.
+    %REF4
+    %“SM Higgs production cross sections at  s=13 TeV (update in CERN Report4 2016)”. https://twiki.cern.ch/twiki/bin/view/LHCPhysics/CERNYellowReportPageAt13TeV. Revision 23 of the page.
+    %REF5
+    %CMS Collaboration, “Search for diboson resonances in the 2l 2nu final state”, CMS Physics Analysis Note CMS-AN-16-352, 2016.
+    %
+    %REF6 G. Passarino, “Higgs boson production and decay: Dalitz sector”, Phys. Lett. B 727 (2013) 424, doi:10.1016/j.physletb.2013.10.052, arXiv:1308.0422.
+    
+    
+    
+    
+    %They are evaluated by varying contributing sources within their corresponding uncertainties and propagating every uncertainty to 
+    
+    
+    
+    
+    %\begin{table}[ht]
+      %\begin{center}
+        %%\resizebox{.5\width}{!}{\input{figures_and_tables/tables/UpperLimits}}
+        %\input{figures_and_tables/tables/FinalHYieldsLatex.tex}
+        %\caption{A summary table of yields in the Higgs boson decaying in $\Upsilon(1S,2S,3S) + \gamma$}
+        %\label{fig:FinalHYields}
+        %\end{center}
+        %\end{table}
+        
+        %%%%%%%%%% Z boson%%%%
+        
+        
+        %\begin{table}[ht]
+          %\begin{center}
+            %%\resizebox{.5\width}{!}{\input{figures_and_tables/tables/UpperLimits}}
+            %\input{figures_and_tables/tables/FinalZYieldsLatex.tex}
+            %\caption{A summary table of yields in the Z boson decaying in  $\Upsilon(1S,2S,3S) + \gamma$}
+            %\label{fig:FinalZYieldsLatex}
+            %\end{center}
+            %\end{table}
+\clearpage
+            
