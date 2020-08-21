@@ -172,14 +172,35 @@ Figure~\ref{lumi} shows, as an example of the luminosity delivered by the LHC, r
 
 Shifts are a continuous weekly activity (specially during the data taking period), performed in a weekly basis, in order to ensure the availability of certified data, as soon as possible.
  
-\begin{figure}%
+% \begin{figure}%
+%     \centering
+%     \subfloat[]{{\includegraphics[width=0.55\textwidth,keepaspectratio]{figures/rpc/lumi_plot.png} }}%
+%     % \qquad
+%     \subfloat[]{{\includegraphics[width=0.35\textwidth,keepaspectratio]{figures/rpc/lumi_table.png} }}%
+%     \caption{(a) Luminosity delivered by the LHC, recorded one by CMS and the certified (validated), from the 22nd of April, 2016 to the 27th of October, 2016. (b) Efficiency of the certification process for each subsystem, from the 22nd of April, 2016 to the 27th of October, 2016. Total CMS efficiency is above 90\%. Source:~\cite{certification}}%
+%     \label{lumi}%
+% \end{figure}
+  
+
+\begin{figure}[htbp]
     \centering
-    \subfloat[]{{\includegraphics[width=0.55\textwidth,keepaspectratio]{figures/rpc/lumi_plot.png} }}%
-    \qquad
-    \c[]{{\includegraphics[width=0.35\textwidth,keepaspectratio]{figures/rpc/lumi_table.png} }}%
-    \caption{(a) Luminosity delivered by the LHC, recorded one by CMS and the certified (validated), from the 22nd of April, 2016 to the 27th of October, 2016. (b) Efficiency of the certification process for each subsystem, from the 22nd of April, 2016 to the 27th of October, 2016. Total CMS efficiency is above 90\%. \cite{certification}}%
+    \begin{subfigure}[b]{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/rpc/lumi_plot.png}  
+        \caption{}
+        % \label{fig:sub-second}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/rpc/lumi_table.png}  
+        \caption{}
+        % \label{fig:sub-second}
+    \end{subfigure}
+    \caption{(a) Luminosity delivered by the LHC, recorded one by CMS and the certified (validated), from the 22nd of April, 2016 to the 27th of October, 2016. (b) Efficiency of the certification process for each subsystem, from the 22nd of April, 2016 to the 27th of October, 2016. Total CMS efficiency is above 90\%. Source:~\cite{certification}}%
     \label{lumi}%
 \end{figure}
+
 
 \section{RPC Online Software}
 
