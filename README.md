@@ -56,3 +56,8 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 - https://iopscience-iop-org.ezproxy.cern.ch/article/10.1088/0954-3899/28/10/313/pdf
 
 - https://cds.cern.ch/record/1379837/files/NOTE2011_005.pdf
+
+- SM xSecs CMS: https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsCombined
+- CERN Higgs Yellow Report Summary: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
+- CERN Higgs Yellow Report INSPIRE: https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20eprint%201610.07922
+

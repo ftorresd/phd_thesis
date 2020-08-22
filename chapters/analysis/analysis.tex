@@ -93,6 +93,7 @@ The primary vertex itself, is determined as the reconstructed vertex with the bi
 For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required to have been reconstructed with the Particle Flow (PF) algorithm. If they have $p_{T} > 200$ GeV, they should reconstructed with the Particle Flow (PF) algorithm or satisfy the strict tracker requirements (defined in table~\ref{tab:Tracker_High_pT}).
 
 \begin{table}[h]
+  \caption{Conditions for a muon to pass the strict tracker requirements.}
     \begin{center}
     \begin{tabular}{l|l}
      % \hline
@@ -112,9 +113,7 @@ For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required
       Tracker hits                   & Hits in at least six tracker layers   \\
       \hline
     \end{tabular}
-    \caption{
-      Conditions for a muon to pass the strict tracker requirements.
-      }
+    
     \label{tab:Tracker_High_pT}
     \end{center}
 \end{table}
@@ -873,17 +872,19 @@ Tables \ref{tab:Z_yields} and \ref{tab:HIGGS_yields} show the total number of ev
 
 \begin{table}[ht]
 \begin{center}
+  \caption{Number of events for the Z decay, before and after the full selection, per categorization scenarios.}
+
 \input{figures_and_tables/tables/FinalZYieldsLatex}
-\caption{Number of events for the Z decay, before and after the full selection, per categorization scenarios.}
 \label{tab:Z_yields}
 \end{center}
 \end{table}
 
 
 \begin{table}[ht]
+\caption{Number of events for the H decay, before and after the full selection.}
 \begin{center}
 \input{figures_and_tables/tables/FinalHYieldsLatex}
-\caption{Number of events for the H decay, before and after the full selection.}
+
 \label{tab:HIGGS_yields}
 \end{center}
 \end{table}
