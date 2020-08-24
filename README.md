@@ -59,5 +59,9 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 
 - SM xSecs CMS: https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsCombined
 - CERN Higgs Yellow Report Summary: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
-- CERN Higgs Yellow Report INSPIRE: https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20eprint%201610.07922
+- CERN Higgs Yellow Report INSPIRE: https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20eprint%201610.
+- Marcel Reiger: https://inspirehep.net/literature/1775688
+- Higgs Public Results: https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsHIG
+- Higss Combination: https://cds.cern.ch/record/2706103
+- LHCHXSWG: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
 

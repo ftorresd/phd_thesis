@@ -27,10 +27,10 @@
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 english, % ngerman for German
-singlespacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
-% onehalfspacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
+% singlespacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
+onehalfspacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
 % draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
-% nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 % liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
 parskip, % Uncomment to add space between paragraphs
@@ -85,8 +85,10 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 \usepackage{rotating}
 
 
-
-\usepackage{ctable} % for \specialrule command
+% \makeatletter
+% \@namedef{ver@transparent.sty}{}
+% \makeatother
+% \usepackage{ctable} % for \specialrule command
 
 %\usepackage{supertabular} % for \topcaption command
 \usepackage{topcapt}
@@ -158,9 +160,12 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 \newcommand{\mpmm}{\ensuremath{\Pgmp\Pgmm}\xspace}
 \newcommand{\epem}{\ensuremath{\Pep\Pem}\xspace}
 
-\newcommand{\todo}[1]{
-\textcolor{red}{\textbf{#1}}
-}
+% \newcommand{\todo}[1]{
+% \textcolor{red}{\textbf{#1}}
+% }
+\usepackage[colorinlistoftodos]{todonotes}
+
+
 
 % \newcommand{\CLs}[0]{
 % $CL_{s}$
@@ -326,7 +331,7 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-  Searches for Standard Model Higgs and Z bosons decaying to a  $\Upsilon(1S,2S,3S)$ and a photon, with subsequent decay of the $\Upsilon(1S,2S,3S)$ to $\mu^{+} \mu^{-}$ are presented. The analyses is performed using data recorded by CMS detector from proton-proton collisions at center-of-mass energy of 13 TeV corresponding to an integrated luminosity of 35.86 $fb^{-1}$. We put a limit, $95\%$ confidence level, on $H \rightarrow  \Upsilon(1S,2S,3S) + \gamma$ decay branching fraction at (6.8, 7.1, 6.0) $\times 10^{-4}$ and on $Z\rightarrow  \Upsilon(1S,2S,3S) + \gamma$ decay branching fraction at (2.6, 2.3, 1.3) $\times 10^{-6}$. Contributions to operation, maintenance and R\&D of Resistive Plate Chambers (RPC) of CMS are also presented. \todo{EXPANDIR}
+  Searches for Standard Model Higgs and Z bosons decaying to a  $\Upsilon(1S,2S,3S)$ and a photon, with subsequent decay of the $\Upsilon(1S,2S,3S)$ to $\mu^{+} \mu^{-}$ are presented. The analyses is performed using data recorded by CMS detector from proton-proton collisions at center-of-mass energy of 13 TeV corresponding to an integrated luminosity of 35.86 $fb^{-1}$. We put a limit, $95\%$ confidence level, on $H \rightarrow  \Upsilon(1S,2S,3S) + \gamma$ decay branching fraction at (6.8, 7.1, 6.0) $\times 10^{-4}$ and on $Z\rightarrow  \Upsilon(1S,2S,3S) + \gamma$ decay branching fraction at (2.6, 2.3, 1.3) $\times 10^{-6}$. Contributions to operation, maintenance and R\&D of Resistive Plate Chambers (RPC) of CMS are also presented. \todo[inline]{EXPANDIR}
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -338,7 +343,7 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 I would like to thank:
 \begin{itemize}
   \item the Campinas State University for providing the institutional support for this study;
-  \item the Rio de Janerio State University for the cooperation with Campinas State University in their high-energy physics program. This was a key factor for this study;
+  \item the Rio de Janeiro State University for the cooperation with Campinas State University in their high-energy physics program. This was a key factor for this study;
   \item the National Council for Scientific and Technological Development (CNPq) for the financial support for this work;
   \item the European Laboratory for Particle Physics (CERN) for the construction and operation of the Large Hadron Collider (LHC);
   \item the Compact Muon Solenoid (CMS) collaboration for the construction, operation and provision of the instrumental means for this study.
@@ -349,6 +354,7 @@ I would like to thank:
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
+\listoftodos
 
 \tableofcontents % Prints the main table of contents
 

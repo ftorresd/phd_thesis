@@ -7,22 +7,10 @@ with 25 ns bunch separation recorded by CMS. This data sample is composed only b
 
 This data sample corresponds to 35.86 $fb^{-1}$ of integrated luminosity~\cite{CMS-PAS-LUM-17-001}.
 
-
-% \begin{table}[htp]
-% \begin{center}
-% %\resizebox{.5\width}{!}{\input{figures_and_tables/tables/UpperLimits}}
-% \input{figures_and_tables/tables/SamplesTable.tex}
-% \caption{Primary datasets from 2016 using the full dataset consists of 35.86 $fb^{-1}$ of integrated luminosity~\cite{CMS-PAS-LUM-17-001}.}
-% \label{tab:golden}
-% \end{center}
-% \end{table}
-
-
-
 \subsection{Simulated datasets}
 \label{sec:datasets}
 
-Data simulation at CMS is done by the use of Monte Carlo (from here on, simply called MC) simulations the generates pseudo-random events, constrained by the physics of the related process to which we are interested, including the effect of the produced particles interacting with the detector. The simulation starts with the \textbf{hard-scattering} process, at parton (constituents of the proton) level, done usually, by matrix element generators, which impose to the incoming and outgoing partons, the dynamics of the simulated process, according to some pre-defined theoretical model. Along the hard interaction simulation, the \textbf{fragmentation} process takes place. Since the the matrix element generator provide information on the parton level, it is necessary to extract the momentum distribution of the parton as a function of the $Q^2$ (transferred momentum) of the process. TO do so, MC generators use the PDFs (parton distribution functions) to sample those values, accordingly. The matrix element formalism also allows the simulation of the process, taking into account, different orders of perturbations, like NLO (next-to-leading-order), NNLO (next-to-next-to-leading-order), and so on.
+Data simulation at CMS is done by the use of Monte Carlo (from here on, simply called MC) simulations the generates pseudo-random events, constrained by the physics of the related process to which we are interested, including the effect of the produced particles interacting with the detector. The simulation starts with the \textbf{hard-scattering} process, at parton (constituents of the proton) level, done usually, by matrix element generators, which impose to the incoming and outgoing partons, the dynamics of the simulated process, according to some pre-defined theoretical model. Along the hard interaction simulation, the \textbf{fragmentation} process takes place. Since the the matrix element generator provide information on the parton level, it is necessary to extract the momentum distribution of the parton as a function of the $Q^2$ (transferred momentum) of the process. TO do so, MC generators use the PDFs (parton distribution functions) to sample those values, accordingly. The matrix element formalism also allows the simulation of the process, taking into account, different orders of perturbations, like NLO (next-to-leading order), NNLO (next-to-next-to-leading order), and so on.
 
 After the hard-scattering, the \textbf{showering} process simulates the radiation emission by gluons and quarks in the initial and final states. Along the hard interaction, the other proton constituents may also interact through soft interaction. This part of the simulation is called \textbf{multiple parton interaction} (MPI). The last components of the simulation is the \textbf{hadronization} and the \textbf{decay of heavy hadrons and leptons}. The former one, imposes the QCD confinement to low energy quarks and gluons~\footnote{QCD forbids coloured objects to exist in non-asymptotic states. They must decays to more complex systems, until they form stable colorless states.}, while the latter one, implements specific models to decays heavy hadrons and leptons, like $B$ hadrons and taus.
 
@@ -45,7 +33,7 @@ There are also background processes that do not give resonance peaks in the thre
 \begin{table}[htp]
 \begin{center}
 \caption{Datasets simulated (MC) for 2016 conditions. Assuming that $\sigma (pp\rightarrow$ H), taking into consideration all the simulated Higgs production modes, is 55.13 $pb$~\cite{CERNYellowReportPageAt13TeV} and  $\sigma (pp\rightarrow Z \rightarrow \mu\mu$ ) is 57094.5 $pb$, including the next-to-next-to-leading order
-(NNLO) QCD contributions, and the next-to-leading order (NLO) electroweak corrections from fewz 3.1~\cite{FEWZ} calculated using the NLO PDF set NNPDF3.0, with the phase space selection in invariant mass of the dimuon system of $m_{\mu\mu} > 50$ GeV. For the Higgs Dalitz $\sigma$, we consider only the gluon fusion contribution ($\sigma_{\text{ggF}}  = $ 48.6 $pb$)~\cite{CERNYellowReportPageAt13TeV}. The Higgs Dalitz Decay $BR_{SM}$ and the $Z \rightarrow \mu\mu\gamma_{FSR}$ were obtained with MCFM 6.6~\cite{CAMPBELL201010} (as in the CMS search for Higgs Dalitz Decay in at $\sqrt{s} =$ 8 TeV~\cite{dalitz_decay_8_Tev}) and with \MADGRAPH5 $\_$\MCATNLO, respectively. The $BR^{PDG}_{\Upsilon(1S,2S,3S) \rightarrow \mu\mu} = \text{(2.48, 1.93, 2.18)} \times 10^{-2}$ is quoted from Particle Data Group report (PDG)~\cite{Patrignani:2016xqp}. The "Effective $\sigma$" for the signal samples is $\sigma(pp \rightarrow Z(H)) \times BR_{SM} \times BR^{PDG}_{\Upsilon(nS) \rightarrow \mu\mu}$.}
+(NNLO) QCD contributions, and the next-to-leading order (NLO) electroweak corrections from fewz 3.1~\cite{FEWZ} calculated using the NLO PDF set NNPDF3.0, with the phase space selection in invariant mass of the dimuon system of $m_{\mu\mu} > 50$ GeV. For the Higgs Dalitz $\sigma$, we consider only the gluon fusion contribution ($\sigma_{\text{ggF}}  = $ 48.6 $pb$)~\cite{CERNYellowReportPageAt13TeV}. The Higgs Dalitz Decay $BR_{SM}$ and the $Z \rightarrow \mu\mu\gamma_{FSR}$ were obtained with MCFM 6.6~\cite{CAMPBELL201010} (as in the CMS search for Higgs Dalitz Decay in at $\sqrt{s} =$ 8 TeV~\cite{dalitz_decay_8_Tev}) and with \MADGRAPH5 $\_$\MCATNLO, respectively. The $BR^{PDG}_{\Upsilon(1S,2S,3S) \rightarrow \mu\mu} = \text{(2.48, 1.93, 2.18)} \times 10^{-2}$ is quoted from Particle Data Group report (PDG)~\cite{pdg_2020}. The "Effective $\sigma$" for the signal samples is $\sigma(pp \rightarrow Z(H)) \times BR_{SM} \times BR^{PDG}_{\Upsilon(nS) \rightarrow \mu\mu}$.}
 \input{figures_and_tables/tables/MC_Samples_Table.tex}
 \label{tab:MC}
 \end{center}

@@ -1,3 +1,5 @@
+% \clearpage
+
 \section{Rare Z and Higgs decays to quarkonia}
 \label{section_rare_deays}
 
@@ -12,19 +14,23 @@ Also, the exclusive rare decays of vector bosons (\Z, W) provide a favorable env
 They offer the perfect way to explore some of the leading order properties of the light-cone distribution amplitudes (LCDAs)~\cite{Grossman2015} of several mesons, but they present a difficulty, considering that in the LHC energy scale the branching ratio of these processes is very small. There are theoretical predictions~\cite{PhysRevD.97.016009,PhysRevD.96.116014} that point out a branching ratio for several decay channels in the Standard Model, as shown in the Table \ref{fig:XsecTable}.
 
 \begin{table}[htp]
-\begin{center}
-\caption{Summary of cross section and branching ratio for $H/Z \rightarrow \Upsilon(1S,2S,3S)+\gamma  \rightarrow \mu^{+} \mu^{-} +\gamma$ analysis. The effective cross-section will be discussed in section \ref{sec:datasets}.}
-%\resizebox{.5\width}{!}{\input{figures_and_tables/tables/UpperLimits}}
-\input{figures_and_tables/tables/XSec_BR_Table.tex}
-%\caption{Summary of cross section and branching ratio for $H/Z \rightarrow \Upsilon(1S,2S,3S)+\gamma  \rightarrow \mu^{+} \mu^{-} +\gamma$ analysis. Assuming that of $\sigma (pp\rightarrow$ H) is 55.614 $pb^{-1}$ and  $\sigma (pp\rightarrow Z \rightarrow \mu\mu$ ) is 57094.5 $pb^{-1}$ with the phase space selection in invariant mass of the dimuon system of $m_{\mu\mu} > 50 GeV$ (Missing References). }
-\label{fig:XsecTable}
-\end{center}
+  \begin{center}
+    \caption{Summary of cross section and branching ratio for $H/Z \rightarrow \Upsilon(1S,2S,3S)+\gamma  \rightarrow \mu^{+} \mu^{-} +\gamma$ analysis. The effective cross-section will be discussed in section \ref{sec:datasets}.}
+    %\resizebox{.5\width}{!}{\input{figures_and_tables/tables/UpperLimits}}
+    \input{figures_and_tables/tables/XSec_BR_Table.tex}
+    %\caption{Summary of cross section and branching ratio for $H/Z \rightarrow \Upsilon(1S,2S,3S)+\gamma  \rightarrow \mu^{+} \mu^{-} +\gamma$ analysis. Assuming that of $\sigma (pp\rightarrow$ H) is 55.614 $pb^{-1}$ and  $\sigma (pp\rightarrow Z \rightarrow \mu\mu$ ) is 57094.5 $pb^{-1}$ with the phase space selection in invariant mass of the dimuon system of $m_{\mu\mu} > 50 GeV$ (Missing References). }
+    \label{fig:XsecTable}
+  \end{center}
 \end{table}
 
+
+
+
+
 %Table
- % https://docs.google.com/spreadsheets/d/1zP8P9kp-yFrkMu9bGt4fpIirKAKYlH-w2em_kVkYYKw/edit?usp=sharing
- %Pag2
- 
+% https://docs.google.com/spreadsheets/d/1zP8P9kp-yFrkMu9bGt4fpIirKAKYlH-w2em_kVkYYKw/edit?usp=sharing
+%Pag2
+
 Recent studies on exclusive Higgs boson decays \cite{ISIDORI2014131,PhysRevLett.114.101802,GAO2014366} in final states containing a simple vector meson and a photon have caused interest in these physics topics. It was proposed to use these decays as a possible way to explore non-standard Yukawa couplings of the Higgs boson. Such measures are quite challenging in the LHC environment. The observation of hadronic decays of vector bosons provides could provide a new frontier for the nature of heavy quarkonia production in hadronic collisions.
 
 Along the same lines, the simple exploration of rare SM decays, even in scenarios where anomalous couplings are, in principle, ruled out by direct measurements~\cite{cms_h_to_bb_PhysRevLett.121.121801}, as in the case of this analysis ($H \rightarrow \Upsilon(nS) + \gamma$), are still important as a stress test of the SM and as reference for future measurements. Specially the later one, when you consider that the small predicted cross sections from Table~\ref{fig:XsecTable}, most probably, would imply that an observation of this decay would be unlikely even in the HL-LHC~\cite{hl_lhc}.
@@ -32,13 +38,26 @@ Along the same lines, the simple exploration of rare SM decays, even in scenario
 This measurement is sensitive to the direct and indirect production (Figure~\ref{direct_indirect}). The \textit{direct} process consists in the decay of boson (Higgs or Z) to a quark anti-quark pair, in which, one of the quarks radiates a photon and the pair hadronizes to a meson (a $\Upsilon(nS)$, for this study), while in \textit{indirect} process, the decay happens to a $\gamma \gamma^{*}(Z)$, with the subsequent decay of the $\gamma^{*}(Z)$ to a quark anti-quark that hadronizes. 
 
 
-\begin{figure}[!htbp]
-  \begin{center}
-  \includegraphics[width=0.35\textwidth ]{figures_and_tables/theory/direct_indirect.png}
-  \end{center}\vspace*{-.5cm}
-  \caption{Example of leading order diagrams for the indirect (top) and direct (bottom) production mechanisms. In the diagrams, the h can also be understood as a Z boson.}
+% direct and indirect decays
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[htbp]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures_and_tables/theory/indirect.png}
+    \caption{Indirect decay.}
+    \label{indirect}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[htbp]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures_and_tables/theory/direct.png}
+    \caption{Direct decay.}
+    \label{direct}
+  \end{subfigure}
+  \caption{\todo[inline]{Melhorar a qualidade das imagens.} Example of leading order diagrams for the indirect and direct production mechanisms. In thees diagrams, the $h$ can also be understood as a $Z$ or a Higgs boson.}
   \label{direct_indirect}
-  \end{figure} 
+\end{figure}
+
 
 Clearly, only the direct process is sensible to the Yukawa coupling of the boson with the quarks, but, since both processes are indistinguishable in their final state, the in direct process needs to be taken into account. In this study, a dimuon final state is used to tag the $\Upsilon(nS)$.
 
@@ -50,7 +69,7 @@ Finally, since the $\Upsilon(nS) + \gamma$ decay has a much smaller cross sectio
 
 \begin{figure}[!htbp]
   \begin{center}
-  \includegraphics[width=0.6\textwidth ]{figures_and_tables/theory/hbb_coup.png}
+    \includegraphics[width=0.6\textwidth ]{figures_and_tables/theory/hbb_coup.png}
   \end{center}\vspace*{-.5cm}
   \caption{Expected relative variation of the branching ratio for the $H \rightarrow \Upsilon(nS) + \gamma$ to $k_b$, where $k_b = g(Hb\bar{b})/g(Hb\bar{b})_{SM}$ is the ratio for the observed and expected Yukawa coupling oh $Hb\bar{b}$. Source:~\cite{PhysRevD.88.053003}}
   \label{hbb_coup}
@@ -63,11 +82,11 @@ The ATLAS experiment~\cite{atlas_collaboration_2008} already have two results on
 
 The what concerns the most updated result, the study corresponded to 36.1 $fb^{-1}$ at $\sqrt{s} = 13$ TeV and no significant excess was found by the experiment. Upper limits for the were obtained, assuming the Standard Model branching fractions predictions, at 95\% confidence level, according to table~\ref{tab:atlas_results_2018}.
 
- 
+
 \begin{table}[htp]
   \begin{center}
-
-  \caption{Observed upper limits, by the ATLAS experiment, on the branching fractions for the Higgs and Z decays (last result). Detailed comparisons with the results obtained in this study will be presented in chapter~\ref{chaper_results}.}
+    
+    \caption{Observed upper limits, by the ATLAS experiment, on the branching fractions for the Higgs and Z decays (last result). Detailed comparisons with the results obtained in this study will be presented in chapter~\ref{chaper_results}.}
     \begin{tabular}{cc}
       \hline
       Decay & $\mathcal{B}F$ at 95\% \CL \\ \hline
@@ -83,33 +102,33 @@ The what concerns the most updated result, the study corresponded to 36.1 $fb^{-
       Z$\rightarrow  \Upsilon(2S) +\gamma$ & < 1.7$\times 10^{-6}$ \\ 
       Z$\rightarrow  \Upsilon(3S) +\gamma$ & < 4.8$\times 10^{-6}$ \\        
     \end{tabular}
-  \label{tab:atlas_results_2018}
+    \label{tab:atlas_results_2018}
   \end{center}
-  \end{table}
+\end{table}
 
-  It is worth it to mention that the ATLAS papers present a broader analysis, including the decays to $J/\Psi +\gamma$ and $\Psi(2S) +\gamma$.
+It is worth it to mention that the ATLAS papers present a broader analysis, including the decays to $J/\Psi +\gamma$ and $\Psi(2S) +\gamma$.
 
 
-  CMS~\cite{cms_paper} also have a result on $J/\Psi +\gamma$ and $\Psi(2S) +\gamma$ decay channel, of the Higgs and Z boson~\cite{papper_jpsi}. The observed upper limit on the branching fraction for these decays are presented in table~\ref{tab:cms_jpsi_results}.
+CMS~\cite{cms_paper} also have a result on $J/\Psi +\gamma$ and $\Psi(2S) +\gamma$ decay channel, of the Higgs and Z boson~\cite{papper_jpsi}. The observed upper limit on the branching fraction for these decays are presented in table~\ref{tab:cms_jpsi_results}.
 
-  \begin{table}[htp]
-    \begin{center}
-
-  
+\begin{table}[htp]
+  \begin{center}
+    
+    
     \caption{Observed upper limits, by CMS, on the branching fractions for the Higgs and Z decays. The number are compatible with the ones obtained by ATLAS. The results presented for different polarization scenarios of the $J/\Psi$.}
-      \begin{tabular}{ ccccc }
-        Channel & Polarization  & $\mathcal{B}F$ at 95\% \CL\\
-          \hline
-          & Unpolarized & $< 1.4\ten{-6}$  \\
-          Z$\rightarrow  J/\Psi +\gamma$ & Transverse & $< 1.5\ten{-6}$  \\
-          & Longitudinal & $< 1.2\ten{-6}$  \\
-          \hline \hline
-          H$\rightarrow  J/\Psi +\gamma$ & Transverse & $< 7.6\ten{-4}$  \\
-        \end{tabular}
-  
+    \begin{tabular}{ ccccc }
+      Channel & Polarization  & $\mathcal{B}F$ at 95\% \CL\\
+      \hline
+      & Unpolarized & $< 1.4\ten{-6}$  \\
+      Z$\rightarrow  J/\Psi +\gamma$ & Transverse & $< 1.5\ten{-6}$  \\
+      & Longitudinal & $< 1.2\ten{-6}$  \\
+      \hline \hline
+      H$\rightarrow  J/\Psi +\gamma$ & Transverse & $< 7.6\ten{-4}$  \\
+    \end{tabular}
+    
     \label{tab:cms_jpsi_results}
-    \end{center}
-    \end{table}
+  \end{center}
+\end{table}
 
 No result on the Z and Higgs decays to $\Upsilon(nS) +\gamma$ have been published by CMS, yet.
 
@@ -121,4 +140,4 @@ The results presented here, are a subset of a broader topic related to the rare 
   \item Search for decays of the 125 GeV Higgs boson into a Z boson and a $\rho$ or $\phi$ meson~\cite{cms_higgs_rho_phi}.
 \end{itemize}
 
-\todo{verificar resultados se outros foram publicados.}
+\todo[inline]{verificar resultados se outros foram publicados.}
