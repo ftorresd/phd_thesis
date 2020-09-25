@@ -55,7 +55,7 @@ For the $Z \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis, the peaking backgro
 
 In order to describe the 2-dimensional invariant mass distribution of the Peaking Background, as stated in Table~\ref{tab:BckgModeling_Z}, the $m_{\mu\mu}$ component is described by a Bernstein polynomial of 1\textsuperscript{st} order~\cite{Bernstein_pol}, which is used here just a representation of a linear function. The $m_{\mu\mu\gamma}$ component is described by Double Crystal Ball function~\cite{cb_function}. A Crystal Ball function is a \textit{pdf} composed by a gaussian distribution and a power-law tail to the left, before certain threshold. The Crystal Ball function was named after the Crystal Ball Collaboration (first to use this \textit{pdf}) and it is widely used in high-energy physics to describe mass distributions that incorporate FSR (final state radiation) effects, via the power-law tail. A Double Crystal Ball is a Crystal Ball function with the power-law tail on both sides.
 
-A Crystal Ball function is define as:
+A Crystal Ball function is defined as:
 
 
 \begin{equation}
@@ -65,15 +65,15 @@ CB(x;\alpha,n,\bar x,\sigma) = N \cdot \begin{cases} \exp(- \frac{(x - \bar x)^2
 \end{equation}
 where,
 
-$A = \left(\frac{n}{\left| \alpha \right|}\right)^n \cdot \exp\left(- \frac {\left| \alpha \right|^2}{2}\right),$
-
-$B = \frac{n}{\left| \alpha \right|}  - \left| \alpha \right|,$
-
-$N = \frac{1}{\sigma (C + D)},$
-
-$C = \frac{n}{\left| \alpha \right|} \cdot \frac{1}{n-1} \cdot \exp\left(- \frac {\left| \alpha \right|^2}{2}\right),$
-
-$D = \sqrt{\frac{\pi}{2}} \left(1 + \operatorname{erf}\left(\frac{\left| \alpha \right|}{\sqrt 2}\right)\right),$
+\begin{equation}
+    \begin{split}
+        &A = \left(\frac{n}{\left| \alpha \right|}\right)^n \cdot \exp\left(- \frac {\left| \alpha \right|^2}{2}\right), \notag\\
+        &B = \frac{n}{\left| \alpha \right|}  - \left| \alpha \right|, \notag\\
+        &N = \frac{1}{\sigma (C + D)}, \notag\\
+        &C = \frac{n}{\left| \alpha \right|} \cdot \frac{1}{n-1} \cdot \exp\left(- \frac {\left| \alpha \right|^2}{2}\right), \notag\\
+        &D = \sqrt{\frac{\pi}{2}} \left(1 + \operatorname{erf}\left(\frac{\left| \alpha \right|}{\sqrt 2}\right)\right),
+    \end{split}
+\end{equation}
 
 and $erf$ is the error function.
 
