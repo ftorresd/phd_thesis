@@ -2,3 +2,7 @@
 \section{Hadronic Calorimeter}
 \todo[inline]{FAZER!}
 
+In the region $\abs{\eta} < 1.74$, the HCAL cells have widths of 0.087 in pseudorapidity and 0.087 in azimuth ($\phi$). In the $\eta$-$\phi$ plane, and for $\abs{\eta} < 1.48$, the HCAL cells map on to $5 \times 5$ arrays of ECAL crystals to form calorimeter towers projecting radially outwards from close to the nominal interaction point. For $\abs{\eta} > 1.74$, the coverage of the towers increases progressively to a maximum of 0.174 in $\Delta \eta$ and $\Delta \phi$. Within each tower, the energy deposits in ECAL and HCAL cells are summed to define the calorimeter tower energies, which are subsequently used to provide the energies and directions of hadronic jets.
+
+Jets are reconstructed offline from the energy deposits in the calorimeter towers, clustered using the anti-\kt algorithm~\cite{Cacciari:2008gp, Cacciari:2011ma} with a distance parameter of 0.4. In this process, the contribution from each calorimeter tower is assigned a momentum, the absolute value and the direction of which are given by the energy measured in the tower, and the coordinates of the tower. The raw jet energy is obtained from the sum of the tower energies, and the raw jet momentum by the vectorial sum of the tower momenta, which results in a nonzero jet mass. The raw jet energies are then corrected to establish a relative uniform response of the calorimeter in $\eta$ and a calibrated absolute response in transverse momentum \pt.
+

@@ -64,4 +64,4 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 - Higgs Public Results: https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsHIG
 - Higss Combination: https://cds.cern.ch/record/2706103
 - LHCHXSWG: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
-
+- CMS official detector description guidelines: https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector

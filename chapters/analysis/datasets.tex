@@ -47,13 +47,13 @@ w_{MC} = \frac{\sigma \mathcal{L}}{N_{sim}},
 \end{equation}
 where $N_{sim}$ is the number of simulated events for a specific process.
 
-The simulated sample are also corrected by the data pile-up distribution, since the pileup distribution of MC is different from the pileup distribution of data. The way to correct the MC is to assign a weight to each bin of the MC pileup distribution, with repect to the data. The rescaling is defined as the ration between normalized Pile-up (PU) distribution for Data and MC.
+The simulated sample are also corrected by the data pileup distribution, since the pileup distribution of MC is different from the pileup distribution of data. The way to correct the MC is to assign a weight to each bin of the MC pileup distribution, with repect to the data. The rescaling is defined as the ration between normalized pileup (PU) distribution for Data and MC.
 
 \begin{equation}
 \label{eqn:mc_weight}
 w_{PU}(n) = \frac{P^{Data}_{PU}(n)}{P^{Sim}_{PU}(n)},
 \end{equation}
-where $n$ is the number of interaction per bunch crossing (pile-up).
+where $n$ is the number of interaction per bunch crossing (pileup).
 
 \section{Contribution of the \texorpdfstring{$\Upsilon(nS)$} p polarisation}
 \label{sec:polarization}
