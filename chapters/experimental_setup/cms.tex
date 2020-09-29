@@ -1,6 +1,5 @@
 
 \section{The Compact Muon Solenoid - CMS}
-\todo[inline]{FAZER!}
 
 The Compact Muon Solenoid (CMS) is a multiple purpose experiment used to investigated $pp$ as well as lead-lead collisions at the LHC. It is operated by the CMS Collaborations, composed by around 5000 researches and 20 institutes~\footnote{It is important to stress that CMS is a collaboration of institutes, not researches.}. The CMS is located in the city of Cessy, France, 100 below the surface. The CMS apparatus has an overall length of 22\unit{m}, a diameter of 15\unit{m}, and weighs 14\,000 \unit{tonnes}. A detailed description of the CMS detector, can be found in~\cite{Chatrchyan:2008zzk}. Figure~\ref{cms_sketch} presents a sketch of CMS and its subdetectors.
 
@@ -13,6 +12,8 @@ The Compact Muon Solenoid (CMS) is a multiple purpose experiment used to investi
 \end{figure}
 
 The central feature of the CMS apparatus is a superconducting solenoid of 6\unit{m} internal diameter, providing a magnetic field of 3.8\unit{T}. Within the solenoid volume are a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (ECAL), and a brass and scintillator hadron calorimeter (HCAL), each composed of a barrel and two endcap sections. Forward calorimeters extend the pseudorapidity coverage provided by the barrel and endcap detectors. Muons are detected in gas-ionization chambers embedded in the steel flux-return yoke outside the solenoid.  
+
+The following sections describes the subdetectors, mentored above, and the CMS coordinate system, as well as some important variables.
 
 
 \subsection{Coordinate system}
@@ -35,6 +36,22 @@ A usually more suitable variable is the pseudorapidity, which is the rapidity in
 \end{equation}
 where $\theta$ is the angle between the transverse plane to the beam line ($x$-$y$ plane) and the positive $z$ direction. The convenience of using the pseudorapidity is its direct connection with the geometry of the event by the $\theta$ angle.
 
+Spatial distance, at CMS, usually is measured based on the $\eta$-$\phi$ space. In this sense the distance $\Delta R$ between two objects is defined as:
 
+\begin{equation}
+    \begin{split}
+        \Delta R &= \sqrt{(\Delta \eta)^2+(\Delta \phi)^2} \\
+        & =\sqrt{(\eta_1 - \eta_2)^2+(\phi_1 - \phi_2)^2}
+    \end{split}
+    \label{delta_R}
+\end{equation}
 
+One last important variable is the transverse momentum component, computed as in Equation~\ref{transverse_momentum}
 
+\begin{equation}
+    \begin{split}
+        p_T &= \sqrt{p_x^2 + p_y^2} \\
+        & =|\mathbf{p}| \cos(\theta)
+    \end{split}
+    \label{transverse_momentum}
+\end{equation}

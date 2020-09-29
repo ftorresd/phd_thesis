@@ -65,3 +65,4 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 - Higss Combination: https://cds.cern.ch/record/2706103
 - LHCHXSWG: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
 - CMS official detector description guidelines: https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector
+- The CMS Experiment at the CERN LHC: https://inspirehep.net/literature/796887
