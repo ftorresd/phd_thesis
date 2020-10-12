@@ -22,6 +22,7 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 - Phase 2 - Muon TDR: https://cds.cern.ch/record/2283189/files/CMS-TDR-016.pdf
 - Muon TDR: https://cds.cern.ch/record/343814/files/LHCC-97-032.pdf
 - Performance - Muons: https://iopscience.iop.org/article/10.1088/1748-0221/13/06/P06015
+- Performance - Muons - Run2: https://cds.cern.ch/record/2682902/files/DP2019_022.pdf
 - jPsi analysis: https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-6562-5
 - tese da cecile: https://cds.cern.ch/record/2222392/files/TS2016_016_2.pdf
 - tese do andres: https://cds.cern.ch/record/2647950/files/TS2018_028_2.pdf
