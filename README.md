@@ -67,3 +67,4 @@ To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 - LHCHXSWG: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG
 - CMS official detector description guidelines: https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubDetector
 - The CMS Experiment at the CERN LHC: https://inspirehep.net/literature/796887
+- C. Burgess and G. Moore. The standard model, a primer: https://www.mobt3ath.com/uplode/book/book-33972.pdf
