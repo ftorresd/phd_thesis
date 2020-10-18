@@ -9,7 +9,7 @@
  
 Physics understands matter and how it interacts in terms of two components: fundamentals forces and elementary particles. From the weakest to the strongest, the fundamental forces are: Gravitational, Weak, Electromagnetic and Strong. All share common characteristics like, being mediated by particles~\footnote{There is no evidence of the existence of the Graviton (force carrier associated to the gravitational force), even though, it is theorized by models that wish to comprehend gravity in a quantum perspective.}, being relevant within some effective range and have a associate a charge-like quantity (i.e. an intrinsic characteristic of the object) that defines whether or not, particles might be subjected to a specific interaction.
 
-Along with the fundamental interactions, the Standard Model~\cite{burgess_moore_2006, oguri_qcd, Halzen:1984mc, Aitchison:2004cs} (or simply \textit{SM}) defines every existing matter in the Universe as a set of fundamental quantum objects, with properties that prescribes their interaction. Those objects are said to be fundamental since, in the context of the SM, they are the smallest possible components of matter. We shall refer to them as \textit{Fundamental Particles}. There four of those mediating particles (force carriers), gluon ($g$ - for the strong interaction), photon ($\gamma$ - for the electromagnetic interaction), Z and W (for weak interaction), all of them being vector bosons (spin 1). Besides the interaction mediators, described at Table~\ref{fundamental_forces}, the fundamental particles are divided in two groups (\textit{quarks} and \textit{leptons}), with three generations, each. These are not force carriers, but elementary particles, endowed with charge-like characteristics that allow them to interact by exchange the vector bosons. Those are the building blocks of Matter in our Universe.
+Along with the fundamental interactions, the Standard Model~\cite{burgess_moore_2006, oguri_qcd, Halzen:1984mc, Aitchison:2004cs} (or simply \textit{SM}) defines every existing matter in the Universe as a set of fundamental quantum objects, with properties that prescribes their interaction. Those objects are said to be fundamental since, in the context of the SM, they are the smallest possible components of matter. We shall refer to them as \textit{Fundamental Particles}. There four of those mediating particles (force carriers), gluon ($g$ - for the strong interaction), photon ($\gamma$ - for the electromagnetic interaction), Z (neutral) and $W^\pm$ (for weak interaction), all of them being vector bosons (spin 1). Besides the interaction mediators, described at Table~\ref{fundamental_forces}, the fundamental particles are divided in two groups (\textit{quarks} and \textit{leptons}), with three generations, each. These are not force carriers, but elementary particles, endowed with charge-like characteristics that allow them to interact by exchange the vector bosons. Those are the building blocks of Matter in our Universe.
 
 Figure~\ref{sm_summary} summarizes their properties. Table~\ref{fundamental_forces} presents the relative strength and effective range, for each on of the four fundamental interactions. It is important to stress that, the gravitational force is not study subject of the Standard Model.
 
@@ -42,6 +42,7 @@ There are six quarks, up and down ($u$ and $d$ - first generation), charm and st
 Figure~\ref{sm_summary} also presents the Higgs Boson ($H$) which is part of the SM and shall be discussed later.
 
 \subsection{Local Gauge Invariance}
+\label{lgi_qed}
 
 Within the Standard Model, the theoretical basis that describe the fundamental interactions are derived from a common principle: the local gauge invariance. According to Salam and Ward~\cite{ward_salam}:
 
@@ -106,7 +107,7 @@ Modifications \ref{covariant_derivative_modification} and \ref{covariant_gauge_f
     \label{invariant_lagrangian}
 \end{equation}
 
-Interesting to notice that the $\mathcal{L_{\text{0}}}$, on \ref{invariant_lagrangian} term corresponds to the electron kinetic energy plus the mass contribution (the free particle lagrangian), while the second corresponds to the interaction of the electron ($\psi(x)$) and the electromagnetic field. One could add the energy contribution of the electromagnetic field itself, by adding a term like:
+Interesting to notice that the $\mathcal{L_{\text{0}}}$ term, on \ref{invariant_lagrangian}, corresponds to the electron kinetic energy plus its mass contribution (the free particle lagrangian), while the second corresponds to the interaction of the electron ($\psi(x)$) and the electromagnetic field. On this basis, $e$ is said to be the generator of the electromagnetic four-potential, $A_\mu$. One could add the energy contribution of the electromagnetic field itself, by adding a term like:
 
 \begin{equation}
     \mathcal{L_{\text{EM}}} = - \frac{1}{4} F_{\mu\nu} F^{\mu\nu},
@@ -114,24 +115,89 @@ Interesting to notice that the $\mathcal{L_{\text{0}}}$, on \ref{invariant_lagra
 \end{equation}
 where:
 \begin{equation}
-    F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu.
+    F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
 \label{f_munu_definition}
 \end{equation}
+is the electromagnetic field tensor.
 
 It can be proven that applying \ref{f_munu_definition} on the Euler-Lagrange equations, this will give us the Maxwell's Equations for the vacuum, $\partial_{\mu} F^{\mu\nu} = 0$~\footnote{A non-vacuum covariant form of the Maxwell's Equations would be $\partial_{\mu} F^{\mu\nu} = j^{\nu}$.}. One could also expect that a field mass contribution in as below, could be introduced, as well.
 
 \begin{equation}
-    \frac{1}{2}m A_\mu A_\mu
+    \frac{1}{2}m_{photon} A_\mu A^\mu
 \label{photon_mass_term}
 \end{equation}
 
-This one would break the gauge invariance, therefor we could imply that the photon should be massless.
+This one would break the gauge invariance, therefore we can imply that the photon should be massless.
+
+The QED is said to be a gauge theory with the symmetry group $U(1)$. The $U(1)$ description comes from Lie Algebra, where \ref{covariant_derivative_modification} and \ref{covariant_gauge_field} are transformations of gauge $\alpha$ (in one dimension) to which the system is symmetric (invariant), then unitary and generated by a $1 \times 1$ matrix ($e$).
 
 \subsection{The Standard Model}
 
-Taking profit of the Local Gauge Invariance as path to introduce interactions in a quantum field theory, such as for the QED, the Standard Model can be defined as 
+Taking profit of the Local Gauge Invariance as path to introduce interactions in a quantum field theory (QFT), such as for the QED, the Standard Model can be defined as a QFT of the gauge group $SU_{\scaleto{c}{5pt}}(3) \times SU_{\scaleto{L}{5pt}}(2) \times U_{\scaleto{Y}{5pt}}(1)$. All the experimental results we have, so far (Section~\ref{section_sm_higgs_results}), give us support to this definition. 
+
+In this context there are 8 spin 1 bosons (called gluons) for the $SU_{\scaleto{c}{5pt}}(3)$ component, which corresponds to the strong interaction, plus 4 bosons, $W^\pm$, $Z$ and the photon for the other components (weak and electromagnetic interactions).
+
+Hadrons are defined as colorless particles that interact strongly. They are bound states of quarks, which also interact via strong force and have non-neutral color. Hadrons are divided in mesons (spin integer) and barions (spin non-integer). Leptons are those particles that do not interact via gluons.
+
+\subsubsection{Quantum Chromodinamics}
+
+Quantum Chromodynamics (QCD) is the $SU_{\scaleto{c}{5pt}}(3)$ component of the SM, where $SU$ stands for special unitary group, to which the $det(e^{i\lambda_i}) = 1$, where $\lambda_i$ are the Gell-Mann matrices (the 8 generators of the $SU(3)$). It corresponds to the field of gluons, responsible for the strong interaction acting on a charge-like degree of freedom: colour ($c$). Gluons follow the same fashion as photons, they are massless and have spin 1, but contrary to electromagnetism, the QCD is a non-abelian gauge theory. This means that the force carriers (gluons) can interact with each other (self-coupling). In other words, gluons are charged (coloured). In a more formal manner, the generators of this group are non-commutative, as follows.
+
+\begin{equation}
+    \left[ T_a, T_b \right] = \left[ \frac{\lambda_a}{2}, \frac{\lambda_b}{2} \right] = i \sum_{c=1}^8 f_{ab}^c\lambda_c,
+\label{photon_mass_term}
+\end{equation}
+where $f_{ab}^c$ are antisymmetric structure constants.
+
+From a experimental perspective, the idea of colour begins with the observation of $\Lambda^{++}$~\cite{dalitz1967proceedings}. It could be only be composed by three up quarks, which would break Pauli Exclusion Principle~\footnote{Two or more fermion can not be in the same quantum state.}. This observation demanded the inclusion of another degree of freedom, the colour, typically refereed as RED, BLUE, GREEN and its anti-colours.
+
+The QCD lagrangian for a quark of colour $c$, just the QED lagrangian for a electron of charge $-e$, is~\footnote{The total QD lagrangian would the sum over all possible states.}:
+
+\begin{equation}
+    \mathcal{L_{QCD}} = \bar{\psi_c}(x)(i\gamma^\mu\ D_\mu -m)\psi_c(x) - \frac{G_{\mu\nu}^c G^{\mu\nu}_c}{4},
+\label{qcd_lagrangian}
+\end{equation}
+where
+\begin{equation}
+    D_\mu = \partial_\mu - ig_s T_c G_\mu^c
+\label{qcd_lagrangian_definitions1}
+\end{equation}
+and 
+\begin{equation}
+    G_{\mu\nu}^c = \partial_\mu G_\nu^c - \partial_\nu G_\mu^c - g_s f_{ab}^c G_\mu^a G_\nu^b
+\label{qcd_lagrangian_definitions2}
+\end{equation}
+
+This lagrangian is local gauge invariant when the strength tensor \ref{qcd_lagrangian_definitions2} as:
+
+\begin{equation}
+    G_{\mu}^c \rightarrow {G_{\mu}^c}' = G_{\mu}^c - \frac{1}{g_s} \partial_\mu \alpha_c(x) - f_{ab}^c \alpha_a(x) G_{\mu}^b
+\label{strength_tensor_tranform}
+\end{equation}
+
+Coloured particles, such as quarks and gluons, are subjected to the phenomenon of Colour Confinement, which prohibits the direct observation of these particles. These can only be observed in colourless bound states (hadrons). A isolated quark or gluon will immediately interact with the vacuum and initiates a hadronization process until a set of stable colourless particle is produced. As a consequence of the Colour Confinement and the self-coupling property of gluons, a bound state of gluons, Glueballs~\cite{wolfgang_status}, is possible, even though there are no experimental clear evidences of its existence. This is one of the few open topics in the SM.
+
+QCD is a perturbation theory which demands renormalization~\footnote{A techniques to deal with infinites that might arrive when calculating quantities in a QFT. In summary the total probability for the theory is required to re-sum to unity.}. In a qualitative way, one could imagine that, as larger the distance on interaction is, more sea vacuum gluon pairs can contribute to the net colour charge, due to the self-coupling, increasing the total interaction strength. To cope the Colour Confinement and the self-coupling, one would redefine the the strong coupling constant as $g_s = \sqrt{4 \pi \alpha_s}$ (from \ref{qcd_lagrangian_definitions1}, \ref{qcd_lagrangian_definitions2} and \ref{strength_tensor_tranform}), where $\alpha_s(Q^2) \propto \frac{\Lambda^2_{QCD}}{ln Q^2}$. In this situation, the coupling strength is related to the transferred momentum $Q^2$, in such a way that, in a highly energetic interaction (high $Q^2$, hence short distance) the coupling is weaker and the quarks and gluons involved, behave like a quasi-free particles, allowing the use of perturbation theory. This effect is known as Asymptotic Freedom, and its scale have already been measured by the LHC experiments~\cite{pdg_2020}.
+
+\subsubsection{Electroweak Theory}
+
+The $SU_{\scaleto{L}{5pt}}(2) \times U_{\scaleto{Y}{5pt}}(1)$ represents the Electroweak component of the SM. It is the unification of the Weak and Electromagnet interaction, under the same theory. Here two new degrees of freedom are introduced, $L$ and $Y$. The former one is related to the chirality of $SU(2)$ and the latter is the weak hypercharge. The generators of groups are the Pauli Matrices ($T_i$)~\footnote{The usual $\sigma_i$ representation for the Pauli Matrices usually is reserved for the $SU_{\scaleto{spin}{5pt}}(2)$ group.}, form the $SU_{\scaleto{L}{5pt}}(2)$ and the electromagnetic generator structure for $U_{\scaleto{Y}{5pt}}(1)$ (but for $Y$, instead of $-e$, as before). Since:
+
+\begin{equation}
+    \begin{split}
+        \left[ T_a, T_b \right] &=  i \levicivita{^{abc}}T_c,  \\
+        \left[ T_a, Y \right] &=  0
+    \end{split}
+\label{pauli_commutator}
+\end{equation}
+where $\levicivita{^{abc}}$ is the Levi-Civita tensor, $SU_{\scaleto{L}{5pt}}(2)$ is also a non-abelian group.
+
+The connection between electric charge $Q$ and the weak charge is $Y = Q - T_3$, as such, QED ($U_{\scaleto{EM}{5pt}}(1)$), as defined in Section~\ref{lgi_qed} is derived from $U_{\scaleto{Y}{5pt}}(1)$.
+
+In the Electroweak Theory, fermions can have left-handed or right-handed components of their wave-functions, according to their chirality. Left-handed components transform as doublets of $(T, T_3)$ with eigenvalues $(1/2, \pm1/2)$ under $SU_{\scaleto{L}{5pt}}(2)$ and the right-handed components transform as singlets $(T=0)$. Weak interactions act only on left-handed fermions. That is the reason for the $L$ subscript in the electroweak symmetry group definition.
+
+\subsubsection{Standard Model Lagrangian and the Scalar Sector}
 
 
 
-\todo[inline]{SM as a gauge theory} 
-\todo[inline]{Spontaneous Symmetry break and the Higgs Boson} 
+\todo[inline]{Spontaneous Symmetry break and the Higgs Boson}  
