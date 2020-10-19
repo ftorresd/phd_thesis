@@ -123,7 +123,7 @@ is the electromagnetic field tensor.
 It can be proven that applying \ref{f_munu_definition} on the Euler-Lagrange equations, this will give us the Maxwell's Equations for the vacuum, $\partial_{\mu} F^{\mu\nu} = 0$~\footnote{A non-vacuum covariant form of the Maxwell's Equations would be $\partial_{\mu} F^{\mu\nu} = j^{\nu}$.}. One could also expect that a field mass contribution in as below, could be introduced, as well.
 
 \begin{equation}
-    \frac{1}{2}m_{photon} A_\mu A^\mu
+    \frac{1}{2}m_{photon}^2 A_\mu A^\mu
 \label{photon_mass_term}
 \end{equation}
 
@@ -145,7 +145,7 @@ Quantum Chromodynamics (QCD) is the $SU_{\scaleto{c}{5pt}}(3)$ component of the 
 
 \begin{equation}
     \left[ T_a, T_b \right] = \left[ \frac{\lambda_a}{2}, \frac{\lambda_b}{2} \right] = i \sum_{c=1}^8 f_{ab}^c\lambda_c,
-\label{photon_mass_term}
+\label{qcd_commutators}
 \end{equation}
 where $f_{ab}^c$ are antisymmetric structure constants.
 
@@ -159,7 +159,7 @@ The QCD lagrangian for a quark of colour $c$, just the QED lagrangian for a elec
 \end{equation}
 where
 \begin{equation}
-    D_\mu = \partial_\mu - ig_s T_c G_\mu^c
+    D_\mu = \partial_\mu + ig_s T_c G_\mu^c
 \label{qcd_lagrangian_definitions1}
 \end{equation}
 and 
@@ -177,7 +177,7 @@ This lagrangian is local gauge invariant when the strength tensor \ref{qcd_lagra
 
 Coloured particles, such as quarks and gluons, are subjected to the phenomenon of Colour Confinement, which prohibits the direct observation of these particles. These can only be observed in colourless bound states (hadrons). A isolated quark or gluon will immediately interact with the vacuum and initiates a hadronization process until a set of stable colourless particle is produced. As a consequence of the Colour Confinement and the self-coupling property of gluons, a bound state of gluons, Glueballs~\cite{wolfgang_status}, is possible, even though there are no experimental clear evidences of its existence. This is one of the few open topics in the SM.
 
-QCD is a perturbation theory which demands renormalization~\footnote{A techniques to deal with infinites that might arrive when calculating quantities in a QFT. In summary the total probability for the theory is required to re-sum to unity.}. In a qualitative way, one could imagine that, as larger the distance on interaction is, more sea vacuum gluon pairs can contribute to the net colour charge, due to the self-coupling, increasing the total interaction strength. To cope the Colour Confinement and the self-coupling, one would redefine the the strong coupling constant as $g_s = \sqrt{4 \pi \alpha_s}$ (from \ref{qcd_lagrangian_definitions1}, \ref{qcd_lagrangian_definitions2} and \ref{strength_tensor_tranform}), where $\alpha_s(Q^2) \propto \frac{\Lambda^2_{QCD}}{ln Q^2}$. In this situation, the coupling strength is related to the transferred momentum $Q^2$, in such a way that, in a highly energetic interaction (high $Q^2$, hence short distance) the coupling is weaker and the quarks and gluons involved, behave like a quasi-free particles, allowing the use of perturbation theory. This effect is known as Asymptotic Freedom, and its scale have already been measured by the LHC experiments~\cite{pdg_2020}.
+QCD is a perturbation theory ($\mathcal{L} = \mathcal{L}_{\text{Free Particle}} + \mathcal{L}_{\text{Interaction}}$) which demands renormalization~\footnote{A techniques to deal with infinites that might arrive when calculating quantities in a QFT. In summary the total probability for the theory is required to re-sum to unity.}. In a qualitative way, one could imagine that, as larger the distance on interaction is, more sea vacuum gluon pairs can contribute to the net colour charge, due to the self-coupling, increasing the total interaction strength. To cope the Colour Confinement and the self-coupling, one would redefine the the strong coupling constant as $g_s = \sqrt{4 \pi \alpha_s}$ (from \ref{qcd_lagrangian_definitions1}, \ref{qcd_lagrangian_definitions2} and \ref{strength_tensor_tranform}), where $\alpha_s(Q^2) \propto \frac{\Lambda^2_{QCD}}{ln Q^2}$. In this situation, the coupling strength is related to the transferred momentum $Q^2$, in such a way that, in a highly energetic interaction (high $Q^2$, hence short distance) the coupling is weaker and the quarks and gluons involved, behave like a quasi-free particles, allowing the use of perturbation theory. This effect is known as Asymptotic Freedom, and its scale have already been measured by the LHC experiments~\cite{pdg_2020}.
 
 \subsubsection{Electroweak Theory}
 
@@ -192,12 +192,179 @@ The $SU_{\scaleto{L}{5pt}}(2) \times U_{\scaleto{Y}{5pt}}(1)$ represents the Ele
 \end{equation}
 where $\levicivita{^{abc}}$ is the Levi-Civita tensor, $SU_{\scaleto{L}{5pt}}(2)$ is also a non-abelian group.
 
-The connection between electric charge $Q$ and the weak charge is $Y = Q - T_3$, as such, QED ($U_{\scaleto{EM}{5pt}}(1)$), as defined in Section~\ref{lgi_qed} is derived from $U_{\scaleto{Y}{5pt}}(1)$.
+The connection between electric charge $Q$ and the weak charge is $\frac{Y}{2} = Q - T_3$, as such, QED ($U_{\scaleto{EM}{5pt}}(1)$), as defined in Section~\ref{lgi_qed} is derived from $U_{\scaleto{Y}{5pt}}(1)$.
 
 In the Electroweak Theory, fermions can have left-handed or right-handed components of their wave-functions, according to their chirality. Left-handed components transform as doublets of $(T, T_3)$ with eigenvalues $(1/2, \pm1/2)$ under $SU_{\scaleto{L}{5pt}}(2)$ and the right-handed components transform as singlets $(T=0)$. Weak interactions act only on left-handed fermions. That is the reason for the $L$ subscript in the electroweak symmetry group definition.
 
-\subsubsection{Standard Model Lagrangian and the Scalar Sector}
+\subsubsection{Standard Model Lagrangian and the Higgs Sector}
+
+The SM lagrangian is given by:
+\begin{equation}
+        \mathcal{L}_{SM} =  \mathcal{L}_{gauge} + \mathcal{L}_{fermions} + \mathcal{L}_{Yukawa} + \mathcal{L}_{Higgs},
+\label{sm_lagrangian}
+\end{equation}
+where $\mathcal{L}_{gauge}$ describes gauge fields of the QCD and Electroweak theories,
+
+\begin{equation}
+    \mathcal{L}_{gauge} =  -\frac{1}{4}\sum_{c = 1}^{8}G_{\mu\nu}^c G^{\mu\nu}_c -\frac{1}{4}\sum_{a = 1}^{3}W_{\mu\nu}^a W^{\mu\nu}_a  -\frac{1}{4}B_{\mu\nu} B^{\mu\nu} .
+\label{sm_lagrangian_gauge}
+\end{equation} 
+
+The first term is related to the $SU_{\scaleto{c}{5pt}}(3)$ component of the SM and last two terms are related to $SU_{\scaleto{L}{5pt}}(2) \times U_{\scaleto{Y}{5pt}}(1)$ components, respectively. The summations are related to all generators in the symmetry group, $8$ and $3 + 1$, for QCD Electroweak.  Following the same structure as in \ref{qcd_lagrangian_definitions2}:
+
+\begin{equation}
+    \begin{split}
+        W_{\mu\nu}^a &= \partial_\mu W_\nu^a - \partial_\nu W_\mu^a - g \levicivita{_{abc}} W_\mu^b W_\nu^c,  \\
+        B_{\mu\nu} &= \partial_\mu B_\nu - \partial_\nu B_\mu
+    \end{split}
+\label{electroweak_field}
+\end{equation}
 
 
+For the fermionic term of the lagrangian, we have:
+\begin{equation}
+    \mathcal{L}_{fermions} = \sum_j i \bar{\psi}_L^j \slashed{D}^L \psi_L^j + \sum_k i \bar{\psi}_R^k \slashed{D}^R \psi_R^k,
+\label{sm_lagrangian_fermionic}
+\end{equation} 
+where the first term is summed over all $T$ doublets (left-handed components) and the second one, over all $T$ singlets (right-handed components). The slash notation was introduced, in which $\slashed{a} = \gamma^\mu a_\mu$. Here, we define the covariant derivatives as:
 
-\todo[inline]{Spontaneous Symmetry break and the Higgs Boson}  
+\begin{equation}
+    \begin{split}
+        D_\mu^L &= \partial_\mu + ig \sum^3_{a=1} T_L^a W_\mu^a + ig'\frac{Y}{2}B_\mu + ig_sT_cG_\mu^c  \\
+        D_\mu^R &= \partial_\mu + ig'\frac{Y}{2}B_\mu + ig_sT_cG_\mu^c 
+    \end{split}
+\label{electroweak_invariant_derivative}
+\end{equation}
+
+It is important to notice that, the weak interaction term ($W_\mu$) is absent in the right-handed component and the QCD term of the covariant derivative is only applied to quarks. Leptons are colourless.
+
+Since, the electroweak components of the SM are not related to flavour and charge, but rather weak hypercharge and left-handed chirality, the boson that we observe experimentally ($Z$, $W^\pm$ and $\gamma$) are not directly related to the fields $W_\mu^a$ and $B_\mu$. They are linear combination of them, as follows (assuming $T_L^a = \sigma^a/2$, where $\sigma^a$ are the Pauli Matrices):
+
+\begin{equation}
+    W^{\pm}_\mu = \frac{1}{\sqrt{2}} W_\mu^1 \mp i W_\mu^2
+\label{eletroweak_linear_combinations_W}
+\end{equation}
+\begin{equation}
+    \begin{split}
+        Z_\mu &= cos \theta_w W^3_\mu - sin \theta_w B_\mu, \\
+        A_\mu &= sin \theta_w W^3_\mu + cos \theta_w B_\mu,
+    \end{split}
+\label{eletroweak_linear_combinations_z_gamma}
+\end{equation}
+where $\theta_w$ is a measurable of the theory~\cite{pdg_2020}.
+
+
+The SM lagrangian terms, presented so far, are clearly gauge invariant, under the proper transformations. Even though this is sufficient to define the interactions, two problems arise, related to mass: the spin 1 gauge boson are, by construction, massless, which is in conflict for the measurements we have for $Z$ and $W^\pm$~\cite{pdg_2020}; if one include a mass term for the fermions, as expected from the previous discussion on the QED and QCD, this would break the gauge invariance of the symmetry.
+
+The overcome these problem, another field ($\phi$) is introduced. By its interaction with Electroweak bosons ($Z$ and $W^\pm$), they gain mass. Also, at the same time, a Yukawa coupling term, between the new field and the fermion, is capable to give them mass, naturally. The simplest way to achieve this is by introducing a scalar field double in $SU_{\scaleto{L}{5pt}}(2)$, the Higgs field.
+
+\begin{equation}
+    \phi = 
+        \left ( 
+        \begin{matrix}
+        \phi^+ \\
+        \phi^0 
+        \end{matrix}
+        \right )
+    \label{higgs_field}
+\end{equation}
+
+Therefore, the Higgs contribution to the SM lagrangian is:
+
+\begin{equation}
+    \mathcal{L}_{Higgs} = (D_\mu\phi)^\dagger(D_\mu\phi) - V(\phi),
+    \label{higgs_field1}
+\end{equation}
+where
+\begin{equation}
+    D_\mu = \partial^\mu + ig \sum^3_{a=1} T_L^a W_\mu^a + ig'\frac{Y}{2}B_\mu
+    \label{higgs_field2}
+\end{equation}
+and 
+\begin{equation}
+    V(\phi) = \mu^2 \phi^\dagger \phi + \lambda(\phi^\dagger \phi)^2.
+    \label{higgs_field3}
+\end{equation}
+
+The key idea behind the introduction of this field, is that, at ground state, the $SU_{\scaleto{L}{5pt}}(3) \times U_{\scaleto{Y}{5pt}}(1)$ symmetry is "spontaneously" broken, hence the name usually given to this procedure Spontaneously Symmetry Break~\cite{Higgs:1964pj, Higgs:1964ia, Higgs:1966ev, Englert:1964et, Guralnik:1964eu, Kibble:1967sv}. In this case, to preserve unitarity and to ensure the $V(\phi)$ has a global minimum, $\lambda > 0$.  and $\mu^2$ needs to be negative, in order to give mass to $Z$ and $W^\pm$, otherwise, we would be adding just a scalar field of mass $\mu$ with self-coupling of strength $\lambda$, but the SM bosons would still be massless.
+
+In this case, the minimum value for $V(\phi)$ is a set of degenerated states in a circle of radius $<\phi> = \sqrt{\frac{-\mu^2}{2\lambda}} = \frac{v}{\sqrt{2}}$, $v = \sqrt{-\mu^2/\lambda}$ is the vacuum expectation value (VEV). Without loss of generality, one can choose a direction:
+
+\begin{equation}
+    \phi = \frac{1}{\sqrt{2}}
+        \left ( 
+        \begin{matrix}
+        0 \\
+        v 
+        \end{matrix}
+        \right )
+    \label{higgs_field_vev_based}
+\end{equation}
+assigning hypercharge $Y=1$.
+
+Once again, taking profit of the perturbation theory around the ground state (VEV), one could define~\footnote{A even more general redefinition of the Higgs field would be possible ($\phi = (\phi^+, v + H +i \chi)$), but the one proposed presents no loss of generality.}:
+
+\begin{equation}
+    \phi = \frac{1}{\sqrt{2}}
+        \left ( 
+        \begin{matrix}
+        0 \\
+        v + H
+        \end{matrix}
+        \right )
+    \label{higgs_field_vev_based}
+\end{equation}
+
+Expanding the potential $V(\phi)$, as is \ref{higgs_field3}, one gets:
+
+\begin{equation}
+    V = \mu^2 H^2 + \frac{\mu^2}{v} H^3 + \frac{\mu^2}{4v^2} H^4,
+    \label{higgs_mass_term}
+\end{equation}
+hence, a new scalar boson (the Higgs boson) is included in the the theory with mass $\sqrt{2\mu^2}$ and self-couplings terms.
+
+In the same way, expanding \ref{higgs_field2} and assuming $T_L^a = \sigma^a/2$: 
+\begin{equation}
+    (D_\mu\phi)^\dagger(D_\mu\phi) = \frac{1}{2}(\partial_\mu H)^2 + \frac{1}{8}g^2(v+H)^2|W_\mu^1+iW_\mu^2|^2 + \frac{1}{8}(v+H)^2|gW_\mu^3-g'B_\mu|^2.
+    \label{higgs_mass_term}
+\end{equation}
+
+Defining the SM bosons fields as:
+
+\begin{equation}
+    \begin{split}
+        W_\mu^\pm &= \frac{1}{\sqrt{2}} (W_\mu^1 \mp iW_\mu^2) \\ 
+        Z_\mu &= \frac{gW_\mu^3-g'B_\mu}{\sqrt{g^2+g'^2}} \\ 
+        A_\mu &= \frac{gW_\mu^3+g'B_\mu}{\sqrt{g^2+g'^2}},
+    \end{split}
+    \label{sm_bosons_fields}
+\end{equation}
+one can naturally infer that the introduction of the Higgs fields gave the SM bosons mass values of: $M_W = vg/2$, $M_Z = v\sqrt(g^2+g'^2)$ and $M_A = 0$. In this context, the Weinberg angle, $\theta_W$, is related to the SM coupling constants as:
+
+\begin{equation}
+    \begin{split}
+        cos \theta_W = \frac{g'}{\sqrt{g^2+g'^2}} \\ 
+        sin \theta_W = \frac{g}{\sqrt{g^2+g'^2}}.
+    \end{split}
+    \label{weinberg_angles}
+\end{equation}
+
+The missing piece of the SM lagragian (\ref{sm_lagrangian}) is the Yukawa components, $\mathcal{L}_{Yukawa}$, and how it gives the fermion masses. The procedure is quite straightforward. Start including a Yukawa coupling for each fermion to either $\phi$ or $\tilde{\phi} =i \sigma_2 \phi^\dagger$ (this one with $Y=-1$). Taking the electron as an example:
+
+\begin{equation}
+    \begin{split}
+        \mathcal{L}_{Yuk}^e &= -\lambda_e \bar{L} \phi e_R + h.c. \\
+        \mathcal{L}_{Yuk}^e &= -\frac{1}{\sqrt{2}} \lambda_e (\bar{\nu^e}, \bar{e_L}) \left ( 
+            \begin{matrix}
+            0 \\
+            v + H
+            \end{matrix}
+            \right )
+            e_R + h.c \\ 
+        \mathcal{L}_{Yuk}^e &= -\frac{1}{\sqrt{2}} \lambda_e  (v+H) \bar{e}_Le_R + h.c,
+    \end{split}
+    \label{fermion_mass}
+\end{equation}
+where $\lambda_e$ is the coupling constant between the Higgs boson and the electron. This tell us that $m_e = \frac{\lambda_e v}{\sqrt{2}}$.
+
+Similar procedure can be used for all the fermion of the SM. 
