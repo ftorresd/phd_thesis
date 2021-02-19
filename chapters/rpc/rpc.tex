@@ -1,10 +1,26 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{CMS Resistive Plate Chambers - RPC}
 \label{chapter_rpc}
 
+\begin{tcolorbox}
+    {\footnotesize 
+    \textbf{Statement of Contribution}
+
+    \vspace{1em}
+    From September/2017 to September/2019, I received a grant from the National Council for Scientific and Technological Development (CNPq) to work at CERN, as part of my PhD graduation. During this period, I started to contribute to the RPC project at CMS. My first task was on the upgrade of the Online Software, that control the data taking process for the RPC system. Later I became the responsible for the monitoring and maintenance of this software. I also had the opportunity to work as shifter for the operation of the detector, as contact person between the CMS Run Coordination and the RPC experts, and also as Data Manager shifter, working on the prompt monitoring of the data quality (data certification). 
+    
+    \vspace{1em}
+    During the course of the Long Shutdown 2 (LS2, from 2019 until middle of 2021), I vigorously worked in the maintenance of the RPC system, specially on the HV system reparation and commissioning. In the context of the task, I proposed changes in the HV connectorization of the RPC chambers, witch were later approved and implemented for recently repaired chambers in the Endcap. In the last moments of my stay at CERN, I also had the opportunity to work with Multiwire Proportional Chambers (MWPC), donated by the LHCb experiment. Those chambers were validated and commissioned by me, in order to server and baseline technology of a muon trigger to be installed in the Gamma Irradiation Facility (GIF++), at CERN, for R\&D of the RPC future upgrades.
+
+    \vspace{1em}
+    Later, I became Deputy Run Coordinator for the RPC system, were I share the responsibilities for the operation and commissioning of the system, management the operation shifters, and monitoring with RPC DAQ backend electronics and its communication with other CMS subsystems. I also represent the RPC system for CMS Run Coordination. 
+
+    \vspace{1em}
+    }
+\end{tcolorbox}
+
 In the course of this PhD study, there were a lot of opportunities to work for the RPC project, in the context of the CMS Collaboration. The main activities consists of shifts for the RPC operation and data certification, upgrade and maintenance of the online software, R\&D activities for the RPC upgrade and detector maintenance during the LHC Long Shutdown 2 (2019 to 2020).
 
-In this chapter, it is presented a summary of the Resistive Plate Chamber technology and the contributions to the RPC project at CMS.
+In this chapter, it is presented a summary of the Resistive Plate Chamber technology and the my contributions to the RPC project at CMS.
 
 \section{Resistive Plate Chambers}
 
@@ -16,11 +32,11 @@ The gas mixture is a key component of a RPC. Even though the first RPCs were pro
 
 Another feature of the RPCs is its construction simplicity and low cost. This allow the use RPC to cover larger at a reasonable cost. 
 
-A extensive review of the RPC technology and its application can be found at~\cite{livro_rpc}.
+An extensive review of the RPC technology and its application can be found at~\cite{livro_rpc}.
 
 \subsection{Principles and operation modes}
 
-The core of a RPC chamber is a gap made with two parallel high resistivity plates, separated by some regular distance (typically millimeters), filled with with a proper gas mixture and under appropriate high voltage (HV) applied on the plates (electrodes, from here on). When a ionizing particle crosses the gap, there is a high enough chance the the particle will interact with the gas and produce a newly created positive ion and a electron. This pair will travel in opposite directions, according to the electric field from the electrodes. During this process, the electron will gain kinetic energy and inelasticly interact with other neighboring atoms/molecules, creating excitations in their energy levels and, potentially, also ionizing them. The secondary ionization electrons will also follow the same curse, creating an \textbf{Avalanche} of positive and negative particle/ions traveling towards the electrodes. This process is proportional to the applied electric field. Figure~\ref{avalanche} illustrates the avalanche production.
+The core of a RPC chamber is a gap made with two parallel high resistivity plates, separated by some regular distance (typically millimeters), filled with with a proper gas mixture and under appropriate high voltage (HV) applied on the plates (electrodes, from here on). When a ionizing particle crosses the gap, there is a high enough chancetheparticle will interact with the gas and produce a newly created positive ion and a electron. This pair will travel in opposite directions, according to the electric field from the electrodes. During this process, the electron will gain kinetic energy and inelasticly interact with other neighboring atoms/molecules, creating excitations in their energy levels and, potentially, also ionizing them. The secondary ionization electrons will also follow the same curse, creating an \textbf{Avalanche} of positive and negative particle/ions traveling towards the electrodes. This process is proportional to the applied electric field. Figure~\ref{avalanche} illustrates the avalanche production.
 
 
 \begin{figure}[h]
@@ -38,7 +54,7 @@ The number of particle composing the avalanche can be expressed as (assuming con
 \end{equation}
 where $n_{0}$ is the number of initial electrons initiating the avalanche, $A$ is the \textit{gas gain}, or \textit{multiplication factor} and $d$ is the distance since the avalanche creation. This is also known as Townsend theory for discharges and $\alpha$ is the first Townsend coefficient.
 
-When the positive ions bunch reaches the cathode, under certain conditions (if the first ionization energy of the ion is greater than the work function of the cathode), the recombination of the ion with the electrode material might release electrons which will also follow the electric field. The relative probability (with respect to the primary electron emission) of this emission to happen ($\gamma_{+}$) is called the the second Townsend coefficient.
+When the positive ions bunch reaches the cathode, under certain conditions (if the first ionization energy of the ion is greater than the work function of the cathode), the recombination of the ion with the electrode material might release electrons which will also follow the electric field. The relative probability (with respect to the primary electron emission) of this emission to happen ($\gamma_{+}$) is calledthesecond Townsend coefficient.
  
 \begin{equation}
     n_{+}=n_{0} A \gamma_{+}.
@@ -46,7 +62,7 @@ When the positive ions bunch reaches the cathode, under certain conditions (if t
 
 Another process which can occur is the secondary photoelectron productions, described by a similar equation as above: $n_{pe}=n_{0} A \gamma_{ph}$. This production is mostly related to de-excitation of molecules and atoms in vicinity of the avalanche. The produced photons might initiate new ionization process.
 
-As an alternative to the Townsend theory, Raether, Meek, and Loeb, proposed the \textit{streamer–leader theory}~\cite{streamer_leader_theory}. This theory is valid when the when there is a high enough concentration of ions produced. This critical value is called Raether limit.
+As an alternative to the Townsend theory, Raether, Meek, and Loeb, proposed the \textit{streamer–leader theory}~\cite{streamer_leader_theory}. This theory is valid when there is a high enough concentration of produced ions. This critical value is called Raether limit.
 
 \begin{equation}
     n_{0} A > 10^{8} \text{ electrons}
@@ -87,7 +103,7 @@ Each gap has its external surface is coated with a thin layer of graphite paint,
 
 The double gap configuration increases the efficiency of the chamber, since the signal is picked up from the OR combination of the two gaps. A chamber with only one gap working, looses around 15\% of efficiency, even though, this can be recovered by increasing the HV applied during operation mode (working point - WP).
 
-A characteristic that differentiate the CMS RPC  from from previous RPC application in HEP is the operation mode. A RPC at CMS, operates in avalanche mode, while previous experiments used the streamer mode. Both modes are related to the applied HV, in commitment with the strength of the generated signal, and are capable of generate a well localized signal, which can be picked up by the readout electronics, but the avalanche mode offer a higher rate capability around 1 kHZ/$cm^2$, while the streamer mode goes up to 100 HZ/$cm^2$. The high rate capability is a key factor in order to cope with requirements of the LHC luminosity, specially in the high background regions.
+A characteristic that differentiate the CMS RPC from previous RPC application in HEP is the operation mode. A RPC at CMS, operates in avalanche mode, while previous experiments used the streamer mode. Both modes are related to the applied HV, in commitment with the strength of the generated signal, and are capable of generate a well localized signal, which can be picked up by the readout electronics, but the avalanche mode offer a higher rate capability around 1 kHZ/$cm^2$, while the streamer mode goes up to 100 HZ/$cm^2$. The high rate capability is a key factor in order to cope with requirements of the LHC luminosity, specially in the high background regions.
 
 Besides the rate capability, the key factors that driven the CMS RPC design were:  high efficiency ($> 95\%$), low cluster size ($> 2$) for better spatial resolution (this reflects in the momentum resolution) and good timing in order to do the readout of the signal within the 25 ns of a LHC bunch cross (BX) and provide it to the CMS trigger system. These requirements have implications in the choice of material, dimensions, electronics and gas mixture.
 
@@ -220,9 +236,9 @@ The upgrade  was done in time to ensure the control and operation of the RPC for
 \end{figure}
 
 
-\subsection{iRPC R\&D}
+\subsection{Improved RPC R\&D}
 
-For the next 4 year of CMS activities it is foreseen  the upgrade of the the Muon Systems~\cite{muon_tdr}. These upgrades are planed in order to extend the pseudorapidity coverage ($\eta$) and to guarantee the operation conditions of the present system in the HL-LHC (High Luminosity LHC) era. The RPC (Resistive Plate Chambers)~\cite{muon_tdr} subsystem, it will have maintenance of the present chambers and installation of new chambers in the region of $|\eta| < 1,8$ para $|\eta| < 2,4$~\cite{pedrazamorales2018rpc}. These new chambers (iRPC) will be added in the most internal part of the muon spectrometer, RE3/1 e RE4/1, as in Figure~\ref{muons_eta}.
+For the next 4 year of CMS activities it is foreseen  the upgrade oftheMuon Systems~\cite{muon_tdr}. These upgrades are planed in order to extend the pseudorapidity coverage ($\eta$) and to guarantee the operation conditions of the present system in the HL-LHC (High Luminosity LHC) era. The RPC (Resistive Plate Chambers)~\cite{muon_tdr} subsystem, it will have maintenance of the present chambers and installation of new chambers in the region of $|\eta| < 1,8$ para $|\eta| < 2,4$~\cite{pedrazamorales2018rpc}. These new chambers (\textbf{Improved RPC - iRPC}) will be added in the most internal part of the muon spectrometer, RE3/1 e RE4/1, as in Figure~\ref{muons_eta}.
 
 \begin{figure}[h]
 \begin{center}
@@ -231,7 +247,7 @@ For the next 4 year of CMS activities it is foreseen  the upgrade of the the Muo
 \caption{$\eta$ projection of the Muon System subdetectors. In purple, is labeled the iRPCS to be installed during the CMS upgrade.}\label{muons_eta}
 \end{figure}
 
-Even thought this region is covered by the CSC detectors CSC (Cathode Strip Chambers), there are some loss of efficiency due the the system geometry. The installation of additional chambers will mitigate this problem and potentially increase the global efficiency of the muon system. The new chamber, called iRPC (\textit{improved RPC}), will be different them the present one. For a luminosity of $5 \times 10^{34} cm^{-2} s^{-1}$  the neutrons, photons, electrons and positrons background in the high $|\eta|$ region is expected to by be around 700 Hz/$cm^{2}$ (for the chambers in RE3-4/1). Applying a safety factor of 3, the new chambers should support up to 2 Hz/$cm^{2}$ of gamma radiation and still keep more than 95\% of efficiency. Studies indicate, so far, that the use of High Pressure Laminates (HPL) for the double gap chambers is the most suitable choice. In order to reduce the aging and increase the rate capability, the electrodes and the gap size should be reduced in comparison with the present system.
+Even thought this region is covered by the CSC detectors CSC (Cathode Strip Chambers), there are some loss of efficiency duethesystem geometry. The installation of additional chambers will mitigate this problem and potentially increase the global efficiency of the muon system. The new chamber, called iRPC (\textit{improved RPC}), will be different them the present one. For a luminosity of $5 \times 10^{34} cm^{-2} s^{-1}$  the neutrons, photons, electrons and positrons background in the high $|\eta|$ region is expected to by be around 700 Hz/$cm^{2}$ (for the chambers in RE3-4/1). Applying a safety factor of 3, the new chambers should support up to 2 Hz/$cm^{2}$ of gamma radiation and still keep more than 95\% of efficiency. Studies indicate, so far, that the use of High Pressure Laminates (HPL) for the double gap chambers is the most suitable choice. In order to reduce the aging and increase the rate capability, the electrodes and the gap size should be reduced in comparison with the present system.
 
 One of the challenges for the R\&D of the iRPC chambers is measuring the their performance in a high radiation environment, as the one for HL-LHC. For this, the CMS RPC project uses the Gamma Irradiation Facility (GIF++)~\cite{gifpp}, at CERN. The GIF++ is located at the H4 beam line in EHN1 providing high energy charged particle beams (mainly muon beam with momentum up to 100 GeV/c), combined with a 14 TBq 137-Cesium source. In the GIFF++ it is possible to achieve the HL-LHC total dose in a much reasonable amount of time. With the shutdown of LHC, the muon beam source is also off and will stay like this for 3 years. This means that the only muon sources for studies in GIF++ are cosmic muons. 
 
@@ -270,12 +286,13 @@ Figure~\ref{setup} shows the setup that was prepared for commissioning of this c
 \begin{center}
 \includegraphics[width=0.57\textwidth,keepaspectratio]{figures_and_tables/rpc/mwpc/setup.png}\hspace*{1.cm}
 \includegraphics[width=0.23\textwidth,keepaspectratio]{figures_and_tables/rpc/mwpc/rack.png}\hspace*{1.cm}
-\end{center}\vspace*{-.5cm}
+\end{center}
+% \vspace*{.5cm}
 \caption{Left: Setup mounted for commissioning. Two MWPC chamber on the top (chambers A and B) and two (chambers C and D) on the bottom with a RPC R\&D in the middle. Right: Rack with all the services for the operation of these chambers.}
 \label{setup}
 \end{figure}
 
-Due to the short amount of time available for the commissioning, only two measurements measurements were made with these chambers. They were meant to be a proof of concept for future activities.
+Due to the short amount of time available for the commissioning, only two measurements were made with these chambers. They were meant to be a proof of concept for future activities.
 
 The first measurement was to measure the coincidence rate of two chambers as a function of the distance between the two top planes (Figure~\ref{coincidence}). This measurements were done with nominal working point, with one FEB configured in  2 channels mode with 7 pC threshold, in (160 mm x 160 mm) area per chamber. One can observe that, if we go for a telescope trigger in the order of 1 meter of separation between the chamber, the logical combination chosen has negligible effect in the coincidence rate. Also, the fits can be used to estimate the rate in a configuration with chamber on the roof and under the floor. This could be the case of a universal trigger, to be mounted in GIF++ with these chamber.
 
@@ -287,7 +304,7 @@ The first measurement was to measure the coincidence rate of two chambers as a f
 \label{coincidence}
 \end{figure}
 
-The second measurement consist on evaluate the impact of $\gamma$ background by placing a small Cs-137 source on top of the chamber A (Figure~\ref{gamma}). For this measurement, the distance between top planes of each pair of chamber (A to B and C to D) is 65 mm, while the distance between the top planes of A and C is 570 mm. It is clear the the $\gamma$ source has an impact on chamber A rate, but this is negligible when we take into account the coincidence between two chambers.
+The second measurement consists on evaluate the impact of $\gamma$ background by placing a small Cs-137 source on top of the chamber A (Figure~\ref{gamma}). For this measurement, the distance between top planes of each pair of chamber (A to B and C to D) is 65 mm, while the distance between the top planes of A and C is 570 mm. It is clearthe$\gamma$ source has an impact on chamber A rate, but this is negligible when we take into account the coincidence between two chambers.
 
 \begin{figure}[h]
 \begin{center}
@@ -318,7 +335,7 @@ The goal for the HV maintenance is to, now that the CMS is off and the chambers 
 
 The CMS RPCs uses two kind of HV connectors, monopolar and tripolar connector. The monopolar are used to connect the chamber to the power supply. If mounted properly, rarely they present problems. The connection to the chamber is made by tripolar connectors, in which the ground and the HV for both gaps arrives to the chamber in a single connector, for simplicity and to save space in the patch panel. Unfortunately these connectors are relatively fragile, and they could be a potential source of leak, specially if they were poorly mounted, badly operated or with aging itself. Also, since this was a connector made exclusively for the CMS RPC system, some design choices had to be improved after the installation of other chamber. Those installed with old batches of tripolar connectors are sensitive ones. The reparation of this connectors consists in isolate the connector from the chamber and power it up to 15 kV (maximum voltage allowed by the system). If the tested connector is broken one will observe a very fast increase in the current of the HV channel. The only solution to this kind of problem is to replace the connector.
 
-On the other hand, if the connector is powered isolated and pass the test, the problem beyond the connector (assuming that the power system have already been tested), i.e. inside the chamber. When a chamber is in SG mode it means that a full layer is off, but not necessarily all the gaps in that layer are bad (a RPC can have up to three per layer). In this situation, the procedure consists in cutting the cables that comes from the gaps to the chamber side connector one by one and identify which gap of the problematic layer is the broken by powering it. Once identified, this gap should isolated and the other ones reconnected. The broken gap is unrecoverable, since it is inside the chamber, but 5\% to 10 \% of efficiency can be retaken, without changing the applied HV and increasing the longevity of the chamber.
+On the other hand, if the connector is powered isolated and pass the test, the problem beyond the connector (assuming that the power system have already been tested), i.e. inside the chamber. When a chamber is in SG mode it means that a full layer is off, but not necessarily all the gaps in that layer are bad (a RPC can have up to three per layer). In this situation, the procedure consists in cutting the cables that comes from the gaps to the chamber side connector one by one and identify which gap of the problematic layer is the broken by powering it. Once identified, this gap should be solated and the other ones reconnected. The broken gap is unrecoverable, since it is inside the chamber, but 5\% to 10 \% of efficiency can be retaken, without changing the applied HV and increasing the longevity of the chamber.
 
 Another contribution to the HV maintenance was the proposal of a procedure to replace the problematic tripolar connector by a monopolar (also called jupiter) connector, which are known for being much more stable and reliable. The figure~\ref{jupiterized} (left) show the designed adapter for the chamber patch panel which would made this change possible. Figure~\ref{jupiterized} (right) shows a tryout of a chamber in which this procedure was tested. The proposal was presented to the RPC community and approved to be used from now on. Technical drawings and instructions were provided.
 
@@ -333,7 +350,7 @@ Another contribution to the HV maintenance was the proposal of a procedure to re
 
 \subsubsection{LV and control maintenance}
 
-The low voltage (LV) and control maintenance consists in make sure that the Front-End Boards (FEBs) are powered and configurable, which means that the LV power system is working from supply board to the cable, that the signal cables are in good state and properly connected to the chamber and to the link boards and that the on-detector electronics (FEBs and Distribution Boards - DBs) are working fine.
+The low voltage (LV) and control maintenance consists in making sure that the Front-End Boards (FEBs) are powered and configurable, which means that the LV power system is working from supply board to the cable, that the signal cables are in good state and properly connected to the chamber and to the link boards and that the on-detector electronics (FEBs and Distribution Boards - DBs) are working fine.
 
 Usually, this system is very reliable. The weak point, in most of the cases, is the detector electronics. When a FEB~\cite{rpc_feb} (as in Figure~\ref{rpc_feb}) is problematic it can present regions of very high noise or no signal at all (silent), which can not be recovered by the threshold control. In cases like this, when the FEB is accessible, it can be replaced in order to recover efficiency in the problematic chamber. This procedure is done by extracting the chamber from inside the detector (only for barrel chamber) and opening its cover to have access to the problematic component. Removed boards are send back to production labs for refurbishment.
 
@@ -344,19 +361,19 @@ Usually, this system is very reliable. The weak point, in most of the cases, is 
 \caption{RPC Front-end board (FEB) used in the barrel chambers.}\label{rpc_feb}
 \end{figure}
 
-The most usual problem is a chamber in which the threshold control was lost. For those chamber, most probably, the problem is in the distribution board of the chamber, which is a piece of hardware responsible for distribute the LV power to the FEBs (3 to 6 per chamber) and send the threshold control signal to the FEBs via I2C line. If a chamber has no threshold control, it means that the RPC operation has no control over the signal selection, which can potentially induce performance issues. 
+The most usual problem is a chamber in which the threshold control was lost. For this chamber, most probably, the problem is in the distribution board of the chamber, which is a piece of hardware responsible for distributing the LV power to the FEBs (3 to 6 per chamber) and send the threshold control signal to the FEBs via I2C line. If a chamber has no threshold control, it means that the RPC operation has no control over the signal selection, which can potentially induce performance issues. 
 
-For the barrel this maintenance happens concomitantly with the gas leak reparations on the barrel chamber, since both demands the chamber extraction, which is a complex procedure in terms of operation and demands specialized equipment and manpower. For technical reasons, the gas leak extractions have precedence over LV ones.
+For the barrel, this maintenance happens concomitantly with the gas leak reparations on the barrel chamber, since both demands the chamber extraction, which is a complex procedure in terms of operation and demands specialized equipment and manpower. For technical reasons, the gas leak extractions have precedence over LV ones.
 
 
 
 \subsubsection{Detector commissioning}
  
-All the LS2 activities demands uncabling of the chamber to be repaired and possibly some neighbor chambers. Also, it can involve the replacement of components of the chamber. To avoid damage to the system a compromising procedure is needed after all this activities. Given the responsibilities of the commissioning it was necessary to: (a) make sure that the the RPC system keep tracks of all the interventions, (b) maintain all the algorithms used in the commissioning procedure, (c) together with the RPC Coordination, define a pool of people and a schedule to the commissioning of the system and (d) follow-up, with other CMS RPC experts, the availability of materials and resources for the commissioning operations.
+All the LS2 activities demands uncabling of the chamber to be repaired and possibly some neighboring chambers. Also, it can involve the replacement of components of the chamber. To avoid damage to the system a compromising procedure is needed after all this activities. Given the responsibilities of the commissioning it was necessary to: (a) make sure thattheRPC system keep tracks of all the interventions, (b) maintain all the algorithms used in the commissioning procedure, (c) together with the RPC Coordination, define a pool of people and a schedule to the commissioning of the system and (d) follow-up, with other CMS RPC experts, the availability of materials and resources for the commissioning operations.
 
-Besides the organizational tasks, the commissioning demanded to establish procedures to ensure the connectivity and functionality of HV and LV connections. For the HV, it is needed to make sure that the chambers are properly connected, without miscabling~\footnote{Mixed cable connections.} and that the currents at stand-by HV  and working point HV are compatible with the ones in the end of last data-taking (end of 2018). This activity will start in November/2019, when the CMS RPC Standard Gas Mixture will be available again.
+Besides the organizational tasks, the commissioning demanded to establish procedures to ensure the connectivity and functionality of HV and LV connections. For the HV, it is necessary to make sure that the chambers are properly connected, without miscabling~\footnote{Mixed cable connections.} and that the currents at stand-by HV  and working point HV are compatible with the ones in the end of last data-taking (end of 2018). This activity will start in November/2019, when the CMS RPC Standard Gas Mixture will be available again.
  
-For the LV point of view, the LV power cable and signal cables should also be properly connected, and presenting a noise profile compatible with last data-taking. One key point for this task is to make sure that that there are no miscabling of signal cable. One RPC chamber can have from 6 to 18 signal cable, which are connected very close one to another. There is a good chance that a chamber, after reparation, have its signal cables mixed. In order to diagnose situations like this, it was validated a algorithm present in the RPC Online Software, but never used since LS1, which, by changing the threshold of each component of the RPC system, from very high to very low values (component by component), can spot miscabled chambers. Since the control line is independent of the signal line, a misclabed will present a different noise from what is expected.
+For the LV point of view, the LV power cable and signal cables should also be properly connected, and presenting a noise profile compatible with last data-taking. One key point for this task is to make sure that there are no miscabling of signal cable. One RPC chamber can have from 6 to 18 signal cable, which are connected very close one to another. There is a good chance that a chamber, after reparation, have its signal cables mixed. In order to diagnose situations like this, it was validated a algorithm present in the RPC Online Software, but never used since LS1, which, by changing the threshold of each component of the RPC system, from very high to very low values (component by component), can spot miscabled chambers. Since the control line is independent of the signal line, a misclabed will present a different noise from what is expected.
 
 Besides the validation of this algorithm, it was also implemented a web system (Figure~\ref{comm}), developed in Flask~\cite{flask} wich automatize the execution of the algorithm, making transparent to the shifter (or the one performing the commissioning) the procedure to get miscabling report.
 

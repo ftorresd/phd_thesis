@@ -3,26 +3,26 @@
 \section{Background modeling} \label{sec:background_modeling}
 %\textbf {editors: Felipe Silva}
 
-The background modeling proposed for this analysis is a two dimensional unbinned maximum likelihood fit on the $\mu\mu$ and the $\mu\mu\gamma$ invariant mass distributions. It is considered and modeled, as briefly discussed in \ref{sec:datasets}, three kinds of backgrounds:
+The background statistical modeling proposed for this analysis is a two dimensional unbinned maximum likelihood fit on the $\mu\mu$ and the $\mu\mu\gamma$ invariant mass distributions. It is considered and modeled, as briefly discussed in \ref{sec:datasets}, three kinds of backgrounds:
 
-% Concerning the main reducible background (combinatorial background), it is due to Drell-Yan process where the photon comes from the initial-state radiation (ISR) or final-state radiation (FSR) and background reducible events are produced from Drell-Yan with jet associate and inclusive quarkonium production, where the jet in both processes is misidentified as a photon in reconstruction level. For the analysis, besides the peaking background, most of the background contributions will be modeled from data. 
+% Concerning the main reducible background (combinatorial background), it is due to Drell-Yan process where the photon comes from the initial-state radiation (ISR) or final-state radiation (FSR) and background reducible events are produced from Drell-Yan with jet associate and inclusive quarkonium production, where the jet in both processes is misidentified as a photon in reconstruction level. For the analysis, besides the resonant background, most of the background contributions will be modeled from data. 
 
 \begin{itemize}
   \item \textbf{Full Combinatorial}: any combination of two muon and one photon that pass all the object reconstruction and event selection criteria.
   \item \textbf{$\Upsilon$ Combinatorial}: a $\Upsilon(1S,2S,3S)$, that decays to a dimuon system, combined with a misidentified photon (misreconstructed, pileup photon, etc.), that pass all the object reconstruction, identification and event selection criteria.
-  \item \textbf{Peaking background}: a \Z (or Higgs) that decays straight to a $\mu\mu\gamma$, that pass all the object reconstruction and event selection criteria, without passing through any intermediate state. The main contributions considered for this background are $Z \rightarrow \mu\mu\gamma_{\small{FSR}}$ (a Z decaying to a dimuon system with one of the muons irradiating a photon) or a Higgs Dalitz Decay.
+  \item \textbf{Resonant background}: a \Z (or Higgs) that decays straight to a $\mu\mu\gamma$, that pass all the object reconstruction and event selection criteria, without passing through any intermediate state. The main contributions considered for this background are $Z \rightarrow \mu\mu\gamma_{\small{FSR}}$ (a Z decaying to a dimuon system with one of the muons irradiating a photon) or a Higgs Dalitz Decay.
 \end{itemize}
 
-All of them will be modeled from data, with some inputs from the MC (simulated) samples, as explained below. For both invariant mass spectra ($\mu\mu$ and $\mu\mu\gamma$) the full combinatorial background is expected to behave like a non-peaking distribution. The same behavior is expected for the $\mu\mu\gamma$ mass distribution of the $\Upsilon$ Combinatorial background and for the $\mu\mu$ mass distribution of the peaking background. 
+All of them will be modeled from data, with some inputs from the MC (simulated) samples, as explained below. For both invariant mass spectra ($\mu\mu$ and $\mu\mu\gamma$) the full combinatorial background is expected to behave like a non-resonant distribution. The same behavior is expected for the $\mu\mu\gamma$ mass distribution of the $\Upsilon$ Combinatorial background and for the $\mu\mu$ mass distribution of the resonant background. 
 
-On the other hand, the $\mu\mu$ distribution of the $\Upsilon$ Combinatorial background and the $\mu\mu\gamma$ mass distribution for the peaking background are expected to behave like a peaking distribution, centered around the $\Upsilon(1S, 2S, 3S)$ invariant mass (9.46 GeV, 10.02 GeV and 10.35 GeV)~\cite{pdg_2020} and the Z boson invariant mass (91.2 GeV)~\cite{pdg_2020}, respectively . Table \ref{tab:BckgModeling_Z} summarizes the background modeling proposed for this analysis.
+On the other hand, the $\mu\mu$ distribution of the $\Upsilon$ Combinatorial background and the $\mu\mu\gamma$ mass distribution for the resonant background are expected to behave like a resonant distribution, centered around the $\Upsilon(1S, 2S, 3S)$ invariant mass (9.46 GeV, 10.02 GeV and 10.35 GeV)~\cite{pdg_2020} and the Z boson invariant mass (91.2 GeV)~\cite{pdg_2020}, respectively . Table \ref{tab:BckgModeling_Z} summarizes the background modeling proposed for this analysis.
 
 % % bckg modeling
 % \begin{table}[ht]
 % \begin{center}
 % \begin{tabular}{l|c|c}
 %                          & $M_{\mu\mu}$                                          & $M_{\mu\mu\gamma}$       \\ \hline 
-% \multirow{2}{*}{\textbf{Peaking background} }      & \multirow{2}{*}{Bernstein 1\textsuperscript{st} order}                 & Crystal Ball (Higgs decay)    \\ 
+% \multirow{2}{*}{\textbf{Resonant background} }      & \multirow{2}{*}{Bernstein 1\textsuperscript{st} order}                 & Crystal Ball (Higgs decay)    \\ 
 %                                   &                       & Double Crystal Ball (Z decay)    \\ \hline
 % \textbf{$\Upsilon$ Combinatorial} & 3 Gaussians (one for each $\Upsilon$ state) & \multirow{2}{*}{Polynomial (F-Test)}  \\ \cline{1-2}
 % \textbf{Full Combinatorial}       & Chebychev 1\textsuperscript{st} order                 &                          \\ 
@@ -40,7 +40,7 @@ On the other hand, the $\mu\mu$ distribution of the $\Upsilon$ Combinatorial bac
 \caption{Modeling for each background source and mass component.}
 \begin{tabular}{l|c|c}
                          & $m_{\mu\mu}$                                          & $m_{\mu\mu\gamma}$       \\ \hline 
-\multirow{2}{*}{\textbf{Peaking background} }      & \multirow{2}{*}{Bernstein 1\textsuperscript{st} order}                 & Crystal Ball (Higgs decay)    \\ 
+\multirow{2}{*}{\textbf{Resonant background} }      & \multirow{2}{*}{Bernstein 1\textsuperscript{st} order}                 & Crystal Ball (Higgs decay)    \\ 
                                   &                       & Double Crystal Ball (Z decay)    \\ \hline
 \textbf{$\Upsilon$ Combinatorial} & 3 Gaussians (one for each $\Upsilon$ state) & \multirow{2}{*}{Polynomial}  \\ \cline{1-2}
 \textbf{Full Combinatorial}       & Chebychev 1\textsuperscript{st} order                 &                          \\ 
@@ -51,9 +51,9 @@ On the other hand, the $\mu\mu$ distribution of the $\Upsilon$ Combinatorial bac
 \end{table}
 
 
-For the $Z \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis, the peaking background model parameters are extracted by performing a simultaneous 2-dimensional fit over the invariant masses, $m_{\mu\mu}$ and $m_{\mu\mu\gamma}$, of the simulated $Z \rightarrow \mu\mu\gamma_{\small{FSR}}$ MC sample of events that passes the selection described in Section~\ref{sec:selection}, as in figure \ref{fig:ZToUpsilon_PeakingBackground}. Once the parameters are extracted, they are fixed and the \textit{pdf} (Probability Distributions Function) of the 2-Dimensional modeling is stored, leaving only the normalization of the \textit{pdf} as a parameter free to float (this will be determined from data). 
+For the $Z \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis, the resonant background model parameters are extracted by performing a simultaneous 2-dimensional fit over the invariant masses, $m_{\mu\mu}$ and $m_{\mu\mu\gamma}$, of the simulated $Z \rightarrow \mu\mu\gamma_{\small{FSR}}$ MC sample of events that passes the selection described in Section~\ref{sec:selection}, as in figure \ref{fig:ZToUpsilon_PeakingBackground}. Once the parameters are extracted, they are fixed and the \textit{pdf} (Probability Distributions Function) of the 2-Dimensional modeling is stored, leaving only the normalization of the \textit{pdf} as a parameter free to float (this will be determined from data). 
 
-In order to describe the 2-dimensional invariant mass distribution of the Peaking Background, as stated in Table~\ref{tab:BckgModeling_Z}, the $m_{\mu\mu}$ component is described by a Bernstein polynomial of 1\textsuperscript{st} order~\cite{Bernstein_pol}, which is used here just a representation of a linear function. The $m_{\mu\mu\gamma}$ component is described by Double Crystal Ball function~\cite{cb_function}. A Crystal Ball function is a \textit{pdf} composed by a gaussian distribution and a power-law tail to the left, before certain threshold. The Crystal Ball function was named after the Crystal Ball Collaboration (first to use this \textit{pdf}) and it is widely used in high-energy physics to describe mass distributions that incorporate FSR (final state radiation) effects, via the power-law tail. A Double Crystal Ball is a Crystal Ball function with the power-law tail on both sides.
+In order to describe the 2-dimensional invariant mass distribution of the Resonant Background, as stated in Table~\ref{tab:BckgModeling_Z}, the $m_{\mu\mu}$ component is described by a Bernstein polynomial of 1\textsuperscript{st} order~\cite{Bernstein_pol}, which is used here just a representation of a linear function. The $m_{\mu\mu\gamma}$ component is described by Double Crystal Ball function~\cite{cb_function}. A Crystal Ball function is a \textit{pdf} composed by a gaussian distribution and a power-law tail to the left, before certain threshold. The Crystal Ball function was named after the Crystal Ball Collaboration (first to use this \textit{pdf}) and it is widely used in high-energy physics to describe mass distributions that incorporate FSR (final state radiation) effects, via the power-law tail. A Double Crystal Ball is a Crystal Ball function with the power-law tail on both sides.
 
 A Crystal Ball function is defined as:
 
@@ -79,7 +79,7 @@ and $erf$ is the error function.
 
 
 
-% Z To Upsilon - peaking background
+% Z To Upsilon - resonant background
 \begin{figure}[!htbp]
 \begin{center}
 
@@ -98,7 +98,7 @@ and $erf$ is the error function.
 
 
 \end{center}\vspace*{-.5cm}
-\caption{Peaking background for the $Z \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis. $\mu\mu$ mass distribution (left) and $\mu\mu\gamma$ invariant mass distribution (right). From top to bottom categories: Inclusive, EB High R9, EB Low R9, EE.}
+\caption{Resonant background for the $Z \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis. $\mu\mu$ mass distribution (left) and $\mu\mu\gamma$ invariant mass distribution (right). From top to bottom categories: Inclusive, EB High R9, EB Low R9, EE.}
 \label{fig:ZToUpsilon_PeakingBackground}
 \end{figure}
 
@@ -112,9 +112,9 @@ This control sample is fitted with a Chebychev 1\textsuperscript{st} order (line
   \item the sigma should be based on the 1S fit of the MC. All other sigma should be the result of the 1S sigma times the state mass over the 1S mass ($\sigma_{2S,3S} = \frac{m_{2S,3S}}{m_{1S}} \sigma_{1S}$).
 \end{itemize}
 
-The idea behind this fit is that scale and resolution (mean and sigma, respectively, of the gaussians) over a sample without a photon selection should be the same as over a sample with photon selection, since these are detector only dependent effects. The fact that we exclude the photon from this control sample, improves the statistics and gives a better measurement of these variables.
+The idea behind this fit is that scale and resolution (mean and sigma, respectively, of the gaussians) over a sample without a photon selection should be the same as over a sample with photon selection, since these are detector-only dependent effects. The fact that we exclude the photon from this control sample, improves the statistics and gives a better measurement of these variables.
 
-The fit of the $\Upsilon$ control sample if shown in figure \ref{fig:upsilon_control_Fit}.
+The fit of the $\Upsilon$ control sample is shown in figure \ref{fig:upsilon_control_Fit}.
 
 
 \begin{figure}[!htbp]
@@ -214,7 +214,7 @@ The implementation, used in the analysis, of the statistical test and the Discre
 \end{figure}
 
 
-For the $H \rightarrow \Upsilon(1S,2S,3S) + \gamma$ analysis, the same procedure is implemented, except for the peaking background modeling. Since the MC prediction for the contribution of the background is too small, according to the comparison between the final selected events for data and the Higgs Dalitz Decay sample, in order to avoid fitting over statistical fluctuations of the data sample, the Peaking Background, for the Higgs channel, is fully modeled from the MC sample, including its normalization, as shown in figure \ref{fig:HToUpsilon_PeakingBackground}, hence it is not included the the statistical test, neither in the final background modeling envelope.
+For the $H \rightarrow \Upsilon(1S,2S,3S) + \gamma$ analysis, the same procedure is implemented, except for the resonant background modeling. Since the MC prediction for the contribution of the background is too small, according to the comparison between the final selected events for data and the Higgs Dalitz Decay sample, in order to avoid fitting over statistical fluctuations of the data sample, the Resonant Background, for the Higgs channel, is fully modeled from the MC sample, including its normalization, as shown in figure \ref{fig:HToUpsilon_PeakingBackground}, hence it is not includedthestatistical test, neither in the final background modeling envelope.
 
 The results of the background modeling for the Full Combinatorial and $\Upsilon$ Combinatorial, can be found at Figures \ref{fig:HToUpsilon_mMuMU_Projection} and \ref{fig:HToUpsilon_mHZ_Projection}, for the $\mu\mu$ and $\mu\mu\gamma$ distribution, respectively. It is worth to remember that, for the Higgs channel, we are not implementing any categorization.
 
@@ -225,7 +225,7 @@ The results of the background modeling for the Full Combinatorial and $\Upsilon$
 \includegraphics[width=0.45\textwidth]{figures_and_tables/fitPlotFiles2D/HToUpsilonPhotonSignalAndBackgroundFit/mMuMNU_HToUpsilon1SPhotonSignalAndBackgroundFit_PeakingBackground_Cat0}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/fitPlotFiles2D/HToUpsilonPhotonSignalAndBackgroundFit/mHZ_HToUpsilon1SPhotonSignalAndBackgroundFit_PeakingBackground_Cat0}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{Peaking Background for the $H \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis. $m_{\mu\mu}$ invariant mass distribution (left) and $m_{\mu\mu\gamma}$ invariant mass distribution (right).}
+\caption{Resonant Background for the $H \rightarrow \Upsilon(1S,2S,3S) +\gamma$ analysis. $m_{\mu\mu}$ invariant mass distribution (left) and $m_{\mu\mu\gamma}$ invariant mass distribution (right).}
 \label{fig:HToUpsilon_PeakingBackground}
 \end{figure}
 

@@ -1,7 +1,7 @@
 
 \section{The Compact Muon Solenoid - CMS}
 
-The Compact Muon Solenoid (CMS) is a multiple purpose experiment used to investigated $pp$ as well as lead-lead collisions at the LHC. It is operated by the CMS Collaborations, composed by around 5000 researches and 20 institutes~\footnote{It is important to stress that CMS is a collaboration of institutes, not researches.}. The CMS is located in the city of Cessy, France, 100 below the surface. The CMS apparatus has an overall length of 22\unit{m}, a diameter of 15\unit{m}, and weighs 14\,000 \unit{tonnes}. A detailed description of the CMS detector, can be found in~\cite{Chatrchyan:2008zzk}. Figure~\ref{cms_sketch} presents a sketch of CMS and its subdetectors.
+The Compact Muon Solenoid (CMS) is a multiple purpose experiment used to investigated $pp$ as well as lead-lead collisions at the LHC. It is operated by the CMS Collaborations, composed by around 200 institutes from more than 40 countries~\footnote{It is important to stress that CMS is a collaboration of institutes, not researches.}. The CMS is located in the city of Cessy, France, 100 $m$ below the surface. The CMS apparatus has an overall length of 22\unit{m}, a diameter of 15\unit{m}, and weighs 14\,000 \unit{tonnes}. A detailed description of the CMS detector, can be found in~\cite{Chatrchyan:2008zzk}. Figure~\ref{cms_sketch} presents a sketch of CMS and its subdetectors.
 
 % cms sketch
 \begin{figure}[htbp]
@@ -18,15 +18,23 @@ The following sections describes the subdetectors, mentored above, and the CMS c
 
 \subsection{Coordinate system}
 
-CMS uses a right-handed coordinate system, with the origin at the nominal interaction point, the $x$ axis pointing to the centre of the LHC ring, the $y$ axis pointing up (perpendicular to the LHC plane), and the $z$ axis along the anticlockwise-beam direction. The polar angle $\theta$ is measured from the positive $z$ axis and the azimuthal angle $\phi$ is measured in the $x$-$y$ plane.
+CMS uses a right-handed coordinate system (Figure~\ref{cms_coordinate_system}), with the origin at the nominal interaction point, the $x$ axis pointing to the centre of the LHC ring, the $y$ axis pointing up (perpendicular to the LHC plane), and the $z$ axis along the anticlockwise-beam direction. The polar angle $\theta$ is measured from the positive $z$ axis and the azimuthal angle $\phi$ is measured in the $x$-$y$ plane.
 
-It is important to define some key variables for CMS, in this study. The rapidity is defined as in Equation~\ref{rapidity}, bellow.
+% cms coordinate system
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures_and_tables/experimental_setup/cms_coordinate_system.png}
+    \caption{Summary of the CMS coordinate system, with respect to the LHC. Source:~\cite{cms_coordinate_system}.}
+    \label{cms_coordinate_system}
+\end{figure}
+
+It is important to define some key variables for CMS, in this study. The rapidity is defined by:
 
 \begin{equation}
     y=\frac{1}{2} \ln \left( \frac{E+p_z}{E-p_z} \right),
     \label{rapidity}
 \end{equation}
-where $E$ is the energy of the object and $p_z$ is the momentum ov the objects along the $z$ direction. The difference between the rapidity of two objects is known for being a lorentz invariant under a boost.
+where $E$ is the energy of the object and $p_z$ is the momentum of the objects along the $z$ direction. The difference between the rapidity of two objects is known for being a lorentz invariant under a boost.
 
 A usually more suitable variable is the pseudorapidity, which is the rapidity in the relativistic limit of $E \gg m$.
 

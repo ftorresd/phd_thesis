@@ -59,17 +59,17 @@ After the full selection, a background and signal modeling process is applied, b
 
 In this study, the same trigger requirements are applied to both data and simulated samples. For the first trigger level (L1), events are selected if they present at least one muon with transverse momentum greater than 5 GeV and an isolated~\footnote{The concept of isolation will be detailed later, but in summary, it means a object which has very small activity (above a certain threshold of energy/momentum) around it. In hadron-hadron collider, isolation is a characteristics of hard interactions.} photon or electron with transverse momentum greater than 18 GeV (at L1, there is no differentiation between photons and electrons). At the software level of the trigger system (HLT), the events are required to have at least one muon with transverse momentum greater than 17 GeV and a photon with transverse momentum greater than 30 GeV.
 
-In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based on the the \PT of the reconstructed muon and photon. These scale factor computed by the ratio between efficiency of the trigger for the Data sample over the efficiency for a MC sample. These efficiencies are calculated with the tag-and-probe method, exploring the the resonance of a final state composted by two muon and one photon in the vicinity of the $Z$ boson invariant mass. To this final state, a selections was applied to ensure that the photon comes from a Final State Radiation process, allowing us to use the tag-and-probe method.
+In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based onthe\PT of the reconstructed muon and photon. These scale factor computed by the ratio between efficiency of the trigger for the Data sample over the efficiency for a MC sample. These efficiencies are calculated with the tag-and-probe method, exploring the resonance of a final state composed by two muon and one photon in the vicinity of the $Z$ boson invariant mass. To this final state, a selection was applied to ensure that the photon comes from a Final State Radiation process, allowing us to use the tag-and-probe method.
 
-Considering the similarity of this analysis with the $H/Z \rightarrow J/\psi + \gamma$ analysis~\cite{papper_jpsi}, not only in therm of data samples, but also for triggering and physics object selection, the same scale factors were applied. More details are given in the same paper.
+Considering the similarity of this analysis with the $H/Z \rightarrow J/\psi + \gamma$ analysis~\cite{papper_jpsi}, not only in term of data samples, but also for triggering and physics object selection, the same scale factors were applied. More details are given in the same paper.
 
 \subsection{Muon Identification}
 \label{sec:muon_id}
 % After trigger selection, the same muon selection of the $H \rightarrow ZZ^{*} \rightarrow 4l$ is applied \cite{CMS_higgs_zz_4l}. This is the same approach used by the $H/Z \rightarrow J/\psi + \gamma$ analysis. 
 
-Ahead of any selection, a standard CMS "Ghost Cleaning" procedure is applied to all reconstructed muons in order to avoid that a single physical muon is reconstructed as two or more. For this procedure, reconstructed muons sharing 50\% or more segments in the system are arbitrated.
+Ahead of any selection, a standard CMS "Ghost Cleaning" procedure is applied to all reconstructed muons in order to avoid that a single physical muon is reconstructed as two or more. For this procedure, reconstructed muons sharing 50\% or more segments in the system are arbitrated, in such way, that the ones with lowest quality characteristic is excluded.
 
-After the cleaning, a muon is chosen when it passes a a two step identification: the \textbf{Loose ID} and the \textbf{Tight ID}. Below the muon identification procedure is summarized .
+After the cleaning, a muon is chosen when it passes a two step identification: the \textbf{Loose ID} and the \textbf{Tight ID}. Below the muon identification procedure is summarized .
 
 % One should keep in mind that the naming conventions for these definitions are exclusive for the $H \rightarrow ZZ^{*} \rightarrow 4l$ and, therefore, to this analysis, not corresponding to the Muon-POG definitions. 
 
@@ -77,9 +77,9 @@ For the Loose ID, each muon is required to:
 \begin{itemize}
   \item have transverse momentum greater than 5 GeV, in order to cope with Particle Flow requirements;
   \item be within the muon system acceptance: $|\eta| < 2.4$;
-  \item to have a three dimensional impact parameter uncertainty smaller than 4;
+  \item to have a three dimensional impact parameter uncertainty, with respect to the primary vertex, smaller than 4;
   \item to have transverse distance smaller than 0.5 cm ($d_{xy} < 0.5$), with respect to the primary vertex (PV);
-  \item to have longitudinal distance greater than 1.0 cm ($d_{z} < 1$), with respect to the primary vertex (PV).
+  \item to have longitudinal distance smaller than 1.0 cm ($d_{z} < 1$), with respect to the primary vertex (PV).
 
   % \item reconstructed as \textbf{Global Muon} or \textbf{Tracker Muon};
   % \item muon tracks only in the muon system are rejected;
@@ -102,7 +102,7 @@ For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required
       Muon station matching          & Muon is matched to segments           \\
                                      & in at least two stations in the muon system        \\
       \hline                                                          
-      Good $\pt$ measurement         & $\frac{\pt}{\sigma_{\pt}} < 0.3$      \\
+      Good $\pt$ measurement         & $\frac{\sigma_{\pt}}{\pt} < 0.3$      \\
       \hline
       Vertex compatibility ($x-y$)   & $d_{xy} < 2$~mm                       \\
       \hline
@@ -119,7 +119,7 @@ For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required
 \end{table}
 
 
-To mitigate spurious signal in the detector that would mimic a muon, the leading muon (the one with highest $p_T$) is required to be isolated within a cone of radious $\Delta R = \sqrt{\smash[b]{\Delta \eta}^2 + {\Delta \phi}^2}< 0.3$ in the $\eta - \phi$ plane. The isolation is evaluated in terms of ${\cal I}^{\mu} < 0.35$, defined as:
+To mitigate spurious signal in the detector that would mimic a muon, the leading muon (the one with highest $p_T$) is required to be isolated within a cone of radius $\Delta R = \sqrt{\smash[b]{\Delta \eta}^2 + {\Delta \phi}^2}< 0.3$ in the $\eta - \phi$ plane. The isolation is evaluated in terms of ${\cal I}^{\mu} < 0.35$, defined as:
 
 
 \begin{equation}
@@ -149,7 +149,7 @@ The $\sum \PT^\text{charged}$ is the scalar sum of the transverse momenta of cha
 
 
 
-One should keep in mind that this muon identification is the same as the one used by the $H \rightarrow ZZ^{*} \rightarrow 4l$~\cite{higgs_zz_4l_papper}. This was done in order to keep in phase with other Higgs analysis inside the collaboration. After the muon identification, an appropriate scale factor is applied to the MC events based on the leading muon \PT and $\eta$, in order to correct any possible discrepancy between data and simulated samples. The scale factors were taken from the $H \rightarrow ZZ^{*} \rightarrow 4l$ analysis.
+One should keep in mind that this muon identification process is the same as the one used by the $H \rightarrow ZZ^{*} \rightarrow 4l$~\cite{higgs_zz_4l_papper}. This was done in order to keep in phase with other Higgs analysis inside the collaboration. After the muon identification, an appropriate scale factor is applied to the MC events based on the leading muon \PT and $\eta$, in order to correct any possible discrepancy between data and simulated samples. The scale factors were taken from the $H \rightarrow ZZ^{*} \rightarrow 4l$ analysis.
 
 In order to cope with trigger requirements, the leading muon should have $\PT > 20$ GeV and the trailing muon $\PT > 4$ GeV.
 
@@ -157,9 +157,9 @@ In order to cope with trigger requirements, the leading muon should have $\PT > 
 \subsection{Photon Identification}
 \label{sec:photon_id}
 
-For the photon identification and selection, standard CMS . The Multivariate (MVA) Photon identification is used with a working point of 90\%, together with a electron veto procedure, to avoid misidentification of electrons as photons. Kinematically, the photons are requested to have transverse energy, with respect to the beam line, $E_{T} > 33$ GeV and reconstructed within the CMS acceptance for photons $|\eta_{SC}| < 2.5$\footnote{SC stands for Super Cluster of the reconstructed photon. It is the set of cell in the Electromagnetic Calorimeter used for the photon observation.}, excluding the Electromagnetic Calorimeter (ECAL) Barrel-Endcap intersections.
+For the photon identification and selection, the standard CMS recommendation are followed. The Multivariate (MVA) Photon identification is used with a working point of 90\%, together with a electron veto procedure, to avoid misidentification of electrons as photons. Kinematically, the photons are requested to have transverse energy, with respect to the beam line, $E_{T} > 33$ GeV and reconstructed within the CMS acceptance for photons $|\eta_{SC}| < 2.5$\footnote{SC stands for Super Cluster of the reconstructed photon. It is the set of cell in the Electromagnetic Calorimeter used for the photon observation.}, excluding the Electromagnetic Calorimeter (ECAL) Barrel-Endcap intersections.
 
-The threshold of 33 GeV for the photon transverse energy is driven by the trigger requirements. The selecte photon, per event, is the one with highest $E_{T}$.
+The threshold of 33 GeV for the photon transverse energy is driven by the trigger requirements. The selected photon, per event, is the one with highest $E_{T}$.
 
 
 \subsection{Kinematical distributions}
@@ -167,13 +167,17 @@ The threshold of 33 GeV for the photon transverse energy is driven by the trigge
 
 The selection described so far, is called Group I. The plots shown below are related to selected events after this set. 
 
-Figures \ref{fig:pTMuons_ZtoUpsilon_Cat0} to \ref{fig:phiPhoton_ZtoUpsilon_Cat0} presents the \PT, $\eta$ and $\phi$ distributions for the leading muon, trailing muon and the photon, for the \Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$. 
+Figures \ref{fig:pTMuons_ZtoUpsilon_Cat0} to \ref{fig:phiPhoton_ZtoUpsilon_Cat0} present the \PT, $\eta$ and $\phi$ distributions for the leading muon, trailing muon and the photon, for the \Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$. 
 
-Figures \ref{fig:pTUpsilon_and_Z_ZtoUpsilon_Cat0} to \ref{fig:phiUpsilon_and_Z_ZtoUpsilon_Cat0} presents the \PT, $\eta$ and $\phi$ distributions for reconstructed $\Upsilon(nS)$ ($\mu\mu$ system) and the reconstructed boson ($\mu\mu\gamma$ system).
+Figures \ref{fig:pTUpsilon_and_Z_ZtoUpsilon_Cat0} to \ref{fig:phiUpsilon_and_Z_ZtoUpsilon_Cat0} present the \PT, $\eta$ and $\phi$ distributions for reconstructed $\Upsilon(nS)$ ($\mu\mu$ system) and the reconstructed boson ($\mu\mu\gamma$ system).
 
-Figures \ref{fig:deltaR_ZtoUpsilon_Cat0} to \ref{fig:dimuon_mass_ZtoUpsilon_Cat0} presents the $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$ between the photon and the muons, the $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon, the absolute value of the $\Delta \phi$ between the leading muon and the photon, the ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$), the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\mu\mu}/M_{\mu\mu\gamma}$) and dimuon mass distribution of the reconstructed $\Upsilon(nS)$.
+Figures \ref{fig:deltaR_ZtoUpsilon_Cat0} to \ref{fig:dimuon_mass_ZtoUpsilon_Cat0} present the $\Delta R = \sqrt{\Delta\eta^2 + \Delta\phi^2}$ between the photon and the muons, the $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon, the absolute value of the $\Delta \phi$ between the leading muon and the photon, the ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$), the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\gamma}/M_{\mu\mu\gamma}$) and dimuon mass distribution of the reconstructed $\Upsilon(nS)$.
 
-Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat0} present the same variables, but for the Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ channel.
+Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat0} present the same variables, but for the Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ channel.
+
+In all figures, the black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples. The observed difference between signal MC and Data is accounted to the lack of full background contribution for these histograms. Only Signal MC is being considered. The key point is to compare the shape of the distributions and how much they match before and after the selection.
+
+For any presented plot, \textbf{Data} stands for data collected from real $pp$ collisions by CMS and \textbf{Signal}, stands for the distribution of events from a MC generated sample of signal events, as described in Section~\ref{sec:datasets}.
 
 %CONTROL PLOTS
 %%$\pT$ muon distributions for ZtoUpsilon_Cat0
@@ -182,7 +186,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT muon distributions from data and signal events for \Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The \PT muon distributions from data and signal events for \Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTMuons_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -193,7 +197,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ muon distributions from data and signal events of \Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The $\eta$ muon distributions from data and signal events of \Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaMuons_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -203,7 +207,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ muon distributions from data and signal events of \Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The $\phi$ muon distributions from data and signal events of \Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiMuons_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -215,7 +219,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plots normalized to the unit of area.}
+\caption{The \PT photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plots normalized to the unit of area.}
 \label{fig:pTPhoton_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -225,7 +229,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_eta}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ photon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The $\eta$ photon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:etaPhoton_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -234,7 +238,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_phi}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ photon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The $\phi$ photon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:phiPhoton_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -246,7 +250,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_Pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_Pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT distributions for the reconstructed $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The \PT distributions for the reconstructed $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTUpsilon_and_Z_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -257,7 +261,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaUpsilon_and_Z_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -267,7 +271,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiUpsilon_and_Z_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -280,7 +284,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Leading_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Trailing_Photon}\end{center}\vspace*{-.5cm}
-\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaR_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -289,7 +293,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Upsilon_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaPhi_Upsilon_Photon}\end{center}\vspace*{-.5cm}
-\caption{Left: The $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon. Right: absolute value of the $\Delta \phi$ between the leading muon and the photon for for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{Left: The $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon. Right: absolute value of the $\Delta \phi$ between the dimuon system and the photon for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaRdeltaPhi_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -300,7 +304,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_upsilonPt_over_zMass}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_photonPt_over_zMass}
 \end{center}\vspace*{-.5cm}
-\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - right) distribution for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\gamma}/M_{\mu\mu\gamma}$ - right) distribution for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:energy_ration_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -309,7 +313,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/noKinCuts/h_noKin_Upsilon_Mass_Signal_and_Background_LargeRange}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The dimuon mass distribution of the reconstructed $\Upsilon (1S,2S,3S)$ from data and signal events for Z decaying after Group I of selection cuts. The plot is normalized to the number of events. "Signal" stands for the $Z \rightarrow \Upsilon (1S,2S,3S) + \gamma$ sample (scaled by a factor of $\times 100$) and "Background" corresponds to the peaking background ($Z \rightarrow \mu\mu\gamma_{FSR}$) sample (scaled by a factor of x3).}
+\caption{The dimuon mass distribution of the reconstructed $\Upsilon (1S,2S,3S)$ from data and signal events for Z decaying after Group I of selection cuts. The plot is normalized to the number of events. "Signal" stands for the $Z \rightarrow \Upsilon (1S,2S,3S) + \gamma$ sample (scaled by a factor of $\times 100$) and "Background" corresponds to the resonant background ($Z \rightarrow \mu\mu\gamma_{FSR}$) sample (scaled by a factor of x3).}
 \label{fig:dimuon_mass_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -323,7 +327,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT muon distributions from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The \PT muon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTMuons_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -334,7 +338,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ muon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The $\eta$ muon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaMuons_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -344,7 +348,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_TrailingMu_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_LeadingMu_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ muon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area.}
+\caption{The $\phi$ muon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiMuons_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -356,7 +360,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The \PT photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:pTPhoton_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -366,7 +370,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_eta}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ photon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The $\eta$ photon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:etaPhoton_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -375,7 +379,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_phi}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ photon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The $\phi$ photon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:phiPhoton_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -387,7 +391,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_Pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_Pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTUpsilon_and_Higgs_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -398,7 +402,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaUpsilon_and_Higgs_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -408,7 +412,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Upsilon_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Z_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiUpsilon_and_Higgs_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -421,7 +425,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Leading_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Trailing_Photon}\end{center}\vspace*{-.5cm}
-\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaR_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -430,7 +434,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaR_Upsilon_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_deltaPhi_Upsilon_Photon}\end{center}\vspace*{-.5cm}
-\caption{Left: The $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon. Right: absolute value of the $\Delta \phi$ between the leading muon and the photon for for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{Left: The $\Delta R$ distributions between reconstructed dimuon ($\mu\mu$) system and the photon. Right: absolute value of the $\Delta \phi$ between the dimuon system and the photon for for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaRdeltaPhi_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -440,7 +444,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_upsilonPt_over_zMass}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_photonPt_over_zMass}
 \end{center}\vspace*{-.5cm}
-\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Higgs mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Higgs mass ($E_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - right) distribution for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area.}
+\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Higgs mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Higgs mass ($E_{T}^{\gamma}/M_{\mu\mu\gamma}$ - right) distribution for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ from data and signal events after Group I of selection cuts. The plots are normalized to the unit of area. The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:energy_ration_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -449,7 +453,7 @@ Figures \ref{fig:pTMuons_HtoUpsilon_Cat0} to \ref{fig:dimuon_mass_HtoUpsilon_Cat
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/noKinCuts/h_noKin_Upsilon_Mass_Signal_and_Background_LargeRange}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The dimuon mass distribution of the reconstructed $\Upsilon (1S,2S,3S)$ from data and signal events for Higgs decaying after Group I of selection cuts. This plot is normalized the expected number of events.  The plot is normalized to the number of events. "Signal" stands for the $H \rightarrow \Upsilon (1S,2S,3S) + \gamma$ sample (scaled by a factor of $\times 60000$) and "Background" corresponds to the peaking background (Higgs Dalitz Decay) sample (scaled by a factor of $\times 400$).}
+\caption{The dimuon mass distribution of the reconstructed $\Upsilon (1S,2S,3S)$ from data and signal events for Higgs decaying after Group I of selection cuts. This plot is normalized the expected number of events.  "Signal" stands for the $H \rightarrow \Upsilon (1S,2S,3S) + \gamma$ sample (scaled by a factor of $\times 600000$) and "Background" corresponds to the resonant background (Higgs Dalitz Decay) sample (scaled by a factor of $\times 400$).}
 \label{fig:dimuon_mass_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -509,7 +513,7 @@ After all Trigger and Object Identification cuts, described in before (\textbf{G
   \item $p_{T}^{\mu\mu}/M_{\mu\mu\gamma} > 35/91.2 \text{ for the Z decay or } 35/125 \text{ for the Higgs decay} $.
 \end{itemize}
 
-The choice of these thresholds were based on the visual inspection of the distributions (besides the invariant mass distribution of the dimuon system $M_{\mu\mu}$, which needs to be defined around the $\upsilon(1S, 2S, 3S)$ mass) and to keep this analysis in phase with other similar analysis within CMS.
+The choice of these thresholds were based on the visual inspection of the distributions (besides the invariant mass distribution of the dimuon system $M_{\mu\mu}$, which needs to be defined around the $\Upsilon(1S, 2S, 3S)$ mass) and to keep this analysis in phase with other similar analysis within CMS.
 
 % A detailed discussion about the choices on the thresholds can be found in the $H/Z \rightarrow J/\psi + \gamma$ analysis \cite{CMS_jpsi_analysis}. In any case, besides the dimuon mass window, which obviously should match with the $\Upsilon(1S,2S,3S)$ mass, the values were not changed, with respect to the reference analysis. Even though some optimization was tried, it brought no reasonable gain that would justify change the thresholds and lose compatibility with the $J/\psi$ study.
 
@@ -523,7 +527,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT muon distributions from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The \PT muon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I+II of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTMuons_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -534,7 +538,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ muon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\eta$ muon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I+II of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaMuons_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -544,7 +548,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ muon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\phi$ muon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I+II of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiMuons_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -556,7 +560,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The \PT photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
 \label{fig:pTPhoton_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -566,7 +570,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_eta}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ photon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\eta$ photon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
 \label{fig:etaPhoton_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -575,7 +579,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_phi}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ photon distributions from data and signal events of Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\phi$ photon distributions from data and signal events of Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
 \label{fig:phiPhoton_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -587,7 +591,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_Pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_Pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTUpsilon_and_Z_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -598,7 +602,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaUpsilon_and_Z_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -608,7 +612,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Z in the right from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiUpsilon_and_Z_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -621,7 +625,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_deltaR_Leading_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_deltaR_Trailing_Photon}\end{center}\vspace*{-.5cm}
-\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for $\Upsilon(1S,2S,3S)$ from data and signal events for Z decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for $\Upsilon(1S,2S,3S)$ from data and signal events for Z decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaR_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -632,7 +636,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_upsilonPt_over_zMass}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_photonPt_over_zMass}
 \end{center}\vspace*{-.5cm}
-\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - right) distribution for $\Upsilon(1S,2S,3S)$ from data and signal events for Z decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Z mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Z mass ($E_{T}^{\gamma}/M_{\mu\mu\gamma}$ - right) distribution for $\Upsilon(1S,2S,3S)$ from data and signal events for Z decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 100$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:energy_ration_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -656,7 +660,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT muon distributions from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The \PT muon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTMuons_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -667,7 +671,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ muon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\eta$ muon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaMuons_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -677,7 +681,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_TrailingMu_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_LeadingMu_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ muon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\phi$ muon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after Group I of selection cuts, where on left are presenting the trailing muons and on right are the leading muons. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiMuons_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -689,7 +693,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The \PT photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
 \label{fig:pTPhoton_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -699,7 +703,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_eta}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ photon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\eta$ photon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
 \label{fig:etaPhoton_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -708,7 +712,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_phi}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ photon distributions from data and signal events of Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of c).}
+\caption{The $\phi$ photon distributions from data and signal events of Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of c).}
 \label{fig:phiPhoton_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -720,7 +724,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_Pt}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_Pt}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The \PT distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:pTUpsilon_and_Higgs_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -731,7 +735,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_eta}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_eta}
 \end{center}\vspace*{-.5cm}
-\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\eta$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:etaUpsilon_and_Higgs_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -741,7 +745,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Upsilon_phi}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Z_phi}
 \end{center}\vspace*{-.5cm}
-\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying in $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\phi$ distributions for $\Upsilon(1S,2S,3S)$ in the left and for Higgs in the right from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:phiUpsilon_and_Higgs_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -754,7 +758,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_deltaR_Leading_Photon}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_deltaR_Trailing_Photon}\end{center}\vspace*{-.5cm}
-\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for $\Upsilon(1S,2S,3S)$ from data and signal events for Higgs decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $\Delta R$ distributions between the photon and the leading muon (left) and the trailing muon (right) for $\Upsilon(1S,2S,3S)$ from data and signal events for Higgs decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:deltaR_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -765,7 +769,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_upsilonPt_over_zMass}\hspace*{1.cm}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_photonPt_over_zMass}
 \end{center}\vspace*{-.5cm}
-\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Higgs mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Higgs mass ($E_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - right) distribution for $\Upsilon(1S,2S,3S)$ from data and signal events for Higgs decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The ratio for the transverse momentum of the reconstructed Upsilon and the reconstructed Higgs mass ($p_{T}^{\mu\mu}/M_{\mu\mu\gamma}$ - left) and the ratio for the transverse energy of the reconstructed Photon and the reconstructed Higgs mass ($E_{T}^{\gamma}/M_{\mu\mu\gamma}$ - right) distribution for $\Upsilon(1S,2S,3S)$ from data and signal events for Higgs decaying after all (Group I+II) selection cuts. The plots are normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$). The black dots are data collect by CMS while the blue distribution is related only to the signal Monte-Carlo generated samples.}
 \label{fig:energy_ration_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -847,7 +851,7 @@ This categorization is implemented only for the \Z decay. The Higgs does not pre
 
 \subsection{R9 reweighting}
 
-As spotted by the $H \rightarrow \gamma\gamma$ at $\sqrt{13}$ TeV analysis~\cite{higgs_gammagamma_PAPPER}, there is a disagreement in the R9 distribution of photons in Data and MC. In order to mitigate this difference, a transformation factor is extracted and applied to the reconstructed photons before the categorization.
+As spotted by the $H \rightarrow \gamma\gamma$ analysis, during Run1~\cite{higgs_gammagamma_PAPPER}, there is a disagreement in the R9 distribution of photons in Data and MC. In order to mitigate this difference, a transformation factor is extracted and applied to the reconstructed photons before the categorization.
 
 The same approach of the $H \rightarrow \gamma\gamma$ analysis is applied, in which the nominal photon selection of this analysis (see section \ref{sec:photon_id}) is used to select photons on Data and MC. Then the two distributions are remapped and the transformation factors are extracted. 
 
@@ -892,14 +896,8 @@ Tables \ref{tab:Z_yields} and \ref{tab:HIGGS_yields} show the total number of ev
 
 The signal selection efficiency is between 20\% and 21\% for all $\Upsilon$ states and categories. 
 
-When one compares the fraction of selected peaking background, with respect to the selected data events for the Higgs decay (1.22/231), the fraction obtained ($\sim0.3\%$) is irrelevant. On the other hand, the same fraction for the \Z decay (176/447) is far from irrelevant ($\sim39\%$)\footnote{It is worth to keep in mind that this is a estimation based on MC}. The same relation is not found in the $H/Z \rightarrow J/\psi + \gamma$ analysis \cite{papper_jpsi}, where both decays (Higgs and \Z) show neglectable estimations of peaking background contribution to data. 
-The very same behavior was found by ATLAS~\cite{atlas_paper:PhysRevLett.114.121801}. It can be explained by the relatively larger cross-section of the \Z peaking background ($Z \rightarrow \mu\mu\gamma_{FSR}$), with respect to the Higgs peaking background (Higgs Dalitz Decay). For the J/$\psi$ channel, it is not an issue since its  cross-section is way larger then the peaking background. The figures \ref{fig:dimuon_mass_ZtoUpsilon_Cat0} and \ref{fig:dimuon_mass_HtoUpsilon_Cat0} help to clarify these affirmations, for the \Z and Higgs decay, respectively. 
-One can easily see how clear the J/$\psi$ peak is in both decays and how minor the Higgs Dalitz Decay contributions is to the $\Upsilon$ peak, with respect to the $Z \rightarrow \mu\mu\gamma_{FSR}$ contribution. It is important to keep in mind the different scaling of the peaking background distributions, x3 for the \Z and $\times 100$ for the Higgs.
-The peaking background to the data due to $Z \rightarrow \Upsilon(1S,2S,3S) + \gamma$ channel  is the main motivation to use a 2-dimensional modeling fitting of the signal and background events, in order to add one more layer of differentiation between many backgrounds contributions which will be detailed in the next section.
-
-
-%Since the proposal is to estimate the background from data, this considerable of the peaking background to the data, for the $Z \rightarrow \Upsilon(1S,2S,3S) + \gamma$ channel, is the main motivation to use a 2-dimensional modeling of the signal and background, in order to add one more layer of differentiation between many backgrounds contributions. It will be detailed in the next section.
-
-
-
+When one compares the fraction of selected resonant background, with respect to the selected data events for the Higgs decay (1.22/231), the fraction obtained ($\sim0.3\%$) is irrelevant. On the other hand, the same fraction for the \Z decay (176/447) is far from irrelevant ($\sim39\%$)\footnote{It is worth to keep in mind that this is a estimation based on MC}. The same relation is not found in the $H/Z \rightarrow J/\psi + \gamma$ analysis \cite{papper_jpsi}, where both decays (Higgs and \Z) show neglectable estimations of resonant background contribution to data. 
+The very same behavior was found by ATLAS~\cite{atlas_paper:PhysRevLett.114.121801}. It can be explained by the relatively larger cross-section of the \Z resonant background ($Z \rightarrow \mu\mu\gamma_{FSR}$), with respect to the Higgs resonant background (Higgs Dalitz Decay). For the J/$\psi$ channel, it is not an issue since its  cross-section is way larger then the resonant background. The figures \ref{fig:dimuon_mass_ZtoUpsilon_Cat0} and \ref{fig:dimuon_mass_HtoUpsilon_Cat0} help to clarify these affirmations, for the \Z and Higgs decay, respectively. 
+One can easily see how clear the J/$\psi$ peak is in both decays and how minor the Higgs Dalitz Decay contributions is to the $\Upsilon$ peak, with respect to the $Z \rightarrow \mu\mu\gamma_{FSR}$ contribution. It is important to keep in mind the different scaling of the resonant background distributions, the yields are multiplied by $\times 3$ for the \Z and $\times 100$ for the Higgs.
+The resonant background to the data due to $Z \rightarrow \Upsilon(1S,2S,3S) + \gamma$ channel  is the main motivation to use a 2-dimensional modeling fitting of the signal and background events, in order to add one more layer of differentiation between many backgrounds contributions which will be detailed in the next section.
 

@@ -1,24 +1,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Results and conclusion}
+\section{Results and conclusion}
 \label{chaper_results}
 
 A two-dimensional (2D) unbinned maximum-likelihood fit to the $m_{\mu^{+}\mu^{-}\gamma}$ and $m_{\mu^{+}\mu^{-}}$ distributions was used to compare the data with background and signal predictions. Search has been performed for a SM Higgs and $\mathrm{Z}$ boson decaying into a $\Upsilon(1S,2S,3S)\gamma$, with $\Upsilon(1S,2S,3S)$ subsequently decaying into $\mu^{+}\mu^{-}$ using data obtained from $35.9~fb^{-1}$ of $pp$ colisions at $\sqrt{s}=13~\mathrm{TeV}$. 
 
 Since no excess has been observed above the background, the \CLs formalism is applied, in order to establish an upper limit in the branching fractions for each channel.
 
-\section{The $CL_{s}$ formalism for upper limits setting at CMS}
+\subsection{The $CL_{s}$ formalism for upper limits setting at CMS}
 \label{sec:cls}
 
 The \CLs formalism~\cite{cls_Read_2002} consist in a modified frequentist approach to obtain an upper limit for a certain parameter of a model, with respect to the data, when there is no significant excess that could justify an observation. It is based on the profile-likelihood-ratio test statistic~\cite{profiled_lh} and asymptotic approximations~\cite{asymptotic_cls}. It is a standard upper limit setting procedure for the LHC experiments~\cite{CMS-NOTE-2011-005}.
 
-When searching for non-observed phenomena, it is often usual to derive the results as a function of the signal strength modifier $\mu$, which is a free parameter of the full model (signal + background). It can be define such as, the expectation value for the number of events in a bin~\footnote{A set of common analysis criteria.} is:
+When searching for non-observed phenomena, it is often usual to derive the results as a function of the signal strength modifier $\mu$, which is a free parameter of the full model (signal + background). It can be defined such as, the expectation value for the number of events in a bin~\footnote{A set of common analysis criteria.} is:
 
 
 \begin{equation}
 \label{eqn:signal_strength}
 E[n] = \mu s + b,
 \end{equation}
-where, $s$ and $b$ are the expected number of signal e background events, respectively.
+where, $s$ and $b$ are the expected number of signal and background events, respectively.
 
 The Neyman–Pearson lemma~\cite{profiled_lh} states the likelihood ratio is the optimal test between a null hypothesis and an alternative one (i.e. background-only and signal-plus-background models). On top on this, one could build a likelihood ratio test as:
 
@@ -37,7 +37,7 @@ With these two models, i.e. their \textit{pdfs}, one can throw toy MC events in 
 \end{equation}
   where $q(\mu)_{\text{data}}$ is the observed value of $q(\mu)$ on data, for a given $\mu$. 
   
-If $p_{\mu}$ is less than $\alpha$ (usually 0.05 or 0.1) the background-only model can be excluded in favor of the signal-plus-background model. For the propose of a confidence interval estimation, the argument can be reversed and one could look for all the values of $\mu$ that would not be excluded with Confidence Level (CL) $1-\alpha$.
+If $p_{\mu}$ is less than $\alpha$ (usually 0.05 or 0.1) the background-only model can be excluded in favor of the signal-plus-background model. For the purpose of a confidence interval estimation, the argument can be reversed and one could look for all the values of $\mu$ that would not be excluded with Confidence Level (CL) $1-\alpha$.
 
 The problem with this definition is that, when the expected signal strength is very small, e.g. a invariant mass distribution in the TeV scale, the null hypothesis and the alternative one are almost indistinguishable. In this situation, a downward fluctuation of the background might lead us to exclude the alternative hypothesis (signal) in a region of low experimental sensitivity region. Putting in number, if we expect 50 background events and 2 signal events, but we observe 40 events, the signal would be easily excluded.
 
@@ -50,16 +50,14 @@ In order to take this effect into account, a modified frequentist approach for u
 \end{equation}
   where, $\mathcal{L}(\text{data} \vert \mu, \doublehat{\theta})$ is the profile likelihood function. 
 
-Defining $\mu$ and the investigated signal strength, $\doublehat{\theta}$ is the nuisances that maximizes the likelihood for a given $\mu$ (fixed) while $\hat{\mu}$ and $\hat{\theta}$ are the signal strength and nuisances that, overall, maximizes the likelihood. The advantage of the 
-
-CMS and ATLAS have a common set of statistical guidelines~\cite{cms_atlas_statistical_guidelines} to ensure the compatibility of the published results. Following these recommendations, the statistics test based on~\ref{profile_likelihood_ratio_def} is:
+Defining $\mu$ and the investigated signal strength, $\doublehat{\theta}$ is the nuisances that maximizes the likelihood for a given $\mu$ (fixed) while $\hat{\mu}$ and $\hat{\theta}$ are the signal strength and nuisances that, overall, maximizes the likelihood. The advantage of the CMS and ATLAS have a common set of statistical guidelines~\cite{cms_atlas_statistical_guidelines} to ensure the compatibility of the published results. Following these recommendations, the statistics test based on~\ref{profile_likelihood_ratio_def} is:
 
 \begin{equation}
   \label{statistics_test_lhc}
   \tilde{q_{\mu}}=-2 ln[\lambda(\mu)], \text{ with } 0 \leqslant \hat{\mu} \leqslant \mu.
 \end{equation}
 
-The left side restriction ($0 \leqslant \hat{\mu}$) ensure us the proper physical interpretation of $\mu$ as a positive define signal strength, i.e., the observation a process would, for a given bin, increase the number of events. The right side restriction $\hat{\mu} \leqslant \mu$ secure the interpretation of $\tilde{q_{\mu}}$'s $p-$value as a one-sided confidence interval. This is required for a upper limit definition.
+The left side restriction ($0 \leqslant \hat{\mu}$) ensure us the proper physical interpretation of $\mu$ as a positive defined signal strength, i.e., the observation a process would, for a given bin, increase the number of events. The right side restriction $\hat{\mu} \leqslant \mu$ secure the interpretation of $\tilde{q_{\mu}}$'s $p-$value as a one-sided confidence interval. This is required for a upper limit definition.
 
 The advantage of using the profile likelihood ratio is that, even though it takes into account the effect of nuisances in the likelihood, it is possible to prove that, with the use of Wilk's Theorem~\cite{wilks1938}, that a statistic test defined as $\tilde{q_{\mu}}$, asymptotically follows a chi-square distribution with one degree of freedom (the signal strength)~\cite{asymptotic_cls}. Thus, $\tilde{q_{\mu}}$ is said to be approximately independent of any nuisance and allow a fast computation of its $p$-value without the need of toy MC strategies (which can computationally demanding, depending on the complexity of the models), event though this is not the standard CMS/ATLAS recommendation.
 
@@ -101,11 +99,11 @@ The main advantage of the $CL_s$ approach is that the presence of the denominato
   \label{qtevDist}
 \end{figure}
 
-The expected expected upper limit and its $\pm 1 \sigma$ and $\pm 2 \sigma$ are determined by generating a large number of toy mc events, for the background-only model ($\mu = 0$), with nuisances free to float, and for each simulation finding $\mu_{95\%}$, which defines the confidence level. Once enough samples are generated, one should scan, from left to right, the cumulative distribution of $\mu_{95\%}$. The median defines the expected value and the quantiles for 16\%, 84\% and 2.5\%, 97.5\% defines the $\pm 1 \sigma$ and $\pm 2 \sigma$, respectively.
+The expected upper limit and its $\pm 1 \sigma$ and $\pm 2 \sigma$ are determined by generating a large number of toy mc events, for the background-only model ($\mu = 0$), with nuisances free to float, and for each simulation finding $\mu_{95\%}$, which defines the confidence level. Once enough samples are generated, one should scan, from left to right, the cumulative distribution of $\mu_{95\%}$. The median defines the expected value and the quantiles for 16\%, 84\% and 2.5\%, 97.5\% defines the $\pm 1 \sigma$ and $\pm 2 \sigma$, respectively.
 
-\section{Branching fraction upper limits}
+\subsection{Branching fraction upper limits}
 \label{sec:results}
-The result are summarized on table \ref{tab:UpperLimits_Cat123}.
+The results are summarized on table \ref{tab:UpperLimits_Cat123}.
 
 \begin{table}[ht]
 \begin{center}
@@ -133,8 +131,7 @@ At table~\ref{tab:UpperLimits_Cat0} we present the results obtained when there i
 \end{center}
 \end{table}
 
-
 It is worth to remember that the categorization takes places only for the Z decay. For the Higgs decay, no categorization is imposed.
 
-By taking, or not, into account any categorization, the numbers presented in both tables (\ref{tab:UpperLimits_Cat123} and \ref{tab:UpperLimits_Cat0}), are compatible within themselves and with the results published by the ATLAS collaboration~\cite{Aaboud_2018}.
+By taking, or not, into account any categorization, the numbers presented in both tables (\ref{tab:UpperLimits_Cat123} and \ref{tab:UpperLimits_Cat0}), are compatible within themselves and with the results published by the ATLAS collaboration~\cite{atlas_paper_2018:2018txb}. Our interpretation to the lack of improvement of the no categorization scenario with respect to the categorized one, is that, the collected statistics, after full selection, is so small, that the categorization just jeopardize the amount of events available. 
 
