@@ -25,7 +25,7 @@
 
 \documentclass[ 
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
-%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 english, % ngerman for German
 % singlespacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
 onehalfspacing, % Single line spacing, alternatives: singlespacing, onehalfspacing or doublespacing
@@ -39,6 +39,13 @@ headsepline, % Uncomment to get a line under the header
 chapterinoneline, % Uncomment to place the chapter title next to the number on one line
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
+
+
+\setlength{\parindent}{2cm}
+% \setlength{\parskip}{1em}
+% \renewcommand{\baselinestretch}{2.0}
+
+
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 
 \usepackage[T1]{fontenc} % Output font encoding for international characters
@@ -209,11 +216,11 @@ chapterinoneline, % Uncomment to place the chapter title next to the number on o
 
 \geometry{
 	paper=a4paper, % Change to letterpaper for US letter
-	inner=2cm, % Inner margin
+	inner=3cm, % Inner margin
 	outer=2cm, % Outer margin
 	bindingoffset=.5cm, % Binding offset
-	top=1.5cm, % Top margin
-	bottom=1.5cm, % Bottom margin
+	top=3cm, % Top margin
+	bottom=2cm, % Bottom margin
 	% showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -455,35 +462,35 @@ I would like to thank:
 % introduction
 \input{chapters/intro_conclusion/introduction}
  
-% theory
-\input{chapters/theory/sm}
-\input{chapters/theory/sm_results}
-\input{chapters/theory/higgs_results}
-\input{chapters/theory/rare_decays}
+% % theory
+% \input{chapters/theory/sm}
+% \input{chapters/theory/sm_results}
+% \input{chapters/theory/higgs_results}
+% \input{chapters/theory/rare_decays}
 
-% detector
-\input{chapters/experimental_setup/intro_and_lhc}
-\input{chapters/experimental_setup/cms}
-\input{chapters/experimental_setup/tracker}
-\input{chapters/experimental_setup/ecal}
-\input{chapters/experimental_setup/hcal}
-\input{chapters/experimental_setup/muon_dt}
-\input{chapters/experimental_setup/rpc_csc}
-\input{chapters/experimental_setup/tridas} 
-\input{chapters/experimental_setup/pf}
+% % detector
+% \input{chapters/experimental_setup/intro_and_lhc}
+% \input{chapters/experimental_setup/cms}
+% \input{chapters/experimental_setup/tracker}
+% \input{chapters/experimental_setup/ecal}
+% \input{chapters/experimental_setup/hcal}
+% \input{chapters/experimental_setup/muon_dt}
+% \input{chapters/experimental_setup/rpc_csc}
+% \input{chapters/experimental_setup/tridas} 
+% \input{chapters/experimental_setup/pf}
 
-% rpc
-\input{chapters/rpc/rpc}
+% % rpc
+% \input{chapters/rpc/rpc}
 
-% analysis
-\input{chapters/analysis/intro} 
-\input{chapters/analysis/datasets} 
-\input{chapters/analysis/analysis}
-\input{chapters/analysis/backgroundmodel}
-\input{chapters/analysis/signalmodel}
-\input{chapters/analysis/systematics}
-\input{chapters/analysis/modeling_xchecks}
-\input{chapters/analysis/results}
+% % analysis
+% \input{chapters/analysis/intro} 
+% \input{chapters/analysis/datasets} 
+% \input{chapters/analysis/analysis}
+% \input{chapters/analysis/backgroundmodel}
+% \input{chapters/analysis/signalmodel}
+% \input{chapters/analysis/systematics}
+% \input{chapters/analysis/modeling_xchecks}
+% \input{chapters/analysis/results}
 
 % conclusion
 \input{chapters/intro_conclusion/conclusion}
