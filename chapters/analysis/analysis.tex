@@ -6,7 +6,7 @@
 
 The event selection is divided in two steps. At first, a set of cuts related to trigger and physics object (muons and photons) selection is applied. High level physics objects at CMS are reconstructed based of the Particle Flow (PF) algorithm \cite{PF_paper_2016}. This selection is called, within this analysis, Group I. 
 
-For the events that pass the Group I selection, another set of cuts is applied, this time focusing on kinematical (phase space) event selection, in order to enhance the signal to background ratio. This later set is called, within this analysis, Group II. After full selection, three exclusive categories are defined, based on the photon's $\eta$ region and its energy spread shape within the ECAL cells (R9).
+For the events that pass the Group I selection, another set of cuts is applied, this time focusing on kinematical (phase space) event selection, in order to enhance the signal to background ratio. This later set is called, within this analysis, Group II. After full selection, three exclusive categories are defined, based on the photon's $\eta$ region and its energy spread shape within the ECAL cells (R9~\footnote{Photon R9 is a shower shape variable defined as the fraction of energy deposited in the 5x5 square surrounding the Super Cluster seed of the reconstructed photon.}).
 
 % It was a deliberated choice to apply on this analysis the same event selection of the $H/Z \rightarrow J/\psi + \gamma$  with 2016 data. Full documentation on this analysis can be found at \cite{CMS_jpsi_analysis}. Since the two analyses are similar, not only in final state, but also on the kind of intermediate meson ($\Upsilon$ or $J/\psi$) and energy scale, this choice was taken in order to keep the compatibility of the two studies. The only difference in the event selection is the dimuon mass window, which was changed to a suitable cut for a $\Upsilon$ selection.  
 
@@ -59,15 +59,15 @@ After the full selection, a background and signal modeling process is applied, b
 
 In this study, the same trigger requirements are applied to both data and simulated samples. For the first trigger level (L1), events are selected if they present at least one muon with transverse momentum greater than 5 GeV and an isolated~\footnote{The concept of isolation will be detailed later, but in summary, it means a object which has very small activity (above a certain threshold of energy/momentum) around it. In hadron-hadron collider, isolation is a characteristics of hard interactions.} photon or electron with transverse momentum greater than 18 GeV (at L1, there is no differentiation between photons and electrons). At the software level of the trigger system (HLT), the events are required to have at least one muon with transverse momentum greater than 17 GeV and a photon with transverse momentum greater than 30 GeV.
 
-In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based onthe\PT of the reconstructed muon and photon. These scale factor computed by the ratio between efficiency of the trigger for the Data sample over the efficiency for a MC sample. These efficiencies are calculated with the tag-and-probe method, exploring the resonance of a final state composed by two muon and one photon in the vicinity of the $Z$ boson invariant mass. To this final state, a selection was applied to ensure that the photon comes from a Final State Radiation process, allowing us to use the tag-and-probe method.
+In order to compensate any difference in the trigger performance between simulated and data samples, for every selected MC a proper scale factor is applied, based on the \PT of the reconstructed muon and photon. These scale factor computed by the ratio between efficiency of the trigger for the Data sample over the efficiency for a MC sample. These efficiencies are calculated with the tag-and-probe method, exploring the resonance of a final state composed by two muon and one photon in the vicinity of the $Z$ boson invariant mass. To this final state, a selection was applied to ensure that the photon comes from a Final State Radiation process, allowing us to use the tag-and-probe method.
 
-Considering the similarity of this analysis with the $H/Z \rightarrow J/\psi + \gamma$ analysis~\cite{papper_jpsi}, not only in term of data samples, but also for triggering and physics object selection, the same scale factors were applied. More details are given in the same paper.
+Considering the similarity of this analysis with the $H/Z \rightarrow J/\Psi + \gamma$ analysis~\cite{papper_jpsi}, not only in term of data samples, but also for triggering and physics object selection, the same scale factors were applied. More details are given in the same paper.
 
 \subsection{Muon Identification}
 \label{sec:muon_id}
 % After trigger selection, the same muon selection of the $H \rightarrow ZZ^{*} \rightarrow 4l$ is applied \cite{CMS_higgs_zz_4l}. This is the same approach used by the $H/Z \rightarrow J/\psi + \gamma$ analysis. 
 
-Ahead of any selection, a standard CMS "Ghost Cleaning" procedure is applied to all reconstructed muons in order to avoid that a single physical muon is reconstructed as two or more. For this procedure, reconstructed muons sharing 50\% or more segments in the system are arbitrated, in such way, that the ones with lowest quality characteristic is excluded.
+Ahead of any selection, a standard CMS "Ghost Cleaning" procedure is applied to all reconstructed muons in order to avoid that a single physical muon is reconstructed as two or more. For this procedure, reconstructed muons sharing 50\% or more segments in the system are arbitrated, in such way, that the ones with lowest quality characteristic are excluded.
 
 After the cleaning, a muon is chosen when it passes a two step identification: the \textbf{Loose ID} and the \textbf{Tight ID}. Below the muon identification procedure is summarized .
 
@@ -90,7 +90,7 @@ Muons reconstructed only in the muon system, without a correspondence with the t
 
 The primary vertex itself, is determined as the reconstructed vertex with the biggest sum of $p_T^2$ in the event. This sum is performed, considering all the charged PF candidates clustered by the jet finding algorithms~\cite{Cacciari:2008gp,Cacciari:2011ma} and the MET, which is defined as the $p_T$ vector sum of all the charged and neutral PF candidates associated to that vertex. 
 
-For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required to have been reconstructed with the Particle Flow (PF) algorithm. If they have $p_{T} > 200$ GeV, they should reconstructed with the Particle Flow (PF) algorithm or satisfy the strict tracker requirements (defined in table~\ref{tab:Tracker_High_pT}).
+For the Tight ID, muons with transverse momentum $p_{T} < 200$ GeV, are required to have been reconstructed with the Particle Flow (PF) algorithm. If they have $p_{T} > 200$ GeV, they should reconstructed with the Particle Flow (PF) algorithm or satisfy the strict tracker requirements (defined in Table~\ref{tab:Tracker_High_pT}).
 
 \begin{table}[h]
   \caption{Conditions for a muon to pass the strict tracker requirements.}
@@ -157,7 +157,7 @@ In order to cope with trigger requirements, the leading muon should have $\PT > 
 \subsection{Photon Identification}
 \label{sec:photon_id}
 
-For the photon identification and selection, the standard CMS recommendation are followed. The Multivariate (MVA) Photon identification is used with a working point of 90\%, together with a electron veto procedure, to avoid misidentification of electrons as photons. Kinematically, the photons are requested to have transverse energy, with respect to the beam line, $E_{T} > 33$ GeV and reconstructed within the CMS acceptance for photons $|\eta_{SC}| < 2.5$\footnote{SC stands for Super Cluster of the reconstructed photon. It is the set of cell in the Electromagnetic Calorimeter used for the photon observation.}, excluding the Electromagnetic Calorimeter (ECAL) Barrel-Endcap intersections.
+For the photon identification and selection, the standard CMS recommendation are followed. The Multivariate (MVA) Photon identification is used with a working point of 90\%, together with a electron veto procedure, to avoid misidentification of electrons as photons. Kinematically, the photons are requested to have transverse energy, with respect to the beam line, $E_{T} > 33$ GeV \footnote{$E_{T}$ is define as the amount of energy of a reconstructed particle times the cosine of $\theta$, where $\theta$ is the angle between the beam line and the particle's momentum.} and reconstructed within the CMS acceptance for photons $|\eta_{SC}| < 2.5$\footnote{SC stands for Super Cluster of the reconstructed photon. It is the set of cell in the Electromagnetic Calorimeter used for the photon observation.}, excluding the Electromagnetic Calorimeter (ECAL) Barrel-Endcap intersections.
 
 The threshold of 33 GeV for the photon transverse energy is driven by the trigger requirements. The selected photon, per event, is the one with highest $E_{T}$.
 
@@ -219,7 +219,7 @@ For any presented plot, \textbf{Data} stands for data collected from real $pp$ c
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plots normalized to the unit of area.}
+\caption{The $E_{T}$ photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plots normalized to the unit of area.}
 \label{fig:pTPhoton_ZtoUpsilon_Cat0}
 \end{figure}
 
@@ -360,7 +360,7 @@ For any presented plot, \textbf{Data} stands for data collected from real $pp$ c
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/au/data_x_mc/noKinCuts/h_noKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plot is normalized to the unit of area.}
+\caption{The $E_{T}$ photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ Group I of selection cuts. The plot is normalized to the unit of area.}
 \label{fig:pTPhoton_HtoUpsilon_Cat0}
 \end{figure}
 
@@ -560,7 +560,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/ZtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
+\caption{The $E_{T}$ photon distributions from data and signal events for Z decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 100$).}
 \label{fig:pTPhoton_ZtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -693,7 +693,7 @@ Below it is shown the same set of plot shown before, but this time, taking into 
 \begin{center}
 \includegraphics[width=0.45\textwidth]{figures_and_tables/outputPlots/HtoUpsilon_Cat0_ZZZZZ/nEvts/data_x_mc/withKinCuts/h_withKin_Photon_pt}\hspace*{1.cm}
 \end{center}\vspace*{-.5cm}
-\caption{The \PT photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
+\caption{The $E_{T}$ photon distributions from data and signal events for Higgs decaying into $\Upsilon(1S,2S,3S)$ + $\gamma$ all (Group I+II) selection cuts. The plot is normalized to the number of events. Signal sample is scaled by a factor of $\times 600000$).}
 \label{fig:pTPhoton_HtoUpsilon_Cat0_groupI_plus_II}
 \end{figure}
 
@@ -822,7 +822,7 @@ In order to increase the sensibility of the analysis, a categorization procedure
  % Table \ref{tab:categorization} present the 3 exclusive categories proposed. 
  They are based on the $\eta$ and R9 distribution of the reconstructed photon.
 
-The photon R9 is a shower shape variable defined as the fraction of energy deposited in the 5x5 square surrounding the Super Cluster seed of the reconstructed photon. A photon that convert before reaching the ECAL tend to have lower values of R9, in comparison with unconverted photons. Converted photons have wider energy resolution and are more likely to be misidentified.
+The photon R9 is a shower shape variable defined as the fraction of energy deposited in the 5x5 square  of calorimeter crystals surrounding the Super Cluster seed of the reconstructed photon. A photon that convert before reaching the ECAL tend to have lower values of R9, in comparison with unconverted photons. Converted photons have wider energy resolution and are more likely to be misidentified.  
 
 % \begin{table}[ht]
 % \begin{center}
@@ -855,7 +855,7 @@ As spotted by the $H \rightarrow \gamma\gamma$ analysis, during Run1~\cite{higgs
 
 The same approach of the $H \rightarrow \gamma\gamma$ analysis is applied, in which the nominal photon selection of this analysis (see section \ref{sec:photon_id}) is used to select photons on Data and MC. Then the two distributions are remapped and the transformation factors are extracted. 
 
-Figure \ref{fig:r9_reweighting} show the R9 distribution before and after the reweighting, for the Barrel and the Endcap.
+Figure \ref{fig:r9_reweighting} shows the R9 distribution before and after the reweighting, for the Barrel and the Endcap.
 
 %%%%%%%%% R9
 % more info: https://eliza.web.cern.ch/eliza/public/ZGTo2MuG_MMuMu_EraDcutsR9/
@@ -896,8 +896,8 @@ Tables \ref{tab:Z_yields} and \ref{tab:HIGGS_yields} show the total number of ev
 
 The signal selection efficiency is between 20\% and 21\% for all $\Upsilon$ states and categories. 
 
-When one compares the fraction of selected resonant background, with respect to the selected data events for the Higgs decay (1.22/231), the fraction obtained ($\sim0.3\%$) is irrelevant. On the other hand, the same fraction for the \Z decay (176/447) is far from irrelevant ($\sim39\%$)\footnote{It is worth to keep in mind that this is a estimation based on MC}. The same relation is not found in the $H/Z \rightarrow J/\psi + \gamma$ analysis \cite{papper_jpsi}, where both decays (Higgs and \Z) show neglectable estimations of resonant background contribution to data. 
+When one compares the fraction of selected resonant background, with respect to the selected data events for the Higgs decay (1.22/231), the fraction obtained ($\sim0.3\%$) is irrelevant. On the other hand, the same fraction for the \Z decay (176/447) is far from irrelevant ($\sim39\%$)\footnote{It is worth to keep in mind that this is a estimation based on MC}. The same relation is not found in the $H/Z \rightarrow J/\Psi + \gamma$ analysis \cite{papper_jpsi}, where both decays (Higgs and \Z) show neglectable estimations of resonant background contribution to data. 
 The very same behavior was found by ATLAS~\cite{atlas_paper:PhysRevLett.114.121801}. It can be explained by the relatively larger cross-section of the \Z resonant background ($Z \rightarrow \mu\mu\gamma_{FSR}$), with respect to the Higgs resonant background (Higgs Dalitz Decay). For the J/$\psi$ channel, it is not an issue since its  cross-section is way larger then the resonant background. The figures \ref{fig:dimuon_mass_ZtoUpsilon_Cat0} and \ref{fig:dimuon_mass_HtoUpsilon_Cat0} help to clarify these affirmations, for the \Z and Higgs decay, respectively. 
-One can easily see how clear the J/$\psi$ peak is in both decays and how minor the Higgs Dalitz Decay contributions is to the $\Upsilon$ peak, with respect to the $Z \rightarrow \mu\mu\gamma_{FSR}$ contribution. It is important to keep in mind the different scaling of the resonant background distributions, the yields are multiplied by $\times 3$ for the \Z and $\times 100$ for the Higgs.
+One can easily see how clear the J/$\Psi$ peak is in both decays and how minor the Higgs Dalitz Decay contributions is to the $\Upsilon$ peak, with respect to the $Z \rightarrow \mu\mu\gamma_{FSR}$ contribution. It is important to keep in mind the different scaling of the resonant background distributions, the yields are multiplied by $\times 3$ for the \Z and $\times 100$ for the Higgs.
 The resonant background to the data due to $Z \rightarrow \Upsilon(1S,2S,3S) + \gamma$ channel  is the main motivation to use a 2-dimensional modeling fitting of the signal and background events, in order to add one more layer of differentiation between many backgrounds contributions which will be detailed in the next section.
 

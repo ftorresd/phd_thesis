@@ -59,7 +59,7 @@ Taking the Quantum Electrodynamics (QED) as an example: the quantum field theory
 where $\psi(x)$ is a spinor, describing the wave-function and $\gamma^\mu$ are gamma-matrices. This equation can be obtained from the lagrangian $\mathcal{L}$~\footnote{Even though, the $\mathcal{L}$ actually represents the lagrangian density, in this document we shall refer to it as simply lagrangian.} of a free particle, in the form of 
 
 \begin{equation}
-    \mathcal{L_{\text{0}}} = i\bar{\psi}(x)\gamma^\mu\partial_\mu\psi(x)-m\bar{\psi}\psi(x),
+    \mathcal{L_{\text{0}}} = i\bar{\psi}(x)\gamma^\mu\partial_\mu\psi(x)-m\bar{\Psi}\Psi(x),
     \label{lagrangian_free_particle}
 \end{equation}
 when applied to the Euler-Lagrange equation.
@@ -151,7 +151,7 @@ where $f_{ab}^c$ are antisymmetric structure constants.
 
 From a experimental perspective, the idea of colour begins with the observation of $\Lambda^{++}$~\cite{dalitz1967proceedings}. It could be only be composed by three up quarks, which would break Pauli Exclusion Principle~\footnote{Two or more fermion can not be in the same quantum state.}. This observation demanded the inclusion of another degree of freedom, the colour, typically refereed as RED, BLUE, GREEN and its anti-colours.
 
-The QCD lagrangian for a quark of colour $c$, just the QED lagrangian for a electron of charge $-e$, is~\footnote{The total QD lagrangian would the sum over all possible states.}:
+The QCD lagrangian for a quark of colour $c$, just the QED lagrangian for a electron of charge $-e$, is~\footnote{The total QCD lagrangian would the sum over all possible states.}:
 
 \begin{equation}
     \mathcal{L_{QCD}} = \bar{\psi_c}(x)(i\gamma^\mu\ D_\mu -m)\psi_c(x) - \frac{G_{\mu\nu}^c G^{\mu\nu}_c}{4},
@@ -177,7 +177,7 @@ This lagrangian is local gauge invariant when the strength tensor \ref{qcd_lagra
 
 Coloured particles, such as quarks and gluons, are subjected to the phenomenon of Colour Confinement, which prohibits the direct observation of these particles. These can only be observed in colourless bound states (hadrons). A isolated quark or gluon will immediately interact with the vacuum and initiates a hadronization process until a set of stable colourless particle is produced. As a consequence of the Colour Confinement and the self-coupling property of the QCD force carriers, a bound state or a resonance of gluons, Glueballs~\cite{wolfgang_status}, is possible, even though there are no experimental clear evidences of its existence. This is one of the few open topics in the SM.
 
-QCD is a perturbation theory ($\mathcal{L} = \mathcal{L}_{\text{Free Particle}} + \mathcal{L}_{\text{Interaction}}$) which demands renormalization~\footnote{A techniques to deal with infinites that might arrive when calculating quantities in a QFT. In summary the total probability for the theory is required to re-sum to unity.}. In a qualitative way, one could imagine that, as larger the distance on interaction is, more sea vacuum gluon pairs can contribute to the net colour charge, due to the self-coupling, increasing the total interaction strength. To cope the Colour Confinement and the self-coupling, one would redefinethestrong coupling constant as $g_s = \sqrt{4 \pi \alpha_s}$ (from \ref{qcd_lagrangian_definitions1}, \ref{qcd_lagrangian_definitions2} and \ref{strength_tensor_tranform}), where $\alpha_s(Q^2) \propto \frac{\Lambda^2_{QCD}}{ln Q^2}$. In this situation, the coupling strength is related to the transferred momentum $Q^2$, in such a way that, in a highly energetic interaction (high $Q^2$, hence short distance) the coupling is weaker and the quarks and gluons involved, behave like a quasi-free particles, allowing the use of perturbation theory. This effect is known as Asymptotic Freedom, and its scale have already been measured by the LHC experiments~\cite{pdg_2020}.
+QCD is a perturbation theory ($\mathcal{L} = \mathcal{L}_{\text{Free Particle}} + \mathcal{L}_{\text{Interaction}}$) which demands renormalization~\footnote{A techniques to deal with infinites that might arrive when calculating quantities in a QFT. In summary the total probability for the theory is required to re-sum to unity.}. In a qualitative way, one could imagine that, as larger the distance on interaction is, more sea vacuum gluon pairs can contribute to the net colour charge, due to the self-coupling, increasing the total interaction strength. To cope the Colour Confinement and the self-coupling, one would redefine the strong coupling constant as $g_s = \sqrt{4 \pi \alpha_s}$ (from \ref{qcd_lagrangian_definitions1}, \ref{qcd_lagrangian_definitions2} and \ref{strength_tensor_tranform}), where $\alpha_s(Q^2) \propto \frac{\Lambda^2_{QCD}}{ln Q^2}$. In this situation, the coupling strength is related to the transferred momentum $Q^2$, in such a way that, in a highly energetic interaction (high $Q^2$, hence short distance) the coupling is weaker and the quarks and gluons involved, behave like a quasi-free particles, allowing the use of perturbation theory. This effect is known as Asymptotic Freedom, and its scale have already been measured by the LHC experiments~\cite{pdg_2020}.
 
 \subsubsection{Electroweak Theory}
 
@@ -322,7 +322,7 @@ Expanding the potential $V(\phi)$, as is \ref{higgs_field3}, one gets:
     V = \mu^2 H^2 + \frac{\mu^2}{v} H^3 + \frac{\mu^2}{4v^2} H^4,
     \label{higgs_mass_term}
 \end{equation}
-hence, a new scalar boson (the Higgs boson) is included inthetheory with mass $\sqrt{2\mu^2}$ and self-couplings terms.
+hence, a new scalar boson (the Higgs boson) is included in the theory with mass $\sqrt{2\mu^2}$ and self-couplings terms.
 
 In the same way, expanding \ref{higgs_field2} and assuming $T_L^a = \sigma^a/2$: 
 \begin{equation}

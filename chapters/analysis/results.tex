@@ -61,7 +61,7 @@ The left side restriction ($0 \leqslant \hat{\mu}$) ensure us the proper physica
 
 The advantage of using the profile likelihood ratio is that, even though it takes into account the effect of nuisances in the likelihood, it is possible to prove that, with the use of Wilk's Theorem~\cite{wilks1938}, that a statistic test defined as $\tilde{q_{\mu}}$, asymptotically follows a chi-square distribution with one degree of freedom (the signal strength)~\cite{asymptotic_cls}. Thus, $\tilde{q_{\mu}}$ is said to be approximately independent of any nuisance and allow a fast computation of its $p$-value without the need of toy MC strategies (which can computationally demanding, depending on the complexity of the models), event though this is not the standard CMS/ATLAS recommendation.
 
-Based on $\tilde{q_{\mu}}$, defined at~\ref{statistics_test_lhc}, one should compute the $\tilde{q_{\mu}}^{\text{obs}}$,also the $\hat{\theta}_{\mu}^{\text{obs}}$ and $\hat{\theta}_{\mu = 0}^{\text{obs}}$, which corresponds to the observed value of $\tilde{q_{\mu}}$ on data, the maximum likelihood estimator for the nuisances assuming some signal strength $\mu$ and assuming a background-only model, respectively. Then, the distributions of $f(\tilde{q_{\mu}} \vert \mu, \hat{\theta}_{\mu}^{\text{obs}})$ and $f(\tilde{q_{\mu}} \vert \mu=0, \hat{\theta}_{\mu = 0}^{\text{obs}})$ are generated tossing pseudo-random toy MC. Figure~\ref{toy_mc_profile_likelihood_test} presents an example of these two distributions.
+Based on $\tilde{q_{\mu}}$, defined at~\ref{statistics_test_lhc}, one should compute the $\tilde{q_{\mu}}^{\text{obs}}$, also the $\hat{\theta}_{\mu}^{\text{obs}}$ and $\hat{\theta}_{\mu = 0}^{\text{obs}}$, which corresponds to the observed value of $\tilde{q_{\mu}}$ on data, the maximum likelihood estimator for the nuisances assuming some signal strength $\mu$ and assuming a background-only model, respectively. Then, the distributions of $f(\tilde{q_{\mu}} \vert \mu, \hat{\theta}_{\mu}^{\text{obs}})$ and $f(\tilde{q_{\mu}} \vert \mu=0, \hat{\theta}_{\mu = 0}^{\text{obs}})$ are generated tossing pseudo-random toy MC. Figure~\ref{toy_mc_profile_likelihood_test} presents an example of these two distributions.
 
 \begin{figure}[htbp]
   \centering
@@ -90,7 +90,7 @@ and
 
 Scanning different values of $\mu$, within $0 \leqslant \hat{\mu} \leqslant \mu$, one would exclude the ones which $CL_s < \alpha$. CMS and ATLAS recommends a CL level ($1-\alpha$) of 95\%.
 
-The main advantage of the $CL_s$ approach is that the presence of the denominator $1-p_{b}$ in~\ref{cls_def} penalizes the exclusion of regions in which the experiment is no sensitive. Figure~\ref{qtevDist} helps to illustrate this. One can notice that a small value of $p_{s+b}$ (yellow area) is balanced by large value of $p_{b}$ (green area). When the experimental sensitivity is higher, the two distributions tend to be far away from each other. Thus leading to a smaller compensation factor ($p_{b}$) and enhancing the chance of a exclusive $CL_s$ value.
+The main advantage of the $CL_s$ approach is that the presence of the denominator $1-p_{b}$ in~\ref{cls_def} penalizes the exclusion of regions in which the experiment is no sensitive. Figure~\ref{qtevDist} helps to illustrate this. One can notice that a small value of $p_{s+b}$ (green area) is balanced by large value of $p_{b}$ (yellow area). When the experimental sensitivity is higher, the two distributions tend to be far away from each other. Thus leading to a smaller compensation factor ($p_{b}$) and enhancing the chance of a exclusive $CL_s$ value.
 
 \begin{figure}[htbp]
   \centering
@@ -99,7 +99,7 @@ The main advantage of the $CL_s$ approach is that the presence of the denominato
   \label{qtevDist}
 \end{figure}
 
-The expected upper limit and its $\pm 1 \sigma$ and $\pm 2 \sigma$ are determined by generating a large number of toy mc events, for the background-only model ($\mu = 0$), with nuisances free to float, and for each simulation finding $\mu_{95\%}$, which defines the confidence level. Once enough samples are generated, one should scan, from left to right, the cumulative distribution of $\mu_{95\%}$. The median defines the expected value and the quantiles for 16\%, 84\% and 2.5\%, 97.5\% defines the $\pm 1 \sigma$ and $\pm 2 \sigma$, respectively.
+The expected upper limit and its $\pm 1 \sigma$ and $\pm 2 \sigma$ are determined by generating a large number of toy MC events, for the background-only model ($\mu = 0$), with nuisances free to float, and for each simulation finding $\mu_{95\%}$, which defines the confidence level. Once enough samples are generated, one should scan, from left to right, the cumulative distribution of $\mu_{95\%}$. The median defines the expected value and the quantiles for 16\%, 84\% and 2.5\%, 97.5\% defines the $\pm 1 \sigma$ and $\pm 2 \sigma$, respectively.
 
 \subsection{Branching fraction upper limits}
 \label{sec:results}
@@ -117,9 +117,9 @@ The results are summarized on table \ref{tab:UpperLimits_Cat123}.
 
 The observed(expected) exclusion limit at $95\%$ confidence level on the $\mathcal{B}(\mathrm{Z}\to\Upsilon(1S,2S,3S)\gamma)=$ 2.9, 2.7, 1.4 ($1.6^{+0.8}_{-0.5}$,  $2.0^{+1.0}_{-0.6}$, $1.8^{+1.0}_{-0.6}$)$\times 10^{-6}$, and on the $\mathcal{B}(\mathrm{H}\to\Upsilon(1S,2S,3S)\gamma)=$ 6.9, 7.4, 5.8 ($7.3^{+4.0}_{-2.4}$,  $8.1^{+4.6}_{-2.8}$, $6.8^{+3.9}_{-2.3}$)$\times 10^{-4}$.
 
-As stated before, this analysis was done, for the Z decay, taking into account a mutually excludent categorization of events, based on the reconstructed photon properties ($\eta_{SC}$ and R9 value), as described in section~\ref{sec:categorization}. 
+As stated before, this analysis was done, for the Z decay, taking into account a mutually excludent categorization of events, based on the reconstructed photon properties ($\eta_{SC}$ and R9 value), as described in Section~\ref{sec:categorization}. 
 
-At table~\ref{tab:UpperLimits_Cat0} we present the results obtained when there is no categorization of events (Inclusive category).
+At Table~\ref{tab:UpperLimits_Cat0} we present the results obtained when there is no categorization of events (Inclusive category).
 
 \begin{table}[ht]
 \begin{center}
