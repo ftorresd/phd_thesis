@@ -1,0 +1,357 @@
+% Escolha: Portugues ou Ingles ou Espanhol.
+% Para a versão final do texto, acrescente a palavra "Final",
+% como na segunda linha abaixo da próxima.
+%\documentclass[Portugues]{tese-FT}
+\documentclass[Ingles,Final]{tese-IFGW}
+%\documentclass[Ingles]{tese-FT}
+%\documentclass[Espanhol,Final]{tese-FT}
+
+%Adicione seu arquivo com as referências bibliográficas
+% \usepackage[sorting=none,style=nature,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\addbibresource{thesis.bib}
+
+%O pacote a seguir gera um dummy text. Elimine a linha quando
+% for editar seu texto.
+\usepackage{lipsum}
+
+%----------------------------------------------------------------------------------------
+%	CMS DEFS
+%----------------------------------------------------------------------------------------
+
+%\DeclareUnicodeCharacter{U+9A}{o} % to solve char problem in bib
+
+\usepackage{lipsum}
+
+% \usepackage{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+% \usepackage[para,online,flushleft]{threeparttable}
+
+
+
+% \usepackage{lineno}
+% \linenumbers
+
+% \usepackage{draftwatermark}
+% \SetWatermarkLightness{0.9}
+% \SetWatermarkScale{4}
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{multirow}
+
+\usepackage{tensor}
+\newcommand{\levicivita}{}% initialize
+\def\levicivita#1#{\tensor#1{\epsilon}}
+
+\usepackage{scalerel}
+
+\usepackage{slashed}
+
+% \renewcommand\thefootnote{\fnsymbol{footnote}}
+
+\usepackage{rotating}
+
+% colored rounded box
+\usepackage{tcolorbox}
+
+% \makeatletter
+% \@namedef{ver@transparent.sty}{}
+% \makeatother
+% \usepackage{ctable} % for \specialrule command
+
+%\usepackage{supertabular} % for \topcaption command
+\usepackage{topcapt}
+
+% ident first paragraph of chapter or section
+\usepackage{indentfirst}
+
+% CMS definitions
+\usepackage{ifthen}
+% switches to handle document styles: one of these must be specified.
+% pas is the same as as.
+\newboolean{cms@tdr}
+\setboolean{cms@tdr}{false}
+\newboolean{cms@note}
+\setboolean{cms@note}{false}
+\newboolean{cms@an}
+\setboolean{cms@an}{false}
+\newboolean{cms@in}
+\setboolean{cms@in}{false}
+\newboolean{cms@cr}
+\setboolean{cms@cr}{false}
+\newboolean{cms@pas}
+\setboolean{cms@pas}{false}
+\newboolean{cms@dn}
+\setboolean{cms@dn}{false}
+\newboolean{cms@paper}
+\setboolean{cms@paper}{false}
+% indicates final version. remove any draft/internal use markers.
+\newboolean{cms@final}
+\setboolean{cms@final}{false}
+% to use a footnote for the collaboration list
+\newboolean{cms@collab}
+\setboolean{cms@collab}{false}
+%to allow external commands
+\newboolean{cms@external}
+\setboolean{cms@external}{false}
+%to allow for italic formatting
+\newboolean{cms@italic}
+\setboolean{cms@italic}{false}
+% to use formatting for a supplement
+\newboolean{cms@supplement}
+\setboolean{cms@supplement}{false}
+% to remove linenumbers for a non @final version
+\newboolean{cms@nolineno}
+\setboolean{cms@nolineno}{false}
+
+% double hat
+\usepackage{amsmath}
+\usepackage{accents}
+\newlength{\dhatheight}
+\newcommand{\doublehat}[1]{%
+    \settoheight{\dhatheight}{\ensuremath{\hat{#1}}}%
+    \addtolength{\dhatheight}{-0.35ex}%
+    \hat{\vphantom{\rule{1pt}{\dhatheight}}%
+    \smash{\hat{#1}}}}
+
+
+\newcommand{\cPZJpsill}{\ensuremath{\cPZ\to\cPJgy\,\ell^+\ell^-}\xspace}
+\newcommand{\cPZJpsimm}{\ensuremath{\cPZ\to\cPJgy\,\Pgmp\Pgmm}\xspace}
+\newcommand{\cPZJpsiee}{\ensuremath{\cPZ\to\cPJgy\,\Pep\Pem}\xspace}
+\newcommand{\cPZpsill}{\ensuremath{\cPZ\to\psi\,\ell^+\ell^-}\xspace}
+\newcommand{\cPZpsimm}{\ensuremath{\cPZ\to\psi\,\Pgmp\Pgmm}\xspace}
+\newcommand{\cPZpsiee}{\ensuremath{\cPZ\to\psi\,\Pep\Pem}\xspace}
+\newcommand{\psill}{\ensuremath{\psi\,\ell^+\ell^-}\xspace}
+\newcommand{\cPZfourmu}{\ensuremath{\cPZ\to\Pgmp\Pgmm\Pgmp\Pgmm}\xspace}
+\newcommand{\psitomm}{\ensuremath{\psi\to\Pgmp\Pgmm}\xspace}
+\newcommand{\Jpsitomm}{\ensuremath{\cPJgy\to\Pgmp\Pgmm}\xspace}
+\newcommand{\lplm}{\ensuremath{\ell^+\ell^-}\xspace}
+\newcommand{\mpmm}{\ensuremath{\Pgmp\Pgmm}\xspace}
+\newcommand{\epem}{\ensuremath{\Pep\Pem}\xspace}
+
+% \newcommand{\todo}[1]{
+% \textcolor{red}{\textbf{#1}}
+% }
+% \usepackage[colorinlistoftodos]{todonotes}
+
+
+
+% \newcommand{\CLs}[0]{
+% $CL_{s}$
+% }
+
+\usepackage{ptdr-definitions}
+
+%\usepackage{siunitx}
+%\newcommand{\pt}{p_{T}}
+%\newcommand{\PT}{p_{T}}
+%\newcommand{\MADGRAPH}{MADGRAPH}
+%\newcommand{\POWHEG}{POWHEG}
+%%\newcommand{\Z}{Z}
+%\def\Z{Z}
+%\def\unit#1{ #1}
+
+
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%----------------------------------------------------------------------------------------
+% Adicione o pacote a seguir, se seu texto tiver uma lista de 
+% símbolos. Não confunda com a lista de abreviaturas.
+%\usepackage[symbols,nogroupskip,sort=none]{glossaries-extra}
+
+\begin{document}
+
+% Escolha entre autor ou autora:
+\autor{Felipe Torres da Silva de Araujo}
+%\autora{Nome da Autora}
+
+% Sempre deve haver um título em português:
+\titulo{Estudo sobre decaimentos dos bósons Z e Higgs em $\Upsilon + \gamma$ para colisões pp no CMS/LHC}
+
+% Se a língua for o inglês ou o espanhol defina:
+\title{Search for Z and Higgs boson decaying into $\Upsilon + \gamma$ in pp collisions at CMS/LHC}
+
+% Escolha entre orientador ou orientadora e inclua os títulos:
+\orientador{Prof. Dr. José Augusto Chinellato}
+% \orientadora{Profa. Dr. Alberto Franco de Sá Santoro}
+
+% Escolha entre coorientador ou coorientadora, se houver, 
+% e inclua os títulos:
+\coorientador{Profa. Dr. Alberto Franco de Sá Santoro}
+% \coorientadora{Prof. Dra. Eng. Lic. Nome da Co-Orientadora}
+
+% Escolha entre uma das quatro opções a seguir (comente as demais):
+%\bsi         % para Trabalho de Conclusão de Curso em BSI
+%\tads       % para Trabalho de Conclusão de Curso em TADS
+%\qualificacaoMestrado  % Para textos de qualificação de mestrado.
+%\qualificacaoDoutorado % Para textos de qualificação de doutorado.
+% \mestrado   % para Dissertação de Mestrado em Tecnologia
+\doutorado  % para Tese de Doutorado em Tecnologia
+
+%Defina a área de concentração. Se for TCC, deixe comentado
+\areaConcentracao{Física}
+%\areaConcentracao{Ambiente}
+%\areaConcentracao{Ciência dos Materiais}
+
+% Se houve cotutela, defina:
+%\cotutela{Universidade Nova de Plutão}
+
+%Defina a data da defesa no formato {Dia}{Mês}{Ano}
+\datadadefesa{20}{04}{2021}
+
+% Para a versão final defina:
+% Repita o nome do Orientador(a) no primeiro avaliador
+\avaliadorA{Prof. Dr. Nome do Orientador}{IFCH/UNICAMP}
+\avaliadorB{Profa. Dra. Segunda Avaliadora}{Instituição da segunda avaliadora}
+\avaliadorC{Dr. Terceiro Avaliador}{Instituição do terceiro avaliador}
+% \avaliadorD{Prof. Dr. Quarto Avaliador}{Instituição do quarto avaliador}
+% \avaliadorE{Prof. Dr. Quinto Avaliador}{Instituição do quinto avaliador}
+% \avaliadorF{Prof. Dr. Sexto Avaliador}{Instituição do sexto avaliador}
+% \avaliadorG{Prof. Dr. Sétimo Avaliador}{Instituição do sétimo avaliador}
+% \avaliadorH{Prof. Dr. Oitavo Avaliador}{Instituição do oitavo avaliador}
+
+
+% Para incluir a ficha catalográfica em PDF na versão final, 
+% copie o arquivo PDF, descomente e ajuste a linha a seguir:
+%\fichacatalografica{arquivo.pdf}
+
+% Este comando deve ficar aqui:
+\paginasiniciais
+
+% Se houver dedicatória, descomente a linha a seguir:
+%\prefacesection{Isso é um teste}
+%A dedicatória deve ocupar uma única página.
+%
+%
+% Se houver epígrafe, descomente e edite as linhas a seguir:
+\begin{epigrafe}
+    \noindent{\itshape Sometimes science is a lot more art than science. A lot of people don't get that.}\bigbreak
+
+    \hfill Rick Sanchez
+    
+    \vspace*{0.05\textheight}
+    
+    \noindent{\itshape Então, que seja doce. Repito todas as manhãs, ao abrir as janelas para deixar entrar o sol ou o cinza dos dias, bem assim, que seja doce. Quando há sol, e esse sol bate na minha cara amassada do sono ou da insônia, contemplando as partículas de poeira soltas no ar, feito um pequeno universo; repito sete vezes para dar sorte: que seja doce que seja doce que seja doce e assim por diante. Mas, se alguém me perguntasse o que deverá ser doce, talvez não saiba responder. Tudo é tão vago como se fosse nada.}\bigbreak
+    
+    \hfill Caio Fernando Abreu
+\end{epigrafe}
+
+% dedicatoria
+\input{dedicatoria}
+
+%
+%
+% Adicione no arquivo "agradecimentos.tex" os seus agradecimentos
+% Caso prefira omitir os agradecimentos, comente a linha a seguir.
+\input{agradecimentos}
+
+% Sempre deve haver um resumo em português:
+
+\input{resumo_port}
+
+% Sempre deve haver um abstract:
+\input{resumo_eng}
+
+% Se houver um resumo em espanhol, descomente as linhas a seguir:
+%\begin{resumen}
+% A mesma regra aplica-se.
+%\end{resumen}
+
+% A lista de figuras:
+\listoffigures
+
+% A lista de tabelas:
+\listoftables
+
+% A lista de símbolos é opcional. Não confunda a lisa de símbolos
+% com a lista de abreviaturas.
+% \input{listaSimbolos}
+
+% A lista de abreviações e siglas vem a seguir.
+% Dê uma olhada no pacote nomencl para ver os comandos para 
+% adicionar abreviações e siglas no texto.
+\renewcommand{\nomname}{Lista de Abreviações e Siglas}
+\printnomenclature[3cm]
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{abbreviations} % Include a list of abbreviations (a table of two columns)
+
+    \textbf{CERN} & European Laboratory for Particle Physics \\
+    \textbf{LHC} & Large Hadron Collider \\
+    \textbf{CMS} & Compact Muon Solenoid \\
+    \textbf{SM} & Standard Model \\
+    \textbf{R9} & Photon R9 is a shower shape variable defined as the fraction of \\
+                       & energy deposited in the 5x5 square surrounding the Super Cluster \\
+                       & seed of the reconstructed photon.   \\
+    \textbf{LS1, LS2} & Long-Shutdown 1 and 2. Long periods of maintenance and upgrade \\
+                       & (spread over few year), in between data taking periods (Run). \\
+                      &  The LHC timescale is: Run1, LS1, Run2, LS2, Run3, ...  \\
+    \textbf{ECAL} & Electromagnetic Calorimeter \\
+    \textbf{HCAL} & Hadronic Calorimeter \\
+    \textbf{FEWZ} & Fully Exclusive W and Z Production \\
+    
+\end{abbreviations}
+
+% O sumário vem aqui:
+\tableofcontents
+
+% E esta linha deve ficar bem aqui:
+\fimdaspaginasiniciais
+
+% O corpo da dissertação ou tese começa aqui:
+% introduction
+\input{chapters/intro_conclusion/introduction}
+ 
+% theory
+\input{chapters/theory/sm}
+\input{chapters/theory/sm_results}
+\input{chapters/theory/higgs_results}
+\input{chapters/theory/rare_decays}
+
+% detector
+\input{chapters/experimental_setup/intro_and_lhc}
+\input{chapters/experimental_setup/cms}
+\input{chapters/experimental_setup/tracker}
+\input{chapters/experimental_setup/ecal}
+\input{chapters/experimental_setup/hcal}
+\input{chapters/experimental_setup/muon_dt}
+\input{chapters/experimental_setup/rpc_csc}
+\input{chapters/experimental_setup/tridas} 
+\input{chapters/experimental_setup/pf}
+
+% rpc
+\input{chapters/rpc/rpc}
+
+% analysis
+\input{chapters/analysis/intro} 
+\input{chapters/analysis/datasets} 
+\input{chapters/analysis/analysis}
+\input{chapters/analysis/backgroundmodel}
+\input{chapters/analysis/signalmodel}
+\input{chapters/analysis/systematics}
+\input{chapters/analysis/modeling_xchecks}
+\input{chapters/analysis/results}
+
+% conclusion
+\input{chapters/intro_conclusion/conclusion}
+
+\printbibliography[heading=bibintoc]
+
+
+% Os anexos, se houver, vêm depois das referências:
+\appendix
+
+% O comando a seguir inclui o arquivo apendices.tex
+% que contém os apêndices. Observe o comando \appendix
+% na linha anterior
+% Detalhe: não precisa incluir a extensão .tex
+\include{apendices}
+
+\end{document}

@@ -375,7 +375,7 @@ Besides the organizational tasks, the commissioning demanded to establish proced
  
 For the LV point of view, the LV power cable and signal cables should also be properly connected, and presenting a noise profile compatible with last data-taking. One key point for this task is to make sure that there are no miscabling of signal cable. One RPC chamber can have from 6 to 18 signal cable, which are connected very close one to another. There is a good chance that a chamber, after reparation, have its signal cables mixed. In order to diagnose situations like this, it was validated an algorithm present in the RPC Online Software, but never used since LS1, which, by changing the threshold of each component of the RPC system, from very high to very low values (component by component), can spot miscabled chambers. Since the control line is independent of the signal line, a misclabed will present a different noise from what is expected.
 
-Besides the validation of this algorithm, it was also implemented a web system (Figure~\ref{comm}), developed in Flask~\cite{flask} wich automatize the execution of the algorithm, making transparent to the shifter (or the one performing the commissioning) the procedure to get miscabling report.
+Besides the validation of this algorithm, it was also implemented a web system (Figure~\ref{comm}), developed in Flask~\cite{flask} wich automatize the execution of the algorithm, making transparent to the shifter (or the one performing the commissioning) the procedure to get the miscabling report.
 
 \begin{figure}[h]
 \begin{center}
