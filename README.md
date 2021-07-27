@@ -2,6 +2,8 @@
 
 To build the pdf, `LaTeX-Workshop` (VSCode extension), will do the trick.
 
+Source file: `tese.tex`
+
 ## References
 
 - Apresentação interessante: https://www.physik.uzh.ch/~koenigma/1608%20Higgs%20Hunting%20Talk.pdf

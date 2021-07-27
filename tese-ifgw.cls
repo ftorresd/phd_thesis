@@ -62,7 +62,7 @@
 \RequirePackage[sorting=none,style=nature,natbib=true]{biblatex}
 
 % Definição de novos comandos
-\newcommand{\@IFGW}{Instituto de Filosofia e Ciências Humanas}
+\newcommand{\@IFGW}{Instituto de Física "Gleb Wataghin"}
 \newcommand{\@UNICAMP}{Universidade Estadual de Campinas}
 
 % Criação de variáveis para o texto.
@@ -114,7 +114,7 @@
   \gdef\@degnamees{Doctora en Demografía}
   \gdef\@artigo{a}
   \fi
-  \gdef\@degnameen{Doctor in Demography}
+  \gdef\@degnameen{Doctor in Science}
   \gdef\@monopt{Monografia de qualificação}
   \gdef\@monoes{Monografía de calificación}
   \gdef\@monoen{Qualification monograph}
@@ -149,7 +149,7 @@
   \gdef\@degnamees{Doctora en Demografía}
   \gdef\@artigo{a}
   \fi
-  \gdef\@degnameen{Doctor in Demography}
+  \gdef\@degnameen{Doctor in Science}
   \gdef\@monopt{Tese de Doutorado}
   \gdef\@monoes{Tesis}
   \gdef\@monoen{Thesis}
@@ -267,23 +267,27 @@
   \large\bf
   \vfill
   \begin{center}
+    % \vspace*{2.6cm}
     \sc \if\@autora\relax\@autor\else\@autora\fi\\
-    \vspace*{1.3cm}
-    \sc \@titulo\\
-    \vspace*{0.5cm}
-    \sc  \@title
+    \vspace*{2.6cm}
+    \Large\sc \@title\\
+    \vspace*{3cm}
+    \Large\sc  \@titulo
+    \vspace*{2cm}
   \end{center}
   \vfill
   \normalfont
   \normalsize
   \hfill\begin{minipage}[t]{0.54\textwidth}
     \supresshyphen
-    \@monopt\xspace apresentada ao Instituto de Filosofia e Ciências Humanas da Universidade Estadual de Campinas como parte dos requisitos para a obtenção do título de \@degnamept\xspace \ifx\@areaConcentracao\relax\else, na área de  \@areaConcentracao\fi\ifx\@cotutela\relax\else\xspace, no âmbito do acordo de Cotutela firmado entre a Unicamp e a \@cotutela\fi.
+    \@monoen\xspace presented to the Institute of Physics of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Physics\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
+
+    % \@monopt\xspace apresentada ao Instituto de Filosofia e Ciências Humanas da Universidade Estadual de Campinas como parte dos requisitos para a obtenção do título de \@degnamept\xspace \ifx\@areaConcentracao\relax\else, na área de  \@areaConcentracao\fi\ifx\@cotutela\relax\else\xspace, no âmbito do acordo de Cotutela firmado entre a Unicamp e a \@cotutela\fi.
   \end{minipage}
   \vskip 8mm
   \hfill\begin{minipage}[t]{0.54\textwidth}
     \supresshyphen
-    \@monoen\xspace presented to the Institute of Philosophy and the Humanities of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Demography\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
+    % \@monoen\xspace presented to the Institute of Philosophy and the Humanities of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Demography\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
     \end{minipage}
     
   \vfill
@@ -353,56 +357,58 @@
 
 
 \def\approvalpage{
-  \iffinalversion
-    \logos
-%    \noindent\centerline{\large\MakeUppercase{\textbf{Folha de Aprovação}}}
-    \vskip 20mm
+  \includepdf[pages={1}]{institucional/folha_aprovacao_felipe_silva.pdf}
+
+%   \iffinalversion
+%     \logos
+% %    \noindent\centerline{\large\MakeUppercase{\textbf{Folha de Aprovação}}}
+%     \vskip 20mm
     
-    A Comissão Julgadora dos trabalhos de Defesa de \@monopt\xspace, composta pelos Professores Doutores a seguir descritos, em sessão pública realizada em \@dia\xspace de \ifcase \@mes \or janeiro\or fevereiro\or março\or abril\or maio\or junho\or julho\or agosto\or setembro\or outubro\or novembro\or      dezembro\fi\xspace de \@ano\xspace, considerou \@artigo\xspace candidat\@artigo\xspace \if\@autora\relax\@autor\else\@autora\fi\xspace aprovad\@artigo\xspace.
+%     A Comissão Julgadora dos trabalhos de Defesa de \@monopt\xspace, composta pelos Professores Doutores a seguir descritos, em sessão pública realizada em \@dia\xspace de \ifcase \@mes \or janeiro\or fevereiro\or março\or abril\or maio\or junho\or julho\or agosto\or setembro\or outubro\or novembro\or      dezembro\fi\xspace de \@ano\xspace, considerou \@artigo\xspace candidat\@artigo\xspace \if\@autora\relax\@autor\else\@autora\fi\xspace aprovad\@artigo\xspace.
 
-    \vfill
+%     \vfill
 
-    \ifx\@avalA\relax
-    \else
-       \noindent \textbf{\@avalA}\newline 
-       \noindent Presidente da Comissão Julgadora \vspace*{3em}%\@instavalA 
+%     \ifx\@avalA\relax
+%     \else
+%        \noindent \textbf{\@avalA}\newline 
+%        \noindent Presidente da Comissão Julgadora \vspace*{3em}%\@instavalA 
        
-       \ifx\@avalB\relax\else \noindent \textbf{\@avalB}\newline\@instavalB\vspace*{3em}\fi
+%        \ifx\@avalB\relax\else \noindent \textbf{\@avalB}\newline\@instavalB\vspace*{3em}\fi
        
-       \ifx\@avalC\relax\else \noindent \textbf{\@avalC}\newline\@instavalC\vspace*{3em}\fi
+%        \ifx\@avalC\relax\else \noindent \textbf{\@avalC}\newline\@instavalC\vspace*{3em}\fi
        
-       \ifx\@avalD\relax\else \noindent \textbf{\@avalD}\newline\@instavalD\vspace*{3em}\fi
+%        \ifx\@avalD\relax\else \noindent \textbf{\@avalD}\newline\@instavalD\vspace*{3em}\fi
        
-       \ifx\@avalE\relax\else \noindent \textbf{\@avalE}\newline\@instavalE\vspace*{3em}\fi
+%        \ifx\@avalE\relax\else \noindent \textbf{\@avalE}\newline\@instavalE\vspace*{3em}\fi
        
-       \ifx\@avalF\relax\else \noindent \textbf{\@avalF}\newline\@instavalF\fi
-    \fi
-    \vfill
-    %\hfill\begin{minipage}[t]{\textwidth}
-      %\begin{center}
+%        \ifx\@avalF\relax\else \noindent \textbf{\@avalF}\newline\@instavalF\fi
+%     \fi
+%     \vfill
+%     %\hfill\begin{minipage}[t]{\textwidth}
+%       %\begin{center}
       
-      \supresshyphen
-      \noindent
-      A Ata de Defesa com as respectivas assinaturas dos membros encontra-se no SIGA/Sistema de Fluxo de Dissertações/Teses e na Secretaria do Programa de Pós-Graduação em Demografia do Instituto de Filosofia e Ciências Humanas.
+%       \supresshyphen
+%       \noindent
+%       A Ata de Defesa com as respectivas assinaturas dos membros encontra-se no SIGA/Sistema de Fluxo de Dissertações/Teses e na Secretaria do Programa de Pós-Graduação em Demografia do Instituto de Filosofia e Ciências Humanas.
 
-      %\end{center}
-    %\end{minipage}
-    % \vfill
-    % \hfill\begin{minipage}[t]{\textwidth}
-    %   \begin{center}
-    %   Limeira, \@dia\xspace de
-    %   \ifcase \@mes \or janeiro\or fevereiro\or março\or abril\or maio\or
-    %   junho\or julho\or agosto\or setembro\or outubro\or novembro\or
-    %   dezembro\fi\xspace
-    %   de \@ano
-    %   \end{center}
-    % \end{minipage}
-    \vfill
-  \else
-    Na versão final, esta página será substituída por outra
-    informando a composição da banca e que a ata de defesa está arquivada
-    pela Unicamp.
-  \fi
+%       %\end{center}
+%     %\end{minipage}
+%     % \vfill
+%     % \hfill\begin{minipage}[t]{\textwidth}
+%     %   \begin{center}
+%     %   Limeira, \@dia\xspace de
+%     %   \ifcase \@mes \or janeiro\or fevereiro\or março\or abril\or maio\or
+%     %   junho\or julho\or agosto\or setembro\or outubro\or novembro\or
+%     %   dezembro\fi\xspace
+%     %   de \@ano
+%     %   \end{center}
+%     % \end{minipage}
+%     \vfill
+%   \else
+%     Na versão final, esta página será substituída por outra
+%     informando a composição da banca e que a ata de defesa está arquivada
+%     pela Unicamp.
+%   \fi
 }
 
 
