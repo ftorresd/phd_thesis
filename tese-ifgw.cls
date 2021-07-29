@@ -59,7 +59,7 @@
 %\RequirePackage[hyphenbreaks]{breakurl}
 
 %Pacotes para adicionar a bibliografia
-\RequirePackage[sorting=none,style=nature,natbib=true]{biblatex}
+\RequirePackage[sorting=none,style=nature,natbib=true,backend=bibtex]{biblatex}
 
 % Definição de novos comandos
 \newcommand{\@IFGW}{Instituto de Física "Gleb Wataghin"}
@@ -273,20 +273,24 @@
     \Large\sc \@title\\
     \vspace*{3cm}
     \Large\sc  \@titulo
-    \vspace*{2cm}
+    % \vspace*{2cm}
   \end{center}
   \vfill
   \normalfont
   \normalsize
   \hfill\begin{minipage}[t]{0.54\textwidth}
     \supresshyphen
-    \@monoen\xspace presented to the Institute of Physics of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Physics\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
+    % \@monoen\xspace presented to the Institute of Physics of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Physics\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
 
-    % \@monopt\xspace apresentada ao Instituto de Filosofia e Ciências Humanas da Universidade Estadual de Campinas como parte dos requisitos para a obtenção do título de \@degnamept\xspace \ifx\@areaConcentracao\relax\else, na área de  \@areaConcentracao\fi\ifx\@cotutela\relax\else\xspace, no âmbito do acordo de Cotutela firmado entre a Unicamp e a \@cotutela\fi.
+    \@monopt\xspace apresentada ao Instituto de Física "Gleb Wataghin" da Universidade Estadual de Campinas como parte dos requisitos para a obtenção do título de \@degnamept\xspace \ifx\@areaConcentracao\relax\else, na área de  \@areaConcentracao\fi\ifx\@cotutela\relax\else\xspace, no âmbito do acordo de Cotutela firmado entre a Unicamp e a \@cotutela\fi.
   \end{minipage}
   \vskip 8mm
   \hfill\begin{minipage}[t]{0.54\textwidth}
     \supresshyphen
+
+    \@monoen\xspace presented to the Institute of Physics of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Physics\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
+
+
     % \@monoen\xspace presented to the Institute of Philosophy and the Humanities of the University of Campinas in partial fulfillment of the requirements for the degree of \@degnameen\xspace, in the area of Demography\ifx\@cotutela\relax\else\xspace under the double-diploma agreement between Unicamp and \@cotutela\fi.
     \end{minipage}
     
