@@ -89,11 +89,11 @@
   \gdef\@textoaviso{\clearpage}
   \if\@autora\relax
   \gdef\@degnamept{Mestre em Demografia}
-  \gdef\@degnamees{Maestro en Demografía}
+  \gdef\@degnamees{Maestro en Ciências}
   \gdef\@artigo{o}
   \else
   \gdef\@degnamept{Mestra em Demografia}
-  \gdef\@degnamees{Maestra en Demografía}
+  \gdef\@degnamees{Maestra en Ciências}
   \gdef\@artigo{a}
   \fi
   \gdef\@degnameen{Master of Science in Demography}
@@ -106,12 +106,12 @@
 %added 
   \gdef\@textoaviso{\clearpage}
   \if\@autora\relax
-  \gdef\@degnamept{Doutor em Demografia}
-  \gdef\@degnamees{Doctor en Demografía}
+  \gdef\@degnamept{Doutor em Ciências}
+  \gdef\@degnamees{Doctor en Ciências}
   \gdef\@artigo{o}
   \else
-  \gdef\@degnamept{Doutora em Demografia}
-  \gdef\@degnamees{Doctora en Demografía}
+  \gdef\@degnamept{Doutora em Ciências}
+  \gdef\@degnamees{Doctora en Ciências}
   \gdef\@artigo{a}
   \fi
   \gdef\@degnameen{Doctor in Science}
@@ -123,12 +123,12 @@
 %added 
   \gdef\@textoaviso{\clearpage \cathpage}
   \if\@autora\relax
-  \gdef\@degnamept{Mestre em Demografia}
-  \gdef\@degnamees{Maestro en Demografía}
+  \gdef\@degnamept{Mestre em Ciências}
+  \gdef\@degnamees{Maestro en Ciências}
   \gdef\@artigo{o}
   \else
-  \gdef\@degnamept{Mestra em Demografia}
-  \gdef\@degnamees{Maestra en Demografía}
+  \gdef\@degnamept{Mestra em Ciências}
+  \gdef\@degnamees{Maestra en Ciências}
   \gdef\@artigo{a}
   \fi
   \gdef\@degnameen{Master of Science in Demography}
@@ -141,12 +141,12 @@
 %added 
   \gdef\@textoaviso{\clearpage \cathpage}
   \if\@autora\relax
-  \gdef\@degnamept{Doutor em Demografia}
-  \gdef\@degnamees{Doctor en Demografía}
+  \gdef\@degnamept{Doutor em Ciências}
+  \gdef\@degnamees{Doctor en Ciências}
   \gdef\@artigo{o}
   \else
-  \gdef\@degnamept{Doutora em Demografia}
-  \gdef\@degnamees{Doctora en Demografía}
+  \gdef\@degnamept{Doutora em Ciências}
+  \gdef\@degnamees{Doctora en Ciências}
   \gdef\@artigo{a}
   \fi
   \gdef\@degnameen{Doctor in Science}
